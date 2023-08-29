@@ -3,10 +3,11 @@
     <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  viewport-fit=cover" name="viewport" />
-    <meta name="description" content="Hexo+Git远程更新内容" />
+    <meta name="description" content="Hexo d部署报错解决办法" />
     <meta name="hexo-theme-A4" content="v1.7.1" />
     <link rel="alternate icon" type="image/webp" href="/%5Csource%5Cimg%5Cfavicon.webp">
-    <title>青年晚报</title>
+    <title>南山忆 | NOE.ZONE</title>
+	
 
     
         
@@ -45,12 +46,12 @@
         width: 56px;
         height: auto;" alt="^-^" cache-control="max-age=86400" class="header-img" src="/img/favicon.webp" width="10%"></img>
         <div class="header-content">
-            <a class="logo" href="/">青年晚报</a> 
-            <span class="description">生活中那些有的没的</span> 
+            <a class="logo" href="/">南山忆</a> 
+            <span class="description">乘一叶扁舟 入景随风 望江畔渔火</span> 
         </div>
         
     </div>
-    
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="https://music.163.com/outchain/player?type=1&id=173519143&auto=1&height=90"></iframe>
    
     <ul class="nav">
         
@@ -85,21 +86,18 @@
 
     
         <div class="post-main-title">
-            Hexo+Git远程更新内容
+            Hexo d部署报错解决办法
         </div>
       
     
 
     <div class="post-md">
         
-            
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E6%96%B9%E6%B3%95%E4%B8%80%EF%BC%9A%E5%9C%A8%E5%8D%9A%E5%AE%A2%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%AD%E5%88%A0%E9%99%A4-deploy-git%E6%96%87%E4%BB%B6"><span class="post-toc-text">方法一：在博客文件夹中删除.deploy_git文件</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E6%96%B9%E6%B3%95%E4%BA%8C%EF%BC%9A%E4%BF%AE%E6%94%B9Repo-%E6%89%BE%E5%88%B0-config-yml%E6%96%87%E4%BB%B6"><span class="post-toc-text">方法二：修改Repo 找到_config.yml文件</span></a></li></ol>
         
-        <p>更新与发布博文 依然在 Git Shell 中进入 Hexo文件夹，执行下面几条命令，将博客部署到 GitHub 上：</p>
-<p>hexo clean<br>hexo generate (若要本地预览就先执行 hexo server)<br>hexo deploy</p>
-<p>快捷命令：<br>hexo c &#x3D;&#x3D; hexo clean # 清除缓存<br>hexo g &#x3D;&#x3D; hexo generate # 生成静态文件<br>hexo d &#x3D;&#x3D; hexo deploy # 部署到github中，更新网页端的内容<br>hexo s &#x3D;&#x3D; hexo server # 通过启动本地服务器，预览文章效果<br>hexo n &#x3D;&#x3D; hexo new </p>
-<p>还能组合使用，如：</p>
-<p>hexo d -g 刷新个人博客，一般使用如下命令来刷新博客。</p>
-<p><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></p>
+        <h5 id="方法一：在博客文件夹中删除-deploy-git文件"><a href="#方法一：在博客文件夹中删除-deploy-git文件" class="headerlink" title="方法一：在博客文件夹中删除.deploy_git文件"></a>方法一：<em><strong>在博客文件夹中删除.deploy_git文件</strong></em></h5><p>在博客文件夹中删除.deploy_git 文件<br>命令行(terminal)[不推荐使用cmd, 使用 git bash 等] 中输入 git config –global core.autocrlf false把git加入系统环境变量<br>重新执行hexo c hexo g hexo d<br>部署成功。</p>
+<h5 id="方法二：修改Repo-找到-config-yml文件"><a href="#方法二：修改Repo-找到-config-yml文件" class="headerlink" title="方法二：修改Repo 找到_config.yml文件"></a>方法二：<em><strong>修改Repo 找到_config.yml文件</strong></em></h5><p><strong>格式如下:</strong><br>找到_config.yml文件，翻到最后面根据格式修改如下内容<br>Repo:<a target="_blank" rel="noopener" href="https://github.com/YourName/YourName.github.io.git(%E4%B8%8D%E8%A6%81%E4%BD%BF%E7%94%A8%E8%BF%99%E4%B8%AA)">https://github.com/YourName/YourName.github.io.git(不要使用这个)</a><br>            <a href="mailto:&#103;&#x69;&#116;&#x40;&#x67;&#105;&#x74;&#x68;&#117;&#98;&#46;&#99;&#111;&#109;">&#103;&#x69;&#116;&#x40;&#x67;&#105;&#x74;&#x68;&#117;&#98;&#46;&#99;&#111;&#109;</a>:YourName&#x2F;YourName.github.io.git(用这个)<br>部署成功。<br>【注】YourName是你的GitHub用户名</p>
+<p><a target="_blank" rel="noopener" href="https://hexo-delta-khaki.vercel.app/posts/3.html">Hexo Github Action 自动部署 在线编辑文章 新建文章</a></p>
 
     </div>
 
@@ -111,6 +109,15 @@
                 <span>该篇文章由 江河</span>
             
             
+                <span>打上标签:
+                    
+                    
+                        <a href='/tags/Hexo/'>
+                            Hexo
+                        </a>
+                    
+                </span>
+             
              
                 <span>归为分类:
                     
