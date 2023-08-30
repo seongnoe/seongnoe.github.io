@@ -3,7 +3,7 @@
     <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  viewport-fit=cover" name="viewport" />
-    <meta name="description" content="Github Pages配置域名问题" />
+    <meta name="description" content="Github Pages配置域名失效问题" />
     <meta name="hexo-theme-A4" content="v1.7.1" />
     <link rel="alternate icon" type="image/webp" href="/%5Csource%5Cimg%5Cfavicon.webp">
     <title>南山忆 | NOE.ZONE</title>
@@ -86,21 +86,32 @@
 
     
         <div class="post-main-title">
-            Github Pages配置域名问题
+            Github Pages配置域名失效问题
         </div>
       
     
 
     <div class="post-md">
         
-            
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0%EF%BC%9A"><span class="post-toc-text">问题描述：</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%EF%BC%9A"><span class="post-toc-text">问题排查：</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E5%85%B7%E4%BD%93%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%EF%BC%9A"><span class="post-toc-text">具体解决办法：</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E7%BB%93%E6%9E%9C"><span class="post-toc-text">结果</span></a></li></ol>
         
-        <p><em>问题描述：</em></p>
-<blockquote>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><p><a target="_blank" rel="noopener" href="https://imgse.com/i/pPd6VTP"><img src="https://s1.ax1x.com/2023/08/30/pPd6VTP.md.jpg" alt="pPd6VTP.md.jpg"></a></p>
+<h4 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a><em>问题描述：</em></h4><blockquote>
 <p>这两天发现部署在github的博客明明已经配置了域名，也已经显示了“DNS check successful”</p>
 <p>但是很奇怪第二天就发现不行了，根据域名访问显示404.进到设置页面一看，域名又没了，需要重新配置。</p>
 </blockquote>
-<p>问题排查：是否添加了CNAME文件并写入域名（无问题）</p>
+<h4 id="问题排查："><a href="#问题排查：" class="headerlink" title="问题排查："></a><em>问题排查：</em></h4><ul>
+<li><input checked="" disabled="" type="checkbox"> 是否添加了CNAME文件并写入域名（无问题）</li>
+<li><input disabled="" type="checkbox"> CNAME文件后缀是否正确，我的CNAME文件直接在github上面进行创建的，单独下载后发现居然是TXT格式，我怀疑是这里的问题。</li>
+<li><input disabled="" type="checkbox"> 本地source目录是否也存在CNAME文件（无）</li>
+<li><input disabled="" type="checkbox"> _congfig.yml是否在URL中设置了域名。（无）</li>
+</ul>
+<h4 id="具体解决办法："><a href="#具体解决办法：" class="headerlink" title="具体解决办法："></a><em>具体解决办法：</em></h4><ul>
+<li>重新创建CNAME文件，注意是否是否仍然有后缀（CNMAE命名必须全部大写）</li>
+<li>在本地博客source目录中同样将CNAME文件复制进去</li>
+<li>_congfig.yml中URL中设置域名，因为之前默认了example.com</li>
+</ul>
+<h4 id="结果"><a href="#结果" class="headerlink" title="结果"></a><em>结果</em></h4><p>无问题出现，解决成功。</p>
 
     </div>
 
