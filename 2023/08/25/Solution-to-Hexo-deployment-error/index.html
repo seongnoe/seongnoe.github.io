@@ -40,7 +40,7 @@
         }
         body {
             color: black;
-            background: #FFFDFD;
+            background: #FFFFFF;
         }
         .post-md code {
             background: black;
@@ -67,19 +67,19 @@
             color: black;
         }
         a {
-            color: #CC3333;
+            color: #black;
         }
 
         .post-md a {
-            color: #CC3333;
+            color: #black;
         }
 
         .nav li a {
-            color: #CC3333;
+            color: #black;
         }
 
         .archive-main a:link {
-            color: #CC3333;
+            color: #black;
         }
         .archive-main a:visited {
             color: black; 
@@ -117,7 +117,7 @@
         }
 
         .paper {
-            background: #FFFDFD;
+            background: #FFFFFF;
         }
 
         .index-main {
@@ -191,6 +191,10 @@
                 <li><a href="/about/">关于</a></li>
             
         
+            
+                <li><a href="/pic/">光影</a></li>
+            
+        
     </ul>
 </div> 
         
@@ -216,7 +220,7 @@
             <ol class="post-toc"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E6%96%B9%E6%B3%95%E4%B8%80%EF%BC%9A%E5%9C%A8%E5%8D%9A%E5%AE%A2%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%AD%E5%88%A0%E9%99%A4-deploy-git%E6%96%87%E4%BB%B6"><span class="post-toc-text">方法一：在博客文件夹中删除.deploy_git文件</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E6%96%B9%E6%B3%95%E4%BA%8C%EF%BC%9A%E4%BF%AE%E6%94%B9Repo-%E6%89%BE%E5%88%B0-config-yml%E6%96%87%E4%BB%B6"><span class="post-toc-text">方法二：修改Repo 找到_config.yml文件</span></a></li></ol>
         
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><h5 id="方法一：在博客文件夹中删除-deploy-git文件"><a href="#方法一：在博客文件夹中删除-deploy-git文件" class="headerlink" title="方法一：在博客文件夹中删除.deploy_git文件"></a>方法一：<em><strong>在博客文件夹中删除.deploy_git文件</strong></em></h5><p>在博客文件夹中删除.deploy_git 文件<br>命令行(terminal)[不推荐使用cmd, 使用 git bash 等] 中输入 git config –global core.autocrlf false把git加入系统环境变量<br>重新执行hexo c hexo g hexo d<br>部署成功。</p>
-<h5 id="方法二：修改Repo-找到-config-yml文件"><a href="#方法二：修改Repo-找到-config-yml文件" class="headerlink" title="方法二：修改Repo 找到_config.yml文件"></a>方法二：<em><strong>修改Repo 找到_config.yml文件</strong></em></h5><p><strong>格式如下:</strong><br>找到_config.yml文件，翻到最后面根据格式修改如下内容<br>Repo:<a target="_blank" rel="noopener" href="https://github.com/YourName/YourName.github.io.git(%E4%B8%8D%E8%A6%81%E4%BD%BF%E7%94%A8%E8%BF%99%E4%B8%AA)">https://github.com/YourName/YourName.github.io.git(不要使用这个)</a><br>            <a href="mailto:&#x67;&#x69;&#x74;&#64;&#x67;&#105;&#x74;&#104;&#x75;&#x62;&#46;&#x63;&#x6f;&#109;">&#x67;&#x69;&#x74;&#64;&#x67;&#105;&#x74;&#104;&#x75;&#x62;&#46;&#x63;&#x6f;&#109;</a>:YourName&#x2F;YourName.github.io.git(用这个)<br>部署成功。<br>【注】YourName是你的GitHub用户名</p>
+<h5 id="方法二：修改Repo-找到-config-yml文件"><a href="#方法二：修改Repo-找到-config-yml文件" class="headerlink" title="方法二：修改Repo 找到_config.yml文件"></a>方法二：<em><strong>修改Repo 找到_config.yml文件</strong></em></h5><p><strong>格式如下:</strong><br>找到_config.yml文件，翻到最后面根据格式修改如下内容<br>Repo:<a target="_blank" rel="noopener" href="https://github.com/YourName/YourName.github.io.git(%E4%B8%8D%E8%A6%81%E4%BD%BF%E7%94%A8%E8%BF%99%E4%B8%AA)">https://github.com/YourName/YourName.github.io.git(不要使用这个)</a><br>            <a href="mailto:&#103;&#105;&#x74;&#x40;&#x67;&#x69;&#116;&#104;&#x75;&#98;&#46;&#x63;&#111;&#109;">&#103;&#105;&#x74;&#x40;&#x67;&#x69;&#116;&#104;&#x75;&#98;&#46;&#x63;&#111;&#109;</a>:YourName&#x2F;YourName.github.io.git(用这个)<br>部署成功。<br>【注】YourName是你的GitHub用户名</p>
 <p><a target="_blank" rel="noopener" href="https://hexo-delta-khaki.vercel.app/posts/3.html">Hexo Github Action 自动部署 在线编辑文章 新建文章</a></p>
 
     </div>
