@@ -1,327 +1,335 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-    <head>
+<html lang=zh>
+<head>
+    <!-- so meta -->
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  viewport-fit=cover" name="viewport" />
-    <meta name="description" content="A4主题首页标题大小设置方法" />
-    <meta name="hexo-theme-A4" content="v1.7.1" />
-    <link rel="alternate icon" type="image/webp" href="/img/favicon.webp">
-    <title>南山忆 | NOE.ZONE</title>
-	
-
-    
-        
-<link rel="stylesheet" href="/css/reset.css">
-
-        
-<link rel="stylesheet" href="/css/markdown.css">
-
-        
-<link rel="stylesheet" href="/css/fonts.css">
- 
-         <!--注意：首页既不是post也不是page-->
-        
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="[Github issue直达] 方法   如果通过git方式安装，可以先关闭A4的CDN，随后找到style.css文件，找到.index-logo，修改其中的font-size参数值即可。   总结 没啥总结的 自己太菜 不懂代码！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="A4主题首页标题大小设置方法">
+<meta property="og:url" content="https://noe.zone/2023/08/28/Changing-A4-titlesize/index.html">
+<meta property="og:site_name" content="南山忆">
+<meta property="og:description" content="[Github issue直达] 方法   如果通过git方式安装，可以先关闭A4的CDN，随后找到style.css文件，找到.index-logo，修改其中的font-size参数值即可。   总结 没啥总结的 自己太菜 不懂代码！">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-08-28T06:03:33.000Z">
+<meta property="article:modified_time" content="2023-08-29T03:03:36.176Z">
+<meta property="article:author" content="江河">
+<meta property="article:tag" content="A4">
+<meta name="twitter:card" content="summary">
     
     
-<link rel="stylesheet" href="/css/ui.css">
- 
+      
+        
+          <link rel="shortcut icon" href="/images/logo.png">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>A4主题首页标题大小设置方法</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
     
 <link rel="stylesheet" href="/css/style.css">
 
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
 <meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
     
-    <style>
-        :root {
-            --waline-theme-color: black; 
-            --waline-color: black; 
-            --waline-border-color: black; 
-            --waline-white: black; 
-            --waline-bgcolor-light: #FFFFFF;  
-        }
-        body {
-            color: black;
-            background: #FFFFFF;
-        }
-        .post-md code {
-            background: black;
-            color: white; 
-        }
-        .year-font-color {
-            color: black !important;
-        }
-        .wl-card span.wl-nick {
-            color: black; 
-        }
-        .wl-card .wl-badge {
-            border: 1px solid black;
-            color: black; 
-        }
-        .wl-btn {
-            border: 1px solid black; 
-            color:  black;  
-        }
-        .wl-btn.primary {
-            color: #FFFFFF; 
-        }
-        .wl-header label {
-            color: black;
-        }
-        a {
-            color: #black;
-        }
-
-        .post-md a {
-            color: #black;
-        }
-
-        .nav li a {
-            color: #black;
-        }
-
-        .archive-main a:link {
-            color: #black;
-        }
-        .archive-main a:visited {
-            color: black; 
-        }
-
-        .archive li span {
-            color: black;
-        }
-
-        .post-main-title {
-            color: black;
-        }
-
-        .post-md h1,
-        .post-md h2,
-        .post-md h3,
-        .post-md h4,
-        .post-md h5,
-        .post-md h6 {
-            color: black;
-        }
-
-        [data-waline] p {
-            color: black;
-        }
-        [data-waline] a {
-            color: black;
-        } 
-        .wl-sort li.active {
-            color: black;
-        }
-
-        .wl-card .wl-meta>span {
-            background: #FFFFFF;
-        }
-
-        .paper {
-            background: #FFFFFF;
-        }
-
-        .index-main {
-            background: #FFFFFF;
-        }
-
-        .paper-main {
-            background: #FFFFFF;
-        }
-
-        .wl-panel {
-            background: #FFFFFF;
-        }
-
-        .archive li:nth-child(odd) {
-            background: #FFFFFF;
-            ;
-        }
-
-        .archive li:nth-child(even) {
-            background: #FFFFFF;
-        }
-
-        .post-md>table tr:nth-child(odd) td {
-            background: #FFFFFF;
-        }
-
-        .post-md>table tr:nth-child(even) td {
-            background: #FFFFFF;
-        }
-    </style>
-
-    <body>
-        <div class="paper">
-            
-            
-            
-            
-			
-			
-                <div class="shadow-drop-2-bottom paper-main">
-                    
-<div class="header">
-    <div class="header-container">
-        <img style="
-        width: 56px;
-        height: auto;" alt="^-^" cache-control="max-age=86400" class="header-img" src="/img/favicon.webp" width="10%"></img>
-        <div class="header-content">
-            <a class="logo" href="/">南山忆</a> 
-            <span class="description">乘一叶扁舟 入景随风 望江畔渔火</span> 
-        </div>
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="目录"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="目录"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="顶部" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">首页</a></li><!--
+     --><!--
+       --><li><a href="/about/">关于</a></li><!--
+     --><!--
+       --><li><a href="/archives/">归档</a></li><!--
+     --><!--
+       --><li><a href="/tags">标签</a></li><!--
+     --><!--
+       --><li><a href="/categories/">分类</a></li><!--
+     --><!--
+       --><li><a href="/search/">搜索</a></li><!--
+     --><!--
+       --><li><a href="/friends/">朋友</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
         
-    </div>
-    
-   
-    <ul class="nav">
+        <li><a class="icon" aria-label="上一篇" href="/2023/08/30/About-githubpages-cname/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
         
-            
-                <li><a href="/">首页</a></li>
-            
         
-            
-                <li><a href="/list/">文章</a></li>
-            
+        <li><a class="icon" aria-label="下一篇" href="/2023/08/28/Win11-3D-Solution/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
         
-            
-                <li><a href="/tags/">标签</a></li>
-            
-        
-    </ul>
-</div> 
-        
-                    
-                    
-
-                    
-                    
-                    
-                    <!--说明是文章post页面-->
-                    
-                        <div class="post-main">
-
-    
-        <div class="post-main-title">
-            A4主题首页标题大小设置方法
-        </div>
-      
-    
-
-    <div class="post-md">
-        
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#Github-issue%E7%9B%B4%E8%BE%BE"><span class="post-toc-text">[Github issue直达]</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E6%96%B9%E6%B3%95"><span class="post-toc-text">方法</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E6%80%BB%E7%BB%93"><span class="post-toc-text">总结</span></a></li></ol>
-        
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><h5 id="Github-issue直达"><a href="#Github-issue直达" class="headerlink" title="[Github issue直达]"></a><a target="_blank" rel="noopener" href="https://github.com/HiNinoJay/hexo-theme-A4/issues/44">[Github issue直达]</a></h5><h5 id="方法"><a href="#方法" class="headerlink" title="方法"></a><em><strong>方法</strong></em></h5><ul>
-<li>如果通过git方式安装，可以先关闭A4的CDN，随后找到style.css文件，找到.index-logo，修改其中的font-size参数值即可。</li>
+        <li><a class="icon" aria-label="返回顶部" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="分享文章" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">上一篇</span>
+      <span id="i-next" class="info" style="display:none;">下一篇</span>
+      <span id="i-top" class="info" style="display:none;">返回顶部</span>
+      <span id="i-share" class="info" style="display:none;">分享文章</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://noe.zone/2023/08/28/Changing-A4-titlesize/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://noe.zone/2023/08/28/Changing-A4-titlesize/&text=A4主题首页标题大小设置方法"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://noe.zone/2023/08/28/Changing-A4-titlesize/&title=A4主题首页标题大小设置方法"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://noe.zone/2023/08/28/Changing-A4-titlesize/&is_video=false&description=A4主题首页标题大小设置方法"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=A4主题首页标题大小设置方法&body=Check out this article: https://noe.zone/2023/08/28/Changing-A4-titlesize/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://noe.zone/2023/08/28/Changing-A4-titlesize/&title=A4主题首页标题大小设置方法"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://noe.zone/2023/08/28/Changing-A4-titlesize/&title=A4主题首页标题大小设置方法"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://noe.zone/2023/08/28/Changing-A4-titlesize/&title=A4主题首页标题大小设置方法"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://noe.zone/2023/08/28/Changing-A4-titlesize/&title=A4主题首页标题大小设置方法"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://noe.zone/2023/08/28/Changing-A4-titlesize/&name=A4主题首页标题大小设置方法&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://noe.zone/2023/08/28/Changing-A4-titlesize/&t=A4主题首页标题大小设置方法"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
 </ul>
-<h5 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h5><p>没啥总结的 自己太菜 不懂代码！</p>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#Github-issue%E7%9B%B4%E8%BE%BE"><span class="toc-number">1.</span> <span class="toc-text">[Github issue直达]</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%96%B9%E6%B3%95"><span class="toc-number">2.</span> <span class="toc-text">方法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">3.</span> <span class="toc-text">总结</span></a></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        A4主题首页标题大小设置方法
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">江河</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2023-08-28T06:03:33.000Z" class="dt-published" itemprop="datePublished">2023-08-28</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fa-solid fa-archive"></i>
+        <a class="category-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa-solid fa-tag"></i>
+        <a class="p-category" href="/tags/A4/" rel="tag">A4</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><h5 id="Github-issue直达"><a target="_blank" rel="noopener" href="https://github.com/HiNinoJay/hexo-theme-A4/issues/44">[Github issue直达]</a></h5>
+<h5 id="方法"><em><strong>方法</strong></em></h5>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>如果通过git方式安装，可以先关闭A4的CDN，随后找到style.css文件，找到.index-logo，修改其中的font-size参数值即可。</p>
+</li>
+</ul>
+<h5 id="总结">总结</h5>
+<p>没啥总结的 自己太菜 不懂代码！</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">首页</a></li>
+        
+          <li><a href="/about/">关于</a></li>
+        
+          <li><a href="/archives/">归档</a></li>
+        
+          <li><a href="/tags">标签</a></li>
+        
+          <li><a href="/categories/">分类</a></li>
+        
+          <li><a href="/search/">搜索</a></li>
+        
+          <li><a href="/friends/">朋友</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#Github-issue%E7%9B%B4%E8%BE%BE"><span class="toc-number">1.</span> <span class="toc-text">[Github issue直达]</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%96%B9%E6%B3%95"><span class="toc-number">2.</span> <span class="toc-text">方法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">3.</span> <span class="toc-text">总结</span></a></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://noe.zone/2023/08/28/Changing-A4-titlesize/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://noe.zone/2023/08/28/Changing-A4-titlesize/&text=A4主题首页标题大小设置方法"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://noe.zone/2023/08/28/Changing-A4-titlesize/&title=A4主题首页标题大小设置方法"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://noe.zone/2023/08/28/Changing-A4-titlesize/&is_video=false&description=A4主题首页标题大小设置方法"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=A4主题首页标题大小设置方法&body=Check out this article: https://noe.zone/2023/08/28/Changing-A4-titlesize/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://noe.zone/2023/08/28/Changing-A4-titlesize/&title=A4主题首页标题大小设置方法"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://noe.zone/2023/08/28/Changing-A4-titlesize/&title=A4主题首页标题大小设置方法"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://noe.zone/2023/08/28/Changing-A4-titlesize/&title=A4主题首页标题大小设置方法"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://noe.zone/2023/08/28/Changing-A4-titlesize/&title=A4主题首页标题大小设置方法"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://noe.zone/2023/08/28/Changing-A4-titlesize/&name=A4主题首页标题大小设置方法&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://noe.zone/2023/08/28/Changing-A4-titlesize/&t=A4主题首页标题大小设置方法"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
 
     </div>
 
-    <div class="post-meta">
-        <i>
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> 菜单</a>
         
-            <span>2023-08-28</span>
-            
-                <span>该篇文章由 江河</span>
-            
-            
-                <span>打上标签:
-                    
-                    
-                        <a href='/tags/A4/'>
-                            A4
-                        </a>
-                    
-                </span>
-             
-             
-                <span>归为分类:
-                    
-                    
-                        <a href='/categories/%E5%AD%A6%E4%B9%A0/'>
-                            学习
-                        </a>
-                    
-                </span>
-            
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> 目录</a>
         
-        </i>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> 分享</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> 返回顶部</a>
     </div>
-    
+
+  </div>
+</div>
+
         
-
-     
-</div>
-
-
-
-                    
-                    
-                    <div class="footer">
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
     
-        <span> 
-            © 1998-2023 💌[NOE.zone] 
-
-            
-                
-
-            
-                
-                    / <a href="/friends/"> 友链 </a>
-                
-
-            
-                
-                    / <a href="/contact/"> 联系 </a>
-                
-
-            
-                
-                    / <a href="/talk/"> 随记 </a>
-                
-
-            
-                
-                    / <a href="/about/"> 关于 </a>
-                
-
-            
-                
-                    / <a href="/pic/"> 光影 </a>
-                
-
-            
-        </span>
     
-</div>
-<!--这是指一条线往下的内容-->
-<div class="footer-last">
-    
-            <span>你是江岸烟雨 柔化我一蓑一笠</span>
-            
-                <span class="footer-last-span-right"><i>本站由<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/index.html">Hexo</a>驱动｜使用<a target="_blank" rel="noopener" href="https://github.com/HiNinoJay/hexo-theme-A4">Hexo-theme-A4</a>主题</i></span>
-            
-    
-</div>
+    1998-2023
+    江河
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">首页</a></li><!--
+     --><!--
+       --><li><a href="/about/">关于</a></li><!--
+     --><!--
+       --><li><a href="/archives/">归档</a></li><!--
+     --><!--
+       --><li><a href="/tags">标签</a></li><!--
+     --><!--
+       --><li><a href="/categories/">分类</a></li><!--
+     --><!--
+       --><li><a href="/search/">搜索</a></li><!--
+     --><!--
+       --><li><a href="/friends/">朋友</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
 
 
-    
-<link rel="stylesheet" href="/css/a11y-dark.min.css">
 
-    
-<script src="/js/highlight.min.js"></script>
-
-    
-<script src="/js/highlightjs-line-numbers.js"></script>
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
 
 
+    <!-- jquery -->
 
-<script>
-    hljs.initHighlightingOnLoad();
-    hljs.initLineNumbersOnLoad();
-</script>
-                </div>
-            
-    </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"复制到粘贴板！\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "复制成功！");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
 </html>

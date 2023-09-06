@@ -1,349 +1,239 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-    <head>
+<html lang=zh>
+<head>
+    <!-- so meta -->
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  viewport-fit=cover" name="viewport" />
-    <meta name="description" content="talk" />
-    <meta name="hexo-theme-A4" content="v1.7.1" />
-    <link rel="alternate icon" type="image/webp" href="/img/favicon.webp">
-    <title>南山忆 | NOE.ZONE</title>
-	
-
-    
-        
-<link rel="stylesheet" href="/css/reset.css">
-
-        
-<link rel="stylesheet" href="/css/markdown.css">
-
-        
-<link rel="stylesheet" href="/css/fonts.css">
- 
-         <!--注意：首页既不是post也不是page-->
-        
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="2023-9-4 这两天想给我的ipad买一个拓展坞，主要是为了投屏以及相机与监控视频照片快速导入。目前看的有： 主要要求：   多功能原装Typec扩展坞拓展笔记本USB分线多接口适用于MacBookPro   2023-9-3 今天开了一个B站年费，另外目前开的会员有爱奇艺年费，QQ绿钻年费，Spotify季度会员，iCloud 2T，腾讯视频年费，迅雷超会季度会员。改天用notion建立一个">
+<meta property="og:type" content="website">
+<meta property="og:title" content="talk">
+<meta property="og:url" content="https://noe.zone/talk/index.html">
+<meta property="og:site_name" content="南山忆">
+<meta property="og:description" content="2023-9-4 这两天想给我的ipad买一个拓展坞，主要是为了投屏以及相机与监控视频照片快速导入。目前看的有： 主要要求：   多功能原装Typec扩展坞拓展笔记本USB分线多接口适用于MacBookPro   2023-9-3 今天开了一个B站年费，另外目前开的会员有爱奇艺年费，QQ绿钻年费，Spotify季度会员，iCloud 2T，腾讯视频年费，迅雷超会季度会员。改天用notion建立一个">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-09-04T03:50:18.000Z">
+<meta property="article:modified_time" content="2023-09-05T01:14:03.406Z">
+<meta property="article:author" content="江河">
+<meta name="twitter:card" content="summary">
     
     
-<link rel="stylesheet" href="/css/ui.css">
- 
+      
+        
+          <link rel="shortcut icon" href="/images/logo.png">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>talk</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
     
 <link rel="stylesheet" href="/css/style.css">
 
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
 <meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
     
-    <style>
-        :root {
-            --waline-theme-color: black; 
-            --waline-color: black; 
-            --waline-border-color: black; 
-            --waline-white: black; 
-            --waline-bgcolor-light: #FFFFFF;  
-        }
-        body {
-            color: black;
-            background: #FFFFFF;
-        }
-        .post-md code {
-            background: black;
-            color: white; 
-        }
-        .year-font-color {
-            color: black !important;
-        }
-        .wl-card span.wl-nick {
-            color: black; 
-        }
-        .wl-card .wl-badge {
-            border: 1px solid black;
-            color: black; 
-        }
-        .wl-btn {
-            border: 1px solid black; 
-            color:  black;  
-        }
-        .wl-btn.primary {
-            color: #FFFFFF; 
-        }
-        .wl-header label {
-            color: black;
-        }
-        a {
-            color: #black;
-        }
-
-        .post-md a {
-            color: #black;
-        }
-
-        .nav li a {
-            color: #black;
-        }
-
-        .archive-main a:link {
-            color: #black;
-        }
-        .archive-main a:visited {
-            color: black; 
-        }
-
-        .archive li span {
-            color: black;
-        }
-
-        .post-main-title {
-            color: black;
-        }
-
-        .post-md h1,
-        .post-md h2,
-        .post-md h3,
-        .post-md h4,
-        .post-md h5,
-        .post-md h6 {
-            color: black;
-        }
-
-        [data-waline] p {
-            color: black;
-        }
-        [data-waline] a {
-            color: black;
-        } 
-        .wl-sort li.active {
-            color: black;
-        }
-
-        .wl-card .wl-meta>span {
-            background: #FFFFFF;
-        }
-
-        .paper {
-            background: #FFFFFF;
-        }
-
-        .index-main {
-            background: #FFFFFF;
-        }
-
-        .paper-main {
-            background: #FFFFFF;
-        }
-
-        .wl-panel {
-            background: #FFFFFF;
-        }
-
-        .archive li:nth-child(odd) {
-            background: #FFFFFF;
-            ;
-        }
-
-        .archive li:nth-child(even) {
-            background: #FFFFFF;
-        }
-
-        .post-md>table tr:nth-child(odd) td {
-            background: #FFFFFF;
-        }
-
-        .post-md>table tr:nth-child(even) td {
-            background: #FFFFFF;
-        }
-    </style>
-
-    <body>
-        <div class="paper">
-            
-            
-            
-            
-			
-			
-                <div class="shadow-drop-2-bottom paper-main">
-                    
-<div class="header">
-    <div class="header-container">
-        <img style="
-        width: 56px;
-        height: auto;" alt="^-^" cache-control="max-age=86400" class="header-img" src="/img/favicon.webp" width="10%"></img>
-        <div class="header-content">
-            <a class="logo" href="/">南山忆</a> 
-            <span class="description">乘一叶扁舟 入景随风 望江畔渔火</span> 
-        </div>
+    <div class="content index py4 ">
         
+          <header id="header">
+  <a class="u-url u-uid" href="/">
+  
+    
+      <img id="logo" alt class="u-logo" src="/images/logo.png" />
+    
+  
+    <div id="title">
+      <h1 class="p-name">南山忆</h1>
     </div>
-    
-   
-    <ul class="nav">
-        
-            
-                <li><a href="/">首页</a></li>
-            
-        
-            
-                <li><a href="/list/">文章</a></li>
-            
-        
-            
-                <li><a href="/tags/">标签</a></li>
-            
-        
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#" aria-label="目录"><i class="fa-solid fa-bars fa-2x"></i></a>
+      </li>
+      <!--
+     --><li><a href="/">首页</a></li><!--
+   --><!--
+     --><li><a href="/about/">关于</a></li><!--
+   --><!--
+     --><li><a href="/archives/">归档</a></li><!--
+   --><!--
+     --><li><a href="/tags">标签</a></li><!--
+   --><!--
+     --><li><a href="/categories/">分类</a></li><!--
+   --><!--
+     --><li><a href="/search/">搜索</a></li><!--
+   --><!--
+     --><li><a href="/friends/">朋友</a></li><!--
+   -->
     </ul>
-</div> 
+  </div>
+</header>
+
         
-                    
-                    
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  
 
-                    
-                    
-                    
-                    <!--说明是文章post页面-->
-                    
-                        <div class="post-main">
-
-    
-
-    <div class="post-md">
-        
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><h4 id="2023-9-4"><a href="#2023-9-4" class="headerlink" title="2023-9-4"></a>2023-9-4</h4><p>这两天想给我的ipad买一个拓展坞，主要是为了投屏以及相机照片快速导入。<br>目前看的有：</p>
-<ul>
-<li><a target="_blank" rel="noopener" href="https://item.taobao.com/item.htm?id=687827746241&ns=1&abbucket=16#detail">多功能原装Typec扩展坞拓展笔记本USB分线多接口适用于MacBookPro</a></li>
+  <div class="content" itemprop="articleBody">
+      
+          <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><h4 id="2023-9-4">2023-9-4</h4>
+<p>这两天想给我的ipad买一个拓展坞，主要是为了投屏以及相机与监控视频照片快速导入。目前看的有：</p>
+<p>主要要求：</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><a target="_blank" rel="noopener" href="https://item.taobao.com/item.htm?id=687827746241&amp;ns=1&amp;abbucket=16#detail">多功能原装Typec扩展坞拓展笔记本USB分线多接口适用于MacBookPro</a></p>
+</li>
 </ul>
-<h4 id="2023-9-3"><a href="#2023-9-3" class="headerlink" title="2023-9-3"></a>2023-9-3</h4><p>今天开了一个B站年费，另外目前开的会员有爱奇艺年费，QQ绿钻年费，Spotify季度会员，iCloud 2T，腾讯视频年费，迅雷超会季度会员。改天用<a target="_blank" rel="noopener" href="https://www.notion.so/rea1/442430e1e8cf42338bf7f36c6d92347e?v=306efdfb792e429890696c916041383c">notion建立一个数据库</a>记录一下各个会员到期时间。</p>
+<h4 id="2023-9-3">2023-9-3</h4>
+<p>今天开了一个B站年费，另外目前开的会员有爱奇艺年费，QQ绿钻年费，Spotify季度会员，iCloud 2T，腾讯视频年费，迅雷超会季度会员。改天用<a target="_blank" rel="noopener" href="https://www.notion.so/rea1/442430e1e8cf42338bf7f36c6d92347e?v=306efdfb792e429890696c916041383c">notion建立一个数据库</a>记录一下各个会员到期时间。</p>
 <table>
 <thead>
 <tr>
-<th align="center">会员</th>
-<th align="center">付费属性</th>
-<th align="center">到期时间</th>
-<th align="center">链接直达</th>
+<th style="text-align:center">会员</th>
+<th style="text-align:center">付费属性</th>
+<th style="text-align:center">到期时间</th>
+<th style="text-align:center">链接直达</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">腾讯视频</td>
-<td align="center">年费</td>
-<td align="center">2023-9-4 14:24:20</td>
-<td align="center"><a href="v.qq.com">腾讯视频</a></td>
+<tbody>
+<tr>
+<td style="text-align:center">腾讯视频</td>
+<td style="text-align:center">年费</td>
+<td style="text-align:center">2023-9-4 14:24:20</td>
+<td style="text-align:center"><a href="v.qq.com">腾讯视频</a></td>
 </tr>
 <tr>
-<td align="center">爱奇艺</td>
-<td align="center">年费</td>
-<td align="center">—-</td>
-<td align="center">—-</td>
+<td style="text-align:center">爱奇艺</td>
+<td style="text-align:center">年费</td>
+<td style="text-align:center">----</td>
+<td style="text-align:center">----</td>
 </tr>
 <tr>
-<td align="center">B站</td>
-<td align="center">年费</td>
-<td align="center">—-</td>
-<td align="center">—-</td>
+<td style="text-align:center">B站</td>
+<td style="text-align:center">年费</td>
+<td style="text-align:center">----</td>
+<td style="text-align:center">----</td>
 </tr>
 <tr>
-<td align="center">iCloud 2T</td>
-<td align="center">月度扣费</td>
-<td align="center">—-</td>
-<td align="center">—-</td>
+<td style="text-align:center">iCloud 2T</td>
+<td style="text-align:center">月度扣费</td>
+<td style="text-align:center">----</td>
+<td style="text-align:center">----</td>
 </tr>
 <tr>
-<td align="center">QQ音乐</td>
-<td align="center">年费</td>
-<td align="center">—-</td>
-<td align="center">—-</td>
+<td style="text-align:center">QQ音乐</td>
+<td style="text-align:center">年费</td>
+<td style="text-align:center">----</td>
+<td style="text-align:center">----</td>
 </tr>
 <tr>
-<td align="center">迅雷会员</td>
-<td align="center">季度付费</td>
-<td align="center">—-</td>
-<td align="center">—-</td>
+<td style="text-align:center">迅雷会员</td>
+<td style="text-align:center">季度付费</td>
+<td style="text-align:center">----</td>
+<td style="text-align:center">----</td>
 </tr>
 <tr>
-<td align="center">Spotify</td>
-<td align="center">季度付费</td>
-<td align="center">—-</td>
-<td align="center">—-</td>
+<td style="text-align:center">Spotify</td>
+<td style="text-align:center">季度付费</td>
+<td style="text-align:center">----</td>
+<td style="text-align:center">----</td>
 </tr>
-</tbody></table>
-<h4 id="2023-8-30"><a href="#2023-8-30" class="headerlink" title="2023-8-30"></a>2023-8-30</h4><p>183d c8cb abeb fe6b 4832 649c 6fd8 5500 b469 92ae e106 148a 03c5 7337 b768 d14f</p>
+</tbody>
+</table>
+<h4 id="2023-8-30">2023-8-30</h4>
+<p>183d c8cb abeb fe6b 4832 649c 6fd8 5500 b469 92ae e106 148a 03c5 7337 b768 d14f</p>
+
+        
+  </div>
+</article>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    1998-2023
+    江河
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">首页</a></li><!--
+     --><!--
+       --><li><a href="/about/">关于</a></li><!--
+     --><!--
+       --><li><a href="/archives/">归档</a></li><!--
+     --><!--
+       --><li><a href="/tags">标签</a></li><!--
+     --><!--
+       --><li><a href="/categories/">分类</a></li><!--
+     --><!--
+       --><li><a href="/search/">搜索</a></li><!--
+     --><!--
+       --><li><a href="/friends/">朋友</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
 
     </div>
-
-    <div class="post-meta">
-        <i>
-        
-        </i>
-    </div>
-    
-        
-
-     
-</div>
+    <!-- styles -->
 
 
 
-                    
-                    
-                    <div class="footer">
-    
-        <span> 
-            © 1998-2023 💌[NOE.zone] 
-
-            
-                
-
-            
-                
-                    / <a href="/friends/"> 友链 </a>
-                
-
-            
-                
-                    / <a href="/contact/"> 联系 </a>
-                
-
-            
-                
-                    / <a href="/talk/"> 随记 </a>
-                
-
-            
-                
-                    / <a href="/about/"> 关于 </a>
-                
-
-            
-                
-                    / <a href="/pic/"> 光影 </a>
-                
-
-            
-        </span>
-    
-</div>
-<!--这是指一条线往下的内容-->
-<div class="footer-last">
-    
-            <span>你是江岸烟雨 柔化我一蓑一笠</span>
-            
-                <span class="footer-last-span-right"><i>本站由<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/index.html">Hexo</a>驱动｜使用<a target="_blank" rel="noopener" href="https://github.com/HiNinoJay/hexo-theme-A4">Hexo-theme-A4</a>主题</i></span>
-            
-    
-</div>
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
 
 
-    
-<link rel="stylesheet" href="/css/a11y-dark.min.css">
+    <!-- jquery -->
 
-    
-<script src="/js/highlight.min.js"></script>
-
-    
-<script src="/js/highlightjs-line-numbers.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
 
 
 
-<script>
-    hljs.initHighlightingOnLoad();
-    hljs.initLineNumbersOnLoad();
-</script>
-                </div>
-            
-    </body>
+
+<!-- clipboard -->
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
 </html>

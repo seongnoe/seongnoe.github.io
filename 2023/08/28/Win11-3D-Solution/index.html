@@ -1,351 +1,371 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-    <head>
+<html lang=zh>
+<head>
+    <!-- so meta -->
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  viewport-fit=cover" name="viewport" />
-    <meta name="description" content="Win11投影误触3D模式导致黑屏无法连接解决办法" />
-    <meta name="hexo-theme-A4" content="v1.7.1" />
-    <link rel="alternate icon" type="image/webp" href="/img/favicon.webp">
-    <title>南山忆 | NOE.ZONE</title>
-	
-
-    
-        
-<link rel="stylesheet" href="/css/reset.css">
-
-        
-<link rel="stylesheet" href="/css/markdown.css">
-
-        
-<link rel="stylesheet" href="/css/fonts.css">
- 
-         <!--注意：首页既不是post也不是page-->
-        
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="问题描述： 今天在公司帮业务部同事用公司笔记本连接投屏，因连接之后桌面图标不显示，遂进入系统屏幕设置中，结果误触了3D模式，突然屏幕跳动，然后投影仪检测不到信号。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Win11投影误触3D模式导致黑屏无法连接解决办法">
+<meta property="og:url" content="https://noe.zone/2023/08/28/Win11-3D-Solution/index.html">
+<meta property="og:site_name" content="南山忆">
+<meta property="og:description" content="问题描述： 今天在公司帮业务部同事用公司笔记本连接投屏，因连接之后桌面图标不显示，遂进入系统屏幕设置中，结果误触了3D模式，突然屏幕跳动，然后投影仪检测不到信号。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-08-28T05:21:54.000Z">
+<meta property="article:modified_time" content="2023-09-06T06:00:06.858Z">
+<meta property="article:author" content="江河">
+<meta property="article:tag" content="Win11">
+<meta name="twitter:card" content="summary">
     
     
-<link rel="stylesheet" href="/css/ui.css">
- 
+      
+        
+          <link rel="shortcut icon" href="/images/logo.png">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Win11投影误触3D模式导致黑屏无法连接解决办法</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
     
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 6.3.0"></head>
+    <!-- persian styles -->
     
-    <style>
-        :root {
-            --waline-theme-color: black; 
-            --waline-color: black; 
-            --waline-border-color: black; 
-            --waline-white: black; 
-            --waline-bgcolor-light: #FFFFFF;  
-        }
-        body {
-            color: black;
-            background: #FFFFFF;
-        }
-        .post-md code {
-            background: black;
-            color: white; 
-        }
-        .year-font-color {
-            color: black !important;
-        }
-        .wl-card span.wl-nick {
-            color: black; 
-        }
-        .wl-card .wl-badge {
-            border: 1px solid black;
-            color: black; 
-        }
-        .wl-btn {
-            border: 1px solid black; 
-            color:  black;  
-        }
-        .wl-btn.primary {
-            color: #FFFFFF; 
-        }
-        .wl-header label {
-            color: black;
-        }
-        a {
-            color: #black;
-        }
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 6.3.0"></head>
 
-        .post-md a {
-            color: #black;
-        }
-
-        .nav li a {
-            color: #black;
-        }
-
-        .archive-main a:link {
-            color: #black;
-        }
-        .archive-main a:visited {
-            color: black; 
-        }
-
-        .archive li span {
-            color: black;
-        }
-
-        .post-main-title {
-            color: black;
-        }
-
-        .post-md h1,
-        .post-md h2,
-        .post-md h3,
-        .post-md h4,
-        .post-md h5,
-        .post-md h6 {
-            color: black;
-        }
-
-        [data-waline] p {
-            color: black;
-        }
-        [data-waline] a {
-            color: black;
-        } 
-        .wl-sort li.active {
-            color: black;
-        }
-
-        .wl-card .wl-meta>span {
-            background: #FFFFFF;
-        }
-
-        .paper {
-            background: #FFFFFF;
-        }
-
-        .index-main {
-            background: #FFFFFF;
-        }
-
-        .paper-main {
-            background: #FFFFFF;
-        }
-
-        .wl-panel {
-            background: #FFFFFF;
-        }
-
-        .archive li:nth-child(odd) {
-            background: #FFFFFF;
-            ;
-        }
-
-        .archive li:nth-child(even) {
-            background: #FFFFFF;
-        }
-
-        .post-md>table tr:nth-child(odd) td {
-            background: #FFFFFF;
-        }
-
-        .post-md>table tr:nth-child(even) td {
-            background: #FFFFFF;
-        }
-    </style>
-
-    <body>
-        <div class="paper">
-            
-            
-            
-            
-			
-			
-                <div class="shadow-drop-2-bottom paper-main">
-                    
-<div class="header">
-    <div class="header-container">
-        <img style="
-        width: 56px;
-        height: auto;" alt="^-^" cache-control="max-age=86400" class="header-img" src="/img/favicon.webp" width="10%"></img>
-        <div class="header-content">
-            <a class="logo" href="/">南山忆</a> 
-            <span class="description">乘一叶扁舟 入景随风 望江畔渔火</span> 
-        </div>
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="目录"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="目录"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="顶部" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">首页</a></li><!--
+     --><!--
+       --><li><a href="/about/">关于</a></li><!--
+     --><!--
+       --><li><a href="/archives/">归档</a></li><!--
+     --><!--
+       --><li><a href="/tags">标签</a></li><!--
+     --><!--
+       --><li><a href="/categories/">分类</a></li><!--
+     --><!--
+       --><li><a href="/search/">搜索</a></li><!--
+     --><!--
+       --><li><a href="/friends/">朋友</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
         
+        <li><a class="icon" aria-label="上一篇" href="/2023/08/28/Changing-A4-titlesize/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="下一篇" href="/2023/08/27/Github-emoji/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="返回顶部" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="分享文章" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">上一篇</span>
+      <span id="i-next" class="info" style="display:none;">下一篇</span>
+      <span id="i-top" class="info" style="display:none;">返回顶部</span>
+      <span id="i-share" class="info" style="display:none;">分享文章</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://noe.zone/2023/08/28/Win11-3D-Solution/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://noe.zone/2023/08/28/Win11-3D-Solution/&text=Win11投影误触3D模式导致黑屏无法连接解决办法"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://noe.zone/2023/08/28/Win11-3D-Solution/&title=Win11投影误触3D模式导致黑屏无法连接解决办法"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://noe.zone/2023/08/28/Win11-3D-Solution/&is_video=false&description=Win11投影误触3D模式导致黑屏无法连接解决办法"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Win11投影误触3D模式导致黑屏无法连接解决办法&body=Check out this article: https://noe.zone/2023/08/28/Win11-3D-Solution/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://noe.zone/2023/08/28/Win11-3D-Solution/&title=Win11投影误触3D模式导致黑屏无法连接解决办法"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://noe.zone/2023/08/28/Win11-3D-Solution/&title=Win11投影误触3D模式导致黑屏无法连接解决办法"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://noe.zone/2023/08/28/Win11-3D-Solution/&title=Win11投影误触3D模式导致黑屏无法连接解决办法"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://noe.zone/2023/08/28/Win11-3D-Solution/&title=Win11投影误触3D模式导致黑屏无法连接解决办法"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://noe.zone/2023/08/28/Win11-3D-Solution/&name=Win11投影误触3D模式导致黑屏无法连接解决办法&description=&lt;h4 id=&#34;问题描述：&#34;&gt;问题描述：&lt;/h4&gt;
+&lt;p&gt;今天在公司帮业务部同事用公司笔记本连接投屏，因连接之后桌面图标不显示，遂进入系统屏幕设置中，结果误触了3D模式，突然屏幕跳动，然后投影仪检测不到信号。"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://noe.zone/2023/08/28/Win11-3D-Solution/&t=Win11投影误触3D模式导致黑屏无法连接解决办法"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
     </div>
     
-   
-    <ul class="nav">
-        
-            
-                <li><a href="/">首页</a></li>
-            
-        
-            
-                <li><a href="/list/">文章</a></li>
-            
-        
-            
-                <li><a href="/tags/">标签</a></li>
-            
-        
-    </ul>
-</div> 
-        
-                    
-                    
-
-                    
-                    
-                    
-                    <!--说明是文章post页面-->
-                    
-                        <div class="post-main">
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0%EF%BC%9A"><span class="toc-number">1.</span> <span class="toc-text">问题描述：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%951"><span class="toc-number">2.</span> <span class="toc-text">解决办法1</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%952"><span class="toc-number">3.</span> <span class="toc-text">解决办法2</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">4.</span> <span class="toc-text">总结</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5"><span class="toc-number">5.</span> <span class="toc-text">参考链接</span></a></li></ol>
+      </div>
+    
+  </span>
+</div>
 
     
-        <div class="post-main-title">
-            Win11投影误触3D模式导致黑屏无法连接解决办法
-        </div>
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        Win11投影误触3D模式导致黑屏无法连接解决办法
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">江河</span>
+      </span>
       
-    
+    <div class="postdate">
+      
+        <time datetime="2023-08-28T05:21:54.000Z" class="dt-published" itemprop="datePublished">2023-08-28</time>
+        
+      
+    </div>
 
-    <div class="post-md">
-        
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0%EF%BC%9A"><span class="post-toc-text">问题描述：</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%951"><span class="post-toc-text">解决办法1</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%952"><span class="post-toc-text">解决办法2</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E6%80%BB%E7%BB%93"><span class="post-toc-text">总结</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5"><span class="post-toc-text">参考链接</span></a></li></ol>
-        
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><h4 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h4><p>今天在公司帮业务部同事用公司笔记本连接投屏，因连接之后桌面图标不显示，遂进入系统屏幕设置中，结果误触了3D模式，突然屏幕跳动，然后投影仪检测不到信号。<span id="more"></span></p>
+
+      
+    <div class="article-category">
+        <i class="fa-solid fa-archive"></i>
+        <a class="category-link" href="/categories/%E8%AE%B0%E5%BD%95/">记录</a>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa-solid fa-tag"></i>
+        <a class="p-category" href="/tags/Win11/" rel="tag">Win11</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><h4 id="问题描述：">问题描述：</h4>
+<p>今天在公司帮业务部同事用公司笔记本连接投屏，因连接之后桌面图标不显示，遂进入系统屏幕设置中，结果误触了3D模式，突然屏幕跳动，然后投影仪检测不到信号。<span id="more"></span></p>
 <p><em><strong>是否解决：已经解决</strong></em></p>
-<ul>
-<li>系统：Win11</li>
-<li>查询网站：CSDN 、知乎<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[知乎问题：win10的3D显示模式怎么关闭?](https://www.zhihu.com/question/454082578)
-">[1]</span></a></sup> 、哔哩哔哩</li>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>系统：Win11</p>
+</li>
+<li class="lvl-2">
+<p>查询网站：CSDN 、知乎<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[知乎问题：win10的3D显示模式怎么关闭?](https://www.zhihu.com/question/454082578)
+">[1]</span></a></sup> 、哔哩哔哩</p>
+</li>
 </ul>
-<p>&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;</p>
-<h4 id="解决办法1"><a href="#解决办法1" class="headerlink" title="解决办法1"></a>解决办法1</h4><p> 1.把下面注册表路径内的子项删掉就行【不要删除主文件夹 需要一个一个删除】</p>
+<p>==============================================================================</p>
+<h4 id="解决办法1">解决办法1</h4>
+<p>1.把下面注册表路径内的子项删掉就行【不要删除主文件夹 需要一个一个删除】</p>
 <p><code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Configuration HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Connectivity HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\ScaleFactors</code></p>
-<p>&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;</p>
-<h4 id="解决办法2"><a href="#解决办法2" class="headerlink" title="解决办法2"></a>解决办法2</h4><p><strong>通过directx 修复工具解决</strong></p>
-<p>下载链接：<br><a target="_blank" rel="noopener" href="https://www.onlinedown.net/soft/120082.htm?t=1536963605416">DirectX修复工具  v4.2.0.40217 中文版下载</a></p>
-<ul>
-<li><p>下载完成后将DirectX Repair解压出来，打开文件夹，双击 DirectX_Repair ；</p>
+<p>==============================================================================</p>
+<h4 id="解决办法2">解决办法2</h4>
+<p><strong>通过directx 修复工具解决</strong></p>
+<p>下载链接：<br>
+<a target="_blank" rel="noopener" href="https://www.onlinedown.net/soft/120082.htm?t=1536963605416">DirectX修复工具  v4.2.0.40217 中文版下载</a></p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>下载完成后将DirectX Repair解压出来，打开文件夹，双击 DirectX_Repair ；</p>
 </li>
-<li><p>DirectX修复工具 ，然后在工具栏中点击【工具】–【选项】按钮；</p>
+<li class="lvl-2">
+<p>DirectX修复工具 ，然后在工具栏中点击【工具】–【选项】按钮；</p>
 </li>
-<li><p>在选项界面点击【DirectX 加速】</p>
+<li class="lvl-2">
+<p>在选项界面点击【DirectX 加速】</p>
 </li>
-<li><p>在下面找到 DirectDraw 加速、Direct3D加速 ，点击后面的【禁用】即可！</p>
+<li class="lvl-2">
+<p>在下面找到 DirectDraw 加速、Direct3D加速 ，点击后面的【禁用】即可！</p>
 </li>
 </ul>
 <p>【备注】第五步我只点了禁用directdraw加速，direct3d不能点，显示部分禁用，然而同样有效，重启后一切恢复正常了。</p>
-<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>方法应该有很多，目前只测试了这两种方法，方法二是有效果的。第一种方法操作重启后，仍然看不到3D模式恢复。</p>
-<h4 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h4><ul>
-<li><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/454082578">知乎问题：win10的3D显示模式怎么关闭?</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div></li>
+<h4 id="总结">总结</h4>
+<p>方法应该有很多，目前只测试了这两种方法，方法二是有效果的。第一种方法操作重启后，仍然看不到3D模式恢复。</p>
+<h4 id="参考链接">参考链接</h4>
+<ul class="lvl-0">
+<li class="lvl-2">
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/454082578">知乎问题：win10的3D显示模式怎么关闭?</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div></li>
+</ul>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">首页</a></li>
+        
+          <li><a href="/about/">关于</a></li>
+        
+          <li><a href="/archives/">归档</a></li>
+        
+          <li><a href="/tags">标签</a></li>
+        
+          <li><a href="/categories/">分类</a></li>
+        
+          <li><a href="/search/">搜索</a></li>
+        
+          <li><a href="/friends/">朋友</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0%EF%BC%9A"><span class="toc-number">1.</span> <span class="toc-text">问题描述：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%951"><span class="toc-number">2.</span> <span class="toc-text">解决办法1</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%952"><span class="toc-number">3.</span> <span class="toc-text">解决办法2</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">4.</span> <span class="toc-text">总结</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5"><span class="toc-number">5.</span> <span class="toc-text">参考链接</span></a></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://noe.zone/2023/08/28/Win11-3D-Solution/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://noe.zone/2023/08/28/Win11-3D-Solution/&text=Win11投影误触3D模式导致黑屏无法连接解决办法"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://noe.zone/2023/08/28/Win11-3D-Solution/&title=Win11投影误触3D模式导致黑屏无法连接解决办法"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://noe.zone/2023/08/28/Win11-3D-Solution/&is_video=false&description=Win11投影误触3D模式导致黑屏无法连接解决办法"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Win11投影误触3D模式导致黑屏无法连接解决办法&body=Check out this article: https://noe.zone/2023/08/28/Win11-3D-Solution/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://noe.zone/2023/08/28/Win11-3D-Solution/&title=Win11投影误触3D模式导致黑屏无法连接解决办法"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://noe.zone/2023/08/28/Win11-3D-Solution/&title=Win11投影误触3D模式导致黑屏无法连接解决办法"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://noe.zone/2023/08/28/Win11-3D-Solution/&title=Win11投影误触3D模式导致黑屏无法连接解决办法"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://noe.zone/2023/08/28/Win11-3D-Solution/&title=Win11投影误触3D模式导致黑屏无法连接解决办法"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://noe.zone/2023/08/28/Win11-3D-Solution/&name=Win11投影误触3D模式导致黑屏无法连接解决办法&description=&lt;h4 id=&#34;问题描述：&#34;&gt;问题描述：&lt;/h4&gt;
+&lt;p&gt;今天在公司帮业务部同事用公司笔记本连接投屏，因连接之后桌面图标不显示，遂进入系统屏幕设置中，结果误触了3D模式，突然屏幕跳动，然后投影仪检测不到信号。"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://noe.zone/2023/08/28/Win11-3D-Solution/&t=Win11投影误触3D模式导致黑屏无法连接解决办法"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
 
-    <div class="post-meta">
-        <i>
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> 菜单</a>
         
-            <span>2023-08-28</span>
-            
-                <span>该篇文章由 江河</span>
-            
-            
-                <span>打上标签:
-                    
-                    
-                        <a href='/tags/Win11/'>
-                            Win11
-                        </a>
-                    
-                </span>
-             
-             
-                <span>归为分类:
-                    
-                    
-                        <a href='/categories/%E8%AE%B0%E5%BD%95/'>
-                            记录
-                        </a>
-                    
-                </span>
-            
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> 目录</a>
         
-        </i>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> 分享</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> 返回顶部</a>
     </div>
-    
+
+  </div>
+</div>
+
         
-
-     
-</div>
-
-
-
-                    
-                    
-                    <div class="footer">
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
     
-        <span> 
-            © 1998-2023 💌[NOE.zone] 
-
-            
-                
-
-            
-                
-                    / <a href="/friends/"> 友链 </a>
-                
-
-            
-                
-                    / <a href="/contact/"> 联系 </a>
-                
-
-            
-                
-                    / <a href="/talk/"> 随记 </a>
-                
-
-            
-                
-                    / <a href="/about/"> 关于 </a>
-                
-
-            
-                
-                    / <a href="/pic/"> 光影 </a>
-                
-
-            
-        </span>
     
-</div>
-<!--这是指一条线往下的内容-->
-<div class="footer-last">
-    
-            <span>你是江岸烟雨 柔化我一蓑一笠</span>
-            
-                <span class="footer-last-span-right"><i>本站由<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/index.html">Hexo</a>驱动｜使用<a target="_blank" rel="noopener" href="https://github.com/HiNinoJay/hexo-theme-A4">Hexo-theme-A4</a>主题</i></span>
-            
-    
-</div>
+    1998-2023
+    江河
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">首页</a></li><!--
+     --><!--
+       --><li><a href="/about/">关于</a></li><!--
+     --><!--
+       --><li><a href="/archives/">归档</a></li><!--
+     --><!--
+       --><li><a href="/tags">标签</a></li><!--
+     --><!--
+       --><li><a href="/categories/">分类</a></li><!--
+     --><!--
+       --><li><a href="/search/">搜索</a></li><!--
+     --><!--
+       --><li><a href="/friends/">朋友</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
 
 
-    
-<link rel="stylesheet" href="/css/a11y-dark.min.css">
 
-    
-<script src="/js/highlight.min.js"></script>
-
-    
-<script src="/js/highlightjs-line-numbers.js"></script>
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
 
 
+    <!-- jquery -->
 
-<script>
-    hljs.initHighlightingOnLoad();
-    hljs.initLineNumbersOnLoad();
-</script>
-                </div>
-            
-    </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"复制到粘贴板！\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "复制成功！");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
 </html>
