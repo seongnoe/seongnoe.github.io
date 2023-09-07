@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>南山忆</title>
+  <title>Shing</title>
   
-  <subtitle>NOE.ZONE</subtitle>
-  <link href="https://noe.zone/atom.xml" rel="self"/>
+  <subtitle>Shing.cc</subtitle>
+  <link href="https://shing.cc/atom.xml" rel="self"/>
   
-  <link href="https://noe.zone/"/>
+  <link href="https://shing.cc/"/>
   <updated>2023-09-07T03:01:07.575Z</updated>
-  <id>https://noe.zone/</id>
+  <id>https://shing.cc/</id>
   
   <author>
-    <name>江河</name>
+    <name>SHing</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>九月份采购清单</title>
-    <link href="https://noe.zone/2023/09/06/life-lists/"/>
-    <id>https://noe.zone/2023/09/06/life-lists/</id>
+    <link href="https://shing.cc/2023/09/06/life-lists/"/>
+    <id>https://shing.cc/2023/09/06/life-lists/</id>
     <published>2023-09-06T03:45:58.000Z</published>
     <updated>2023-09-07T03:01:07.575Z</updated>
     
@@ -33,17 +33,17 @@
     
     
     
-    <category term="生活" scheme="https://noe.zone/categories/%E7%94%9F%E6%B4%BB/"/>
+    <category term="生活" scheme="https://shing.cc/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-    <category term="采购" scheme="https://noe.zone/tags/%E9%87%87%E8%B4%AD/"/>
+    <category term="采购" scheme="https://shing.cc/tags/%E9%87%87%E8%B4%AD/"/>
     
   </entry>
   
   <entry>
     <title>配置文件简体中文版</title>
-    <link href="https://noe.zone/2023/09/06/yml-chinese/"/>
-    <id>https://noe.zone/2023/09/06/yml-chinese/</id>
+    <link href="https://shing.cc/2023/09/06/yml-chinese/"/>
+    <id>https://shing.cc/2023/09/06/yml-chinese/</id>
     <published>2023-09-05T16:00:00.000Z</published>
     <updated>2023-09-06T05:03:34.178Z</updated>
     
@@ -57,17 +57,17 @@
     
     
     
-    <category term="配置文件" scheme="https://noe.zone/categories/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
+    <category term="配置文件" scheme="https://shing.cc/categories/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
     
     
-    <category term="Hexo" scheme="https://noe.zone/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://shing.cc/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>「🎨会员到期时间」</title>
-    <link href="https://noe.zone/2023/09/04/Vip-time/"/>
-    <id>https://noe.zone/2023/09/04/Vip-time/</id>
+    <link href="https://shing.cc/2023/09/04/Vip-time/"/>
+    <id>https://shing.cc/2023/09/04/Vip-time/</id>
     <published>2023-09-04T06:18:44.000Z</published>
     <updated>2023-09-04T06:51:50.091Z</updated>
     
@@ -84,17 +84,17 @@
     
     
     
-    <category term="数码" scheme="https://noe.zone/categories/%E6%95%B0%E7%A0%81/"/>
+    <category term="数码" scheme="https://shing.cc/categories/%E6%95%B0%E7%A0%81/"/>
     
     
-    <category term="会员" scheme="https://noe.zone/tags/%E4%BC%9A%E5%91%98/"/>
+    <category term="会员" scheme="https://shing.cc/tags/%E4%BC%9A%E5%91%98/"/>
     
   </entry>
   
   <entry>
     <title>Vscode国内下载以及中文、字体设置</title>
-    <link href="https://noe.zone/2023/09/04/Vscode-download/"/>
-    <id>https://noe.zone/2023/09/04/Vscode-download/</id>
+    <link href="https://shing.cc/2023/09/04/Vscode-download/"/>
+    <id>https://shing.cc/2023/09/04/Vscode-download/</id>
     <published>2023-09-04T03:02:11.000Z</published>
     <updated>2023-09-04T06:52:25.306Z</updated>
     
@@ -108,17 +108,17 @@
     
     
     
-    <category term="软件" scheme="https://noe.zone/categories/%E8%BD%AF%E4%BB%B6/"/>
+    <category term="软件" scheme="https://shing.cc/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="vscode" scheme="https://noe.zone/tags/vscode/"/>
+    <category term="vscode" scheme="https://shing.cc/tags/vscode/"/>
     
   </entry>
   
   <entry>
     <title>💡 IOS付费应用推荐</title>
-    <link href="https://noe.zone/2023/08/30/ios-app-recommend/"/>
-    <id>https://noe.zone/2023/08/30/ios-app-recommend/</id>
+    <link href="https://shing.cc/2023/08/30/ios-app-recommend/"/>
+    <id>https://shing.cc/2023/08/30/ios-app-recommend/</id>
     <published>2023-08-30T04:53:56.881Z</published>
     <updated>2023-08-30T05:03:58.908Z</updated>
     
@@ -132,19 +132,19 @@
     
     
     
-    <category term="APP" scheme="https://noe.zone/categories/APP/"/>
+    <category term="APP" scheme="https://shing.cc/categories/APP/"/>
     
     
-    <category term="ios" scheme="https://noe.zone/tags/ios/"/>
+    <category term="ios" scheme="https://shing.cc/tags/ios/"/>
     
-    <category term="app" scheme="https://noe.zone/tags/app/"/>
+    <category term="app" scheme="https://shing.cc/tags/app/"/>
     
   </entry>
   
   <entry>
     <title>MARKDOWN脚注</title>
-    <link href="https://noe.zone/2023/08/30/markdown-footernote/"/>
-    <id>https://noe.zone/2023/08/30/markdown-footernote/</id>
+    <link href="https://shing.cc/2023/08/30/markdown-footernote/"/>
+    <id>https://shing.cc/2023/08/30/markdown-footernote/</id>
     <published>2023-08-30T02:39:16.000Z</published>
     <updated>2023-08-30T03:06:00.552Z</updated>
     
@@ -158,17 +158,17 @@
     
     
     
-    <category term="学习" scheme="https://noe.zone/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://shing.cc/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="markdown" scheme="https://noe.zone/tags/markdown/"/>
+    <category term="markdown" scheme="https://shing.cc/tags/markdown/"/>
     
   </entry>
   
   <entry>
     <title>Github Pages配置域名失效问题</title>
-    <link href="https://noe.zone/2023/08/30/About-githubpages-cname/"/>
-    <id>https://noe.zone/2023/08/30/About-githubpages-cname/</id>
+    <link href="https://shing.cc/2023/08/30/About-githubpages-cname/"/>
+    <id>https://shing.cc/2023/08/30/About-githubpages-cname/</id>
     <published>2023-08-30T01:34:59.000Z</published>
     <updated>2023-08-30T02:16:14.236Z</updated>
     
@@ -182,19 +182,19 @@
     
     
     
-    <category term="记录" scheme="https://noe.zone/categories/%E8%AE%B0%E5%BD%95/"/>
+    <category term="记录" scheme="https://shing.cc/categories/%E8%AE%B0%E5%BD%95/"/>
     
     
-    <category term="github" scheme="https://noe.zone/tags/github/"/>
+    <category term="github" scheme="https://shing.cc/tags/github/"/>
     
-    <category term="域名" scheme="https://noe.zone/tags/%E5%9F%9F%E5%90%8D/"/>
+    <category term="域名" scheme="https://shing.cc/tags/%E5%9F%9F%E5%90%8D/"/>
     
   </entry>
   
   <entry>
     <title>A4主题首页标题大小设置方法</title>
-    <link href="https://noe.zone/2023/08/28/Changing-A4-titlesize/"/>
-    <id>https://noe.zone/2023/08/28/Changing-A4-titlesize/</id>
+    <link href="https://shing.cc/2023/08/28/Changing-A4-titlesize/"/>
+    <id>https://shing.cc/2023/08/28/Changing-A4-titlesize/</id>
     <published>2023-08-28T06:03:33.000Z</published>
     <updated>2023-08-29T03:03:36.176Z</updated>
     
@@ -208,17 +208,17 @@
     
     
     
-    <category term="学习" scheme="https://noe.zone/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://shing.cc/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="A4" scheme="https://noe.zone/tags/A4/"/>
+    <category term="A4" scheme="https://shing.cc/tags/A4/"/>
     
   </entry>
   
   <entry>
     <title>Win11投影误触3D模式导致黑屏无法连接解决办法</title>
-    <link href="https://noe.zone/2023/08/28/Win11-3D-Solution/"/>
-    <id>https://noe.zone/2023/08/28/Win11-3D-Solution/</id>
+    <link href="https://shing.cc/2023/08/28/Win11-3D-Solution/"/>
+    <id>https://shing.cc/2023/08/28/Win11-3D-Solution/</id>
     <published>2023-08-28T05:21:54.000Z</published>
     <updated>2023-09-06T06:00:06.858Z</updated>
     
@@ -230,17 +230,17 @@
     
     
     
-    <category term="记录" scheme="https://noe.zone/categories/%E8%AE%B0%E5%BD%95/"/>
+    <category term="记录" scheme="https://shing.cc/categories/%E8%AE%B0%E5%BD%95/"/>
     
     
-    <category term="Win11" scheme="https://noe.zone/tags/Win11/"/>
+    <category term="Win11" scheme="https://shing.cc/tags/Win11/"/>
     
   </entry>
   
   <entry>
     <title>Github-emoji</title>
-    <link href="https://noe.zone/2023/08/27/Github-emoji/"/>
-    <id>https://noe.zone/2023/08/27/Github-emoji/</id>
+    <link href="https://shing.cc/2023/08/27/Github-emoji/"/>
+    <id>https://shing.cc/2023/08/27/Github-emoji/</id>
     <published>2023-08-27T07:19:23.000Z</published>
     <updated>2023-08-30T05:32:01.544Z</updated>
     
@@ -254,19 +254,19 @@
     
     
     
-    <category term="记录" scheme="https://noe.zone/categories/%E8%AE%B0%E5%BD%95/"/>
+    <category term="记录" scheme="https://shing.cc/categories/%E8%AE%B0%E5%BD%95/"/>
     
     
-    <category term="github" scheme="https://noe.zone/tags/github/"/>
+    <category term="github" scheme="https://shing.cc/tags/github/"/>
     
-    <category term="emoji" scheme="https://noe.zone/tags/emoji/"/>
+    <category term="emoji" scheme="https://shing.cc/tags/emoji/"/>
     
   </entry>
   
   <entry>
     <title>Hexo+Git远程更新内容</title>
-    <link href="https://noe.zone/2023/08/25/Hexo-Remote-Update-Content/"/>
-    <id>https://noe.zone/2023/08/25/Hexo-Remote-Update-Content/</id>
+    <link href="https://shing.cc/2023/08/25/Hexo-Remote-Update-Content/"/>
+    <id>https://shing.cc/2023/08/25/Hexo-Remote-Update-Content/</id>
     <published>2023-08-25T01:04:01.000Z</published>
     <updated>2023-08-29T03:04:10.123Z</updated>
     
@@ -277,15 +277,15 @@
     
     
     
-    <category term="学习" scheme="https://noe.zone/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://shing.cc/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
   </entry>
   
   <entry>
     <title>Hexo多标签多分类的方法</title>
-    <link href="https://noe.zone/2023/08/25/Hexo-more-tags/"/>
-    <id>https://noe.zone/2023/08/25/Hexo-more-tags/</id>
+    <link href="https://shing.cc/2023/08/25/Hexo-more-tags/"/>
+    <id>https://shing.cc/2023/08/25/Hexo-more-tags/</id>
     <published>2023-08-24T16:00:00.000Z</published>
     <updated>2023-08-25T04:02:39.689Z</updated>
     
@@ -299,21 +299,21 @@
     
     
     
-    <category term="学习" scheme="https://noe.zone/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://shing.cc/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="Hexo" scheme="https://noe.zone/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://shing.cc/tags/Hexo/"/>
     
-    <category term="categories" scheme="https://noe.zone/tags/categories/"/>
+    <category term="categories" scheme="https://shing.cc/tags/categories/"/>
     
-    <category term="tag" scheme="https://noe.zone/tags/tag/"/>
+    <category term="tag" scheme="https://shing.cc/tags/tag/"/>
     
   </entry>
   
   <entry>
     <title>Hexo d部署报错解决办法</title>
-    <link href="https://noe.zone/2023/08/25/Solution-to-Hexo-deployment-error/"/>
-    <id>https://noe.zone/2023/08/25/Solution-to-Hexo-deployment-error/</id>
+    <link href="https://shing.cc/2023/08/25/Solution-to-Hexo-deployment-error/"/>
+    <id>https://shing.cc/2023/08/25/Solution-to-Hexo-deployment-error/</id>
     <published>2023-08-24T16:00:00.000Z</published>
     <updated>2023-08-28T06:54:15.509Z</updated>
     
@@ -327,17 +327,17 @@
     
     
     
-    <category term="学习" scheme="https://noe.zone/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://shing.cc/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="Hexo" scheme="https://noe.zone/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://shing.cc/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hello world</title>
-    <link href="https://noe.zone/2023/08/24/Welcome/"/>
-    <id>https://noe.zone/2023/08/24/Welcome/</id>
+    <link href="https://shing.cc/2023/08/24/Welcome/"/>
+    <id>https://shing.cc/2023/08/24/Welcome/</id>
     <published>2023-08-23T16:00:00.000Z</published>
     <updated>2023-08-29T05:32:30.267Z</updated>
     
@@ -350,14 +350,14 @@
     
     
     
-    <category term="Helloworld" scheme="https://noe.zone/tags/Helloworld/"/>
+    <category term="Helloworld" scheme="https://shing.cc/tags/Helloworld/"/>
     
   </entry>
   
   <entry>
     <title>「Airpods2-测评」</title>
-    <link href="https://noe.zone/2022/10/24/Airpods2/"/>
-    <id>https://noe.zone/2022/10/24/Airpods2/</id>
+    <link href="https://shing.cc/2022/10/24/Airpods2/"/>
+    <id>https://shing.cc/2022/10/24/Airpods2/</id>
     <published>2022-10-24T07:19:23.000Z</published>
     <updated>2023-09-07T02:37:03.448Z</updated>
     
@@ -371,12 +371,12 @@
     
     
     
-    <category term="数码" scheme="https://noe.zone/categories/%E6%95%B0%E7%A0%81/"/>
+    <category term="数码" scheme="https://shing.cc/categories/%E6%95%B0%E7%A0%81/"/>
     
     
-    <category term="AirPods2" scheme="https://noe.zone/tags/AirPods2/"/>
+    <category term="AirPods2" scheme="https://shing.cc/tags/AirPods2/"/>
     
-    <category term="Apple" scheme="https://noe.zone/tags/Apple/"/>
+    <category term="Apple" scheme="https://shing.cc/tags/Apple/"/>
     
   </entry>
   
