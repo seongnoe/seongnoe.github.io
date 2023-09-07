@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://noe.zone/2022/10/24/Airpods2/</loc>
+    <loc>https://noe.zone/2023/09/06/life-lists/</loc>
     
     <lastmod>2023-09-07</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://noe.zone/2023/09/06/life-lists/</loc>
+    <loc>https://noe.zone/2022/10/24/Airpods2/</loc>
     
     <lastmod>2023-09-07</lastmod>
     
@@ -259,6 +259,13 @@
   </url>
   
   <url>
+    <loc>https://noe.zone/tags/A4/</loc>
+    <lastmod>2023-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://noe.zone/tags/AirPods2/</loc>
     <lastmod>2023-09-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -267,13 +274,6 @@
   
   <url>
     <loc>https://noe.zone/tags/Apple/</loc>
-    <lastmod>2023-09-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://noe.zone/tags/A4/</loc>
     <lastmod>2023-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -308,14 +308,14 @@
   </url>
   
   <url>
-    <loc>https://noe.zone/tags/%E4%BC%9A%E5%91%98/</loc>
+    <loc>https://noe.zone/tags/vscode/</loc>
     <lastmod>2023-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://noe.zone/tags/vscode/</loc>
+    <loc>https://noe.zone/tags/%E4%BC%9A%E5%91%98/</loc>
     <lastmod>2023-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -336,6 +336,13 @@
   </url>
   
   <url>
+    <loc>https://noe.zone/tags/%E9%87%87%E8%B4%AD/</loc>
+    <lastmod>2023-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://noe.zone/tags/ios/</loc>
     <lastmod>2023-09-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -344,13 +351,6 @@
   
   <url>
     <loc>https://noe.zone/tags/app/</loc>
-    <lastmod>2023-09-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://noe.zone/tags/%E9%87%87%E8%B4%AD/</loc>
     <lastmod>2023-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -373,14 +373,14 @@
   </url>
   
   <url>
-    <loc>https://noe.zone/categories/%E6%95%B0%E7%A0%81/</loc>
+    <loc>https://noe.zone/categories/%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2023-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://noe.zone/categories/%E5%AD%A6%E4%B9%A0/</loc>
+    <loc>https://noe.zone/categories/%E6%95%B0%E7%A0%81/</loc>
     <lastmod>2023-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -394,14 +394,14 @@
   </url>
   
   <url>
-    <loc>https://noe.zone/categories/APP/</loc>
+    <loc>https://noe.zone/categories/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2023-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://noe.zone/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <loc>https://noe.zone/categories/APP/</loc>
     <lastmod>2023-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
