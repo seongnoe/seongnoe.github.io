@@ -280,13 +280,6 @@
   </url>
   
   <url>
-    <loc>https://noe.zone/tags/A4/</loc>
-    <lastmod>2023-09-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://noe.zone/tags/Hexo/</loc>
     <lastmod>2023-09-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -308,6 +301,13 @@
   </url>
   
   <url>
+    <loc>https://noe.zone/tags/A4/</loc>
+    <lastmod>2023-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://noe.zone/tags/vscode/</loc>
     <lastmod>2023-09-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -322,14 +322,21 @@
   </url>
   
   <url>
-    <loc>https://noe.zone/tags/Helloworld/</loc>
+    <loc>https://noe.zone/tags/Win11/</loc>
     <lastmod>2023-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://noe.zone/tags/Win11/</loc>
+    <loc>https://noe.zone/tags/markdown/</loc>
+    <lastmod>2023-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://noe.zone/tags/Helloworld/</loc>
     <lastmod>2023-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -351,13 +358,6 @@
   
   <url>
     <loc>https://noe.zone/tags/%E9%87%87%E8%B4%AD/</loc>
-    <lastmod>2023-09-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://noe.zone/tags/markdown/</loc>
     <lastmod>2023-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -401,14 +401,14 @@
   </url>
   
   <url>
-    <loc>https://noe.zone/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <loc>https://noe.zone/categories/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/</loc>
     <lastmod>2023-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://noe.zone/categories/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/</loc>
+    <loc>https://noe.zone/categories/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2023-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
