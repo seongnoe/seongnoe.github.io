@@ -1,289 +1,439 @@
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-  <meta name="theme-color" content="#202020"/>
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+  <head>
+  <meta charset="utf-8">
+  <meta name="author" content="zchengsite, 1451426471@qq.com" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   
   
-    <meta name="keywords" content="Hexo," />
-  
+  <title>配置文件简体中文版 | 南山忆</title>
 
   
-    <meta name="description" content="乘一叶扁舟 入景随风 望江畔渔火" />
+    <link rel="apple-touch-icon" href="/images/favicon.png">
+    <link rel="icon" href="/images/favicon.png">
   
+
+  <!-- Raleway-Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+  <!-- hexo site css -->
   
-  <link rel="icon" type="image/x-icon" href="/logo.png">
-  <title>配置文件简体中文版 [ 南山忆 ]</title>
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/iconfont/iconfont.css">
+<link rel="stylesheet" href="/css/github-markdown.css">
+<link rel="stylesheet" href="/css/highlight.css">
+
+
+  <!-- jquery3.3.1 -->
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- fancybox -->
+  <link href="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.css" rel="stylesheet">
+  <script async src="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.js"></script>
   
-    <!-- stylesheets list from config.yml -->
-    
-      <link rel="stylesheet" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css">
-    
-      <link rel="stylesheet" href="/css/xoxo.css">
-    
+<script src="/js/fancybox.js"></script>
+
+
   
+
 <meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="南山忆" type="application/atom+xml">
 </head>
 
 
-<body>
-  <div class="nav-container">
-    <nav class="home-menu pure-menu pure-menu-horizontal">
-  <a class="pure-menu-heading" href="/">
-    <img class="avatar" src="https://noe.zone/images/logo.png">
-    <span class="title">南山忆</span>
-  </a>
-
-  <ul class="pure-menu-list clearfix">
+  <body>
+    <div id="app">
+      <div class="header">
+  <div class="avatar">
+    <a href="/">
+      <!-- 头像取消懒加载，添加no-lazy -->
       
-          
-            <li class="pure-menu-item"><a href="/archives" class="pure-menu-link">文章</a></li>
-          
+        <img src="/images/avatar.png" alt="">
       
-          
-            <li class="pure-menu-item"><a href="/tags" class="pure-menu-link">标签</a></li>
-          
-      
-          
-            <li class="pure-menu-item"><a href="/categories" class="pure-menu-link">分类</a></li>
-          
-      
-          
-            <li class="pure-menu-item"><a href="/search" class="pure-menu-link">搜索</a></li>
-          
-      
-          
-            <li class="pure-menu-item"><a href="/about" class="pure-menu-link">关于</a></li>
-          
-      
-  </ul>
-   
-</nav>
+    </a>
+    <div class="nickname"><a href="/">Oranges</a></div>
   </div>
+  <div class="navbar">
+    <ul>
+      
+        <li class="nav-item" data-path="/">
+          <a href="/">Home</a>
+        </li>
+      
+        <li class="nav-item" data-path="/archives/">
+          <a href="/archives/">Archives</a>
+        </li>
+      
+        <li class="nav-item" data-path="/tags/">
+          <a href="/tags/">Tags</a>
+        </li>
+      
+        <li class="nav-item" data-path="/friends/">
+          <a href="/friends/">Friends</a>
+        </li>
+      
+        <li class="nav-item" data-path="/about/">
+          <a href="/about/">About</a>
+        </li>
+      
+    </ul>
+  </div>
+</div>
 
-  <div class="container" id="content-outer">
-    <div class="inner" id="content-inner">
-      <div class="post-container">
-  <article class="post" id="post">
-    <header class="post-header text-center">
-      <h1 class="title">
-        配置文件简体中文版
-      </h1>
-      <span>
-        
-        <time class="time" datetime="2023-09-05T16:00:00.000Z">
-        2023-09-06
-      </time>
-        
-      </span>
-      <span class="slash">/</span>
-      <span class="post-meta">
-      <span class="post-tags">
-        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li></ul>
-      </span>
-    </span>
-      <span class="slash">/</span>
-      <span class="read">
-      <span id="busuanzi_value_page_pv"></span> 点击
-    </span>
-      <span class="slash">/</span>
-      <span class="read">阅读耗时 11 分钟</span>
-    </header>
 
+<script src="/js/activeNav.js"></script>
+
+
+
+      <div class="flex-container">
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
+
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
     <div class="post-content">
-      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br></pre></td><td class="code"><pre><span class="line">#################################################### ############################</span><br><span class="line">＃ 内容</span><br><span class="line">#################################################### ############################</span><br><span class="line"></span><br><span class="line"># 链接到一个页面，该页面概述了您的所有项目。</span><br><span class="line"># 这可以是外部链接（例如，指向您的 GitHub 个人资料）或其他链接</span><br><span class="line">您网站内的 # 个页面。</span><br><span class="line">项目网址：https://noe.zone</span><br><span class="line"></span><br><span class="line"># 设置页面方向为RTL或LTR。默认为 LTR。（如果将其设置为“rtl”，则会加载“vazir”字体。）</span><br><span class="line">方向： LTR</span><br><span class="line"># 配置导航菜单。</span><br><span class="line"># 一对“Key: url”将生成一个指向“url”的链接，其中名称为“Key”</span><br><span class="line"># 导航菜单。（可选）您可以添加“Key”的翻译</span><br><span class="line"># 语言/*.yml</span><br><span class="line"># 将页面方向设置为 RTL 或 LTR。默认值为 LTR。（如果您将其设置为“RTL”，则将加载“Vazir”字体。</span><br><span class="line">#方向： 升</span><br><span class="line">#配置导航菜单。</span><br><span class="line"># 一对 &#x27;Key： url&#x27; 将产生一个指向 &#x27;url&#x27; 的链接，其中的名称为 &#x27;Key&#x27;</span><br><span class="line"># 导航菜单。或者，您可以为“键”添加翻译</span><br><span class="line"># 语言/*.yml</span><br><span class="line">导航：</span><br><span class="line">  家： /</span><br><span class="line">  关于：/关于/</span><br><span class="line">  文章：/档案/</span><br><span class="line">  标签： /标签</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 链接到您的社交媒体帐户。社交分享设置</span><br><span class="line"># “图标”键应对应于 Fontawesome 图标名称</span><br><span class="line">#（参见 https://fontawesome.com/icons?d=gallery&amp;s=brands）；</span><br><span class="line"># 只有“邮件”是一个例外。</span><br><span class="line"># 您可以选择添加“标签”键来设置链接上的标题属性。</span><br><span class="line"># 当“标签”丢失时，“图标”值将用作标题。</span><br><span class="line"></span><br><span class="line">社交链接：</span><br><span class="line">  -</span><br><span class="line">    图标：github</span><br><span class="line">    链接：http://github.com/probberechts/cactus-dark</span><br><span class="line">  -</span><br><span class="line">    图标：推特</span><br><span class="line">    关联： /</span><br><span class="line">  -</span><br><span class="line">    图标：脸书</span><br><span class="line">    关联： /</span><br><span class="line">  -</span><br><span class="line">    图标：邮件</span><br><span class="line">    链接：mailto:name@email.com</span><br><span class="line">  -</span><br><span class="line">    图标：乳齿象</span><br><span class="line">    标签： 乳齿象.social</span><br><span class="line">    链接：https://mastodon.social/@alice</span><br><span class="line">  -</span><br><span class="line">    图标：乳齿象</span><br><span class="line">    标签: fosstodon.org</span><br><span class="line">    链接：https://fosstodon.org/@alice</span><br><span class="line"></span><br><span class="line"># 通过在索引页面上显示标签云来自定义概述。</span><br><span class="line"># 选项：https://hexo.io/docs/helpers.html#tagcloud</span><br><span class="line">标签概述：假</span><br><span class="line"></span><br><span class="line"># 使用索引页面上最新的博客文章自定义概述。</span><br><span class="line">＃ 选项：</span><br><span class="line"># - show_all_posts: 是否显示所有可用的帖子。</span><br><span class="line"># - post_count：是否仅显示 x 个最新帖子。</span><br><span class="line"># - sort_updated：按上次修改日期而不是创建日期对帖子进行排序。</span><br><span class="line">帖子概述：</span><br><span class="line">  显示所有帖子：true</span><br><span class="line">  帖子数：5</span><br><span class="line">  排序更新：真</span><br><span class="line"></span><br><span class="line"># 自定义存档视图。</span><br><span class="line">＃ 选项：</span><br><span class="line"># - sort_updated：按上次修改日期而不是创建日期对帖子进行排序。</span><br><span class="line"># 注意：这不能与分页一起使用，因为分页</span><br><span class="line"># 插件将按创建日期对页面进行排序。</span><br><span class="line">档案：</span><br><span class="line">  排序更新：假</span><br><span class="line"></span><br><span class="line"># 自定义文章视图。</span><br><span class="line">＃ 选项：</span><br><span class="line"># - show_updated：显示最后修改日期。</span><br><span class="line">邮政：</span><br><span class="line">  显示更新：假</span><br><span class="line"></span><br><span class="line"># 自定义版权年份</span><br><span class="line"># 注意：如果未提供 start_year/end_year，将使用当前年份。</span><br><span class="line">版权：</span><br><span class="line">  开始年份：2016</span><br><span class="line">  年底：</span><br><span class="line"></span><br><span class="line"># 自定义404页面</span><br><span class="line">＃ 选项：</span><br><span class="line"># -enabled：是否启用404页面（404.html）。</span><br><span class="line">错误_404：</span><br><span class="line">  启用：真</span><br><span class="line">  标题：“404 页面未找到”</span><br><span class="line">  描述：“你想看到的东西这个网站上没有呢~~~”</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#################################################### ############################</span><br><span class="line"># 外观和感觉</span><br><span class="line">#################################################### ############################</span><br><span class="line"></span><br><span class="line"># 自定义标题中的徽标（即仙人掌）。</span><br><span class="line">＃ 选项：</span><br><span class="line"># - 启用：是否显示（true）或隐藏（false）徽标。</span><br><span class="line"># - width：徽标的宽度（以像素为单位）</span><br><span class="line"># - height：徽标的高度（以像素为单位）</span><br><span class="line"># - url：可以找到徽标的位置</span><br><span class="line"># - gravatar: 是否使用你的Gravatar作为标志</span><br><span class="line"># - greyout: 是否启用徽标悬停效果</span><br><span class="line">标识：</span><br><span class="line">  启用：真</span><br><span class="line">  宽度：50</span><br><span class="line">  身高：50</span><br><span class="line">  网址：/images/logo.png</span><br><span class="line">  头像: false</span><br><span class="line">  灰显：真</span><br><span class="line"></span><br><span class="line"># 自定义图标。</span><br><span class="line"># Cactus 支持一组有限的三个最重要的图标：</span><br><span class="line"># - 桌面：经典的 favion.ico 文件。</span><br><span class="line"># - android：192x192 PNG 文件。</span><br><span class="line"># - 苹果：180x180 PNG 文件。</span><br><span class="line"># 这些可以通过 http://realfavicongenerator.net/ 生成</span><br><span class="line">＃ 选项：</span><br><span class="line"># - url：可以找到图标的位置</span><br><span class="line"># - gravatar：是否从您的 Gravatar 创建网站图标</span><br><span class="line">图标：</span><br><span class="line">  桌面：</span><br><span class="line">    网址：/images/favicon.ico</span><br><span class="line">    头像: false</span><br><span class="line">  安卓：</span><br><span class="line">    网址：/images/favicon-192x192.png</span><br><span class="line">    头像: false</span><br><span class="line">  苹果：</span><br><span class="line">    网址：/images/apple-touch-icon.png</span><br><span class="line">    头像: false</span><br><span class="line"></span><br><span class="line"># 用于突出显示代码块的配色方案。</span><br><span class="line"># 有关所有可用配色方案的列表，请参阅 source/css/_highlight。</span><br><span class="line">#亮点：彩虹</span><br><span class="line"></span><br><span class="line"># 设置配色方案。</span><br><span class="line"># 可用的配色方案有“深色”、“浅色”、“经典”和“白色”。</span><br><span class="line"># 或者，将您自己的自定义配色方案添加到 source/css/_colors。</span><br><span class="line">配色方案： 白色</span><br><span class="line"></span><br><span class="line"># 页面的最大宽度（以 rem 为单位）。</span><br><span class="line">页面宽度：48</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#################################################### ############################</span><br><span class="line">＃ 各种各样的</span><br><span class="line">#################################################### ############################</span><br><span class="line"></span><br><span class="line"># 启用或禁用 RSS 源。</span><br><span class="line">RSS: 假</span><br><span class="line"></span><br><span class="line"># 将您的网页转换为图形对象（请参阅http://ogp.me）。</span><br><span class="line">打开图：</span><br><span class="line">  fb_app_id：</span><br><span class="line">  fb_管理员：</span><br><span class="line">  推特 ID：</span><br><span class="line">  谷歌_加：</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#################################################### ############################</span><br><span class="line"># 插件</span><br><span class="line">#################################################### ############################</span><br><span class="line"></span><br><span class="line"># 启用 MathJax 对 Latex 的支持</span><br><span class="line">数学贾克斯：</span><br><span class="line">  启用：假</span><br><span class="line"></span><br><span class="line"># 填写您的 Disqus 评论简称以启用 Disqus 评论。</span><br><span class="line">讨论：</span><br><span class="line">  启用：假</span><br><span class="line">  简称: cactus-1</span><br><span class="line"></span><br><span class="line"># 填写您的言论数据以启用言论评论</span><br><span class="line">话语：</span><br><span class="line">  启用：假</span><br><span class="line">  仓库：所有者/githubrepo</span><br><span class="line">  issues_term：路径名</span><br><span class="line">  标签： 评论</span><br><span class="line">  主题：github-dark</span><br><span class="line"></span><br><span class="line"># 填写您的 Google Analytics 跟踪 ID 以启用 Google Analytics。</span><br><span class="line">谷歌分析：</span><br><span class="line">  启用：假</span><br><span class="line">  编号: UA-86660611-1</span><br><span class="line"></span><br><span class="line"># 填写您的百度分析跟踪ID以启用百度分析。</span><br><span class="line">百度分析：</span><br><span class="line">  启用：假</span><br><span class="line">  编号: 2e6da3c375c8a87f5b664cea6d4cb29c</span><br><span class="line"></span><br><span class="line"># 填写您的 Cloudflare Analytics 跟踪 ID 以启用 Cloudflare Analytics。</span><br><span class="line">cloudflare_analytics：</span><br><span class="line">  启用：假</span><br><span class="line">  编号: 0dabb6e21848405483a237e6a7b6ed04</span><br><span class="line"></span><br><span class="line"># 填写您的 Umami Analytics 跟踪 ID 以启用 Umami Analytics。</span><br><span class="line">鲜味分析：</span><br><span class="line">  启用：假</span><br><span class="line">  编号: e77e68be-f6e4-4br3-9365-2b76b57cd571</span><br><span class="line">  主机：https://analytics.domain.com</span><br><span class="line">  脚本名称：umami.js</span><br><span class="line"></span><br><span class="line"># 如果您想使用您的头像作为头像，请填写您的头像电子邮件或哈希值</span><br><span class="line"># 您网站的徽标和/或图标。</span><br><span class="line"># 生成哈希值： `$ echo -n &quot;name@email.com&quot; | md5`。</span><br><span class="line">头像:</span><br><span class="line">  电子邮件：name@email.com</span><br><span class="line">  哈希值：d41d8cd98f00b204e9800998ecf8427e</span><br><span class="line"></span><br><span class="line"># 从 CDN 加载库和样式，或者依赖本地文件</span><br><span class="line">cdn:</span><br><span class="line">  启用：真</span><br><span class="line">  jquery：https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js</span><br><span class="line">  剪贴板：https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js</span><br><span class="line">  font_awesome：https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css</span><br><span class="line">  justified_gallery_css：https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/css/justifiedGallery.min.css</span><br><span class="line">  justified_gallery_js：https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js</span><br></pre></td></tr></table></figure>
-    </div>
-
-    <div>全文完。</div>
-  </article>
-  <div class="toc-container">
-    
-
-  </div>
-</div>
-<div class="copyright">
-    <span>本作品采用</span>
-    <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0 国际许可协议</a>
-    <span>进行许可。 转载时请注明原文链接。</span>
-</div>
-<div class="share" style="width: 100%;">
-  <img src="https://s1.ax1x.com/2023/09/07/pPyPgYD.png" alt="南山忆" style="margin: auto; display: block;"/>
-
-  <div style="margin: auto; text-align: center; font-size: 0.8em; color: grey;">南山忆 | noe.zone</div>
-  
-</div>
-
-  
-    <div class="post-nav">
-      <div class="post-nav-item post-nav-next">
+      <div class="post-title">配置文件简体中文版</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime" title="更新时间"></i>
+          2023-09-06
+        </span>
         
-          <span>〈 </span>
-          <a href="/2023/09/04/Vip-time/" rel="next" title="「🎨会员到期时间」">
-          「🎨会员到期时间」
-          </a>
-        
-      </div>
-  
-      <div class="post-nav-item post-nav-prev">
+              <span class="post-tags">
+                <i class="iconfont icon-tags" title="标签"></i>
+                
+                <span class="span--tag">
+                  <a href="/tags/Hexo/" title="Hexo">
+                    <b>#</b> Hexo
+                  </a>
+                </span>
+                
+              </span>
           
-          <a href="/2023/09/06/life-lists/" rel="prev" title="九月份采购清单">
-            九月份采购清单
-          </a>
-          <span>〉</span>
-        
       </div>
+      <div class="markdown-body">
+        <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br></pre></td><td class="code"><pre><span class="line">#################################################### ############################</span><br><span class="line">＃ 内容</span><br><span class="line">#################################################### ############################</span><br><span class="line"></span><br><span class="line"># 链接到一个页面，该页面概述了您的所有项目。</span><br><span class="line"># 这可以是外部链接（例如，指向您的 GitHub 个人资料）或其他链接</span><br><span class="line">您网站内的 # 个页面。</span><br><span class="line">项目网址：https://noe.zone</span><br><span class="line"></span><br><span class="line"># 设置页面方向为RTL或LTR。默认为 LTR。（如果将其设置为“rtl”，则会加载“vazir”字体。）</span><br><span class="line">方向： LTR</span><br><span class="line"># 配置导航菜单。</span><br><span class="line"># 一对“Key: url”将生成一个指向“url”的链接，其中名称为“Key”</span><br><span class="line"># 导航菜单。（可选）您可以添加“Key”的翻译</span><br><span class="line"># 语言/*.yml</span><br><span class="line"># 将页面方向设置为 RTL 或 LTR。默认值为 LTR。（如果您将其设置为“RTL”，则将加载“Vazir”字体。</span><br><span class="line">#方向： 升</span><br><span class="line">#配置导航菜单。</span><br><span class="line"># 一对 &#x27;Key： url&#x27; 将产生一个指向 &#x27;url&#x27; 的链接，其中的名称为 &#x27;Key&#x27;</span><br><span class="line"># 导航菜单。或者，您可以为“键”添加翻译</span><br><span class="line"># 语言/*.yml</span><br><span class="line">导航：</span><br><span class="line">  家： /</span><br><span class="line">  关于：/关于/</span><br><span class="line">  文章：/档案/</span><br><span class="line">  标签： /标签</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 链接到您的社交媒体帐户。社交分享设置</span><br><span class="line"># “图标”键应对应于 Fontawesome 图标名称</span><br><span class="line">#（参见 https://fontawesome.com/icons?d=gallery&amp;s=brands）；</span><br><span class="line"># 只有“邮件”是一个例外。</span><br><span class="line"># 您可以选择添加“标签”键来设置链接上的标题属性。</span><br><span class="line"># 当“标签”丢失时，“图标”值将用作标题。</span><br><span class="line"></span><br><span class="line">社交链接：</span><br><span class="line">  -</span><br><span class="line">    图标：github</span><br><span class="line">    链接：http://github.com/probberechts/cactus-dark</span><br><span class="line">  -</span><br><span class="line">    图标：推特</span><br><span class="line">    关联： /</span><br><span class="line">  -</span><br><span class="line">    图标：脸书</span><br><span class="line">    关联： /</span><br><span class="line">  -</span><br><span class="line">    图标：邮件</span><br><span class="line">    链接：mailto:name@email.com</span><br><span class="line">  -</span><br><span class="line">    图标：乳齿象</span><br><span class="line">    标签： 乳齿象.social</span><br><span class="line">    链接：https://mastodon.social/@alice</span><br><span class="line">  -</span><br><span class="line">    图标：乳齿象</span><br><span class="line">    标签: fosstodon.org</span><br><span class="line">    链接：https://fosstodon.org/@alice</span><br><span class="line"></span><br><span class="line"># 通过在索引页面上显示标签云来自定义概述。</span><br><span class="line"># 选项：https://hexo.io/docs/helpers.html#tagcloud</span><br><span class="line">标签概述：假</span><br><span class="line"></span><br><span class="line"># 使用索引页面上最新的博客文章自定义概述。</span><br><span class="line">＃ 选项：</span><br><span class="line"># - show_all_posts: 是否显示所有可用的帖子。</span><br><span class="line"># - post_count：是否仅显示 x 个最新帖子。</span><br><span class="line"># - sort_updated：按上次修改日期而不是创建日期对帖子进行排序。</span><br><span class="line">帖子概述：</span><br><span class="line">  显示所有帖子：true</span><br><span class="line">  帖子数：5</span><br><span class="line">  排序更新：真</span><br><span class="line"></span><br><span class="line"># 自定义存档视图。</span><br><span class="line">＃ 选项：</span><br><span class="line"># - sort_updated：按上次修改日期而不是创建日期对帖子进行排序。</span><br><span class="line"># 注意：这不能与分页一起使用，因为分页</span><br><span class="line"># 插件将按创建日期对页面进行排序。</span><br><span class="line">档案：</span><br><span class="line">  排序更新：假</span><br><span class="line"></span><br><span class="line"># 自定义文章视图。</span><br><span class="line">＃ 选项：</span><br><span class="line"># - show_updated：显示最后修改日期。</span><br><span class="line">邮政：</span><br><span class="line">  显示更新：假</span><br><span class="line"></span><br><span class="line"># 自定义版权年份</span><br><span class="line"># 注意：如果未提供 start_year/end_year，将使用当前年份。</span><br><span class="line">版权：</span><br><span class="line">  开始年份：2016</span><br><span class="line">  年底：</span><br><span class="line"></span><br><span class="line"># 自定义404页面</span><br><span class="line">＃ 选项：</span><br><span class="line"># -enabled：是否启用404页面（404.html）。</span><br><span class="line">错误_404：</span><br><span class="line">  启用：真</span><br><span class="line">  标题：“404 页面未找到”</span><br><span class="line">  描述：“你想看到的东西这个网站上没有呢~~~”</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#################################################### ############################</span><br><span class="line"># 外观和感觉</span><br><span class="line">#################################################### ############################</span><br><span class="line"></span><br><span class="line"># 自定义标题中的徽标（即仙人掌）。</span><br><span class="line">＃ 选项：</span><br><span class="line"># - 启用：是否显示（true）或隐藏（false）徽标。</span><br><span class="line"># - width：徽标的宽度（以像素为单位）</span><br><span class="line"># - height：徽标的高度（以像素为单位）</span><br><span class="line"># - url：可以找到徽标的位置</span><br><span class="line"># - gravatar: 是否使用你的Gravatar作为标志</span><br><span class="line"># - greyout: 是否启用徽标悬停效果</span><br><span class="line">标识：</span><br><span class="line">  启用：真</span><br><span class="line">  宽度：50</span><br><span class="line">  身高：50</span><br><span class="line">  网址：/images/logo.png</span><br><span class="line">  头像: false</span><br><span class="line">  灰显：真</span><br><span class="line"></span><br><span class="line"># 自定义图标。</span><br><span class="line"># Cactus 支持一组有限的三个最重要的图标：</span><br><span class="line"># - 桌面：经典的 favion.ico 文件。</span><br><span class="line"># - android：192x192 PNG 文件。</span><br><span class="line"># - 苹果：180x180 PNG 文件。</span><br><span class="line"># 这些可以通过 http://realfavicongenerator.net/ 生成</span><br><span class="line">＃ 选项：</span><br><span class="line"># - url：可以找到图标的位置</span><br><span class="line"># - gravatar：是否从您的 Gravatar 创建网站图标</span><br><span class="line">图标：</span><br><span class="line">  桌面：</span><br><span class="line">    网址：/images/favicon.ico</span><br><span class="line">    头像: false</span><br><span class="line">  安卓：</span><br><span class="line">    网址：/images/favicon-192x192.png</span><br><span class="line">    头像: false</span><br><span class="line">  苹果：</span><br><span class="line">    网址：/images/apple-touch-icon.png</span><br><span class="line">    头像: false</span><br><span class="line"></span><br><span class="line"># 用于突出显示代码块的配色方案。</span><br><span class="line"># 有关所有可用配色方案的列表，请参阅 source/css/_highlight。</span><br><span class="line">#亮点：彩虹</span><br><span class="line"></span><br><span class="line"># 设置配色方案。</span><br><span class="line"># 可用的配色方案有“深色”、“浅色”、“经典”和“白色”。</span><br><span class="line"># 或者，将您自己的自定义配色方案添加到 source/css/_colors。</span><br><span class="line">配色方案： 白色</span><br><span class="line"></span><br><span class="line"># 页面的最大宽度（以 rem 为单位）。</span><br><span class="line">页面宽度：48</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#################################################### ############################</span><br><span class="line">＃ 各种各样的</span><br><span class="line">#################################################### ############################</span><br><span class="line"></span><br><span class="line"># 启用或禁用 RSS 源。</span><br><span class="line">RSS: 假</span><br><span class="line"></span><br><span class="line"># 将您的网页转换为图形对象（请参阅http://ogp.me）。</span><br><span class="line">打开图：</span><br><span class="line">  fb_app_id：</span><br><span class="line">  fb_管理员：</span><br><span class="line">  推特 ID：</span><br><span class="line">  谷歌_加：</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#################################################### ############################</span><br><span class="line"># 插件</span><br><span class="line">#################################################### ############################</span><br><span class="line"></span><br><span class="line"># 启用 MathJax 对 Latex 的支持</span><br><span class="line">数学贾克斯：</span><br><span class="line">  启用：假</span><br><span class="line"></span><br><span class="line"># 填写您的 Disqus 评论简称以启用 Disqus 评论。</span><br><span class="line">讨论：</span><br><span class="line">  启用：假</span><br><span class="line">  简称: cactus-1</span><br><span class="line"></span><br><span class="line"># 填写您的言论数据以启用言论评论</span><br><span class="line">话语：</span><br><span class="line">  启用：假</span><br><span class="line">  仓库：所有者/githubrepo</span><br><span class="line">  issues_term：路径名</span><br><span class="line">  标签： 评论</span><br><span class="line">  主题：github-dark</span><br><span class="line"></span><br><span class="line"># 填写您的 Google Analytics 跟踪 ID 以启用 Google Analytics。</span><br><span class="line">谷歌分析：</span><br><span class="line">  启用：假</span><br><span class="line">  编号: UA-86660611-1</span><br><span class="line"></span><br><span class="line"># 填写您的百度分析跟踪ID以启用百度分析。</span><br><span class="line">百度分析：</span><br><span class="line">  启用：假</span><br><span class="line">  编号: 2e6da3c375c8a87f5b664cea6d4cb29c</span><br><span class="line"></span><br><span class="line"># 填写您的 Cloudflare Analytics 跟踪 ID 以启用 Cloudflare Analytics。</span><br><span class="line">cloudflare_analytics：</span><br><span class="line">  启用：假</span><br><span class="line">  编号: 0dabb6e21848405483a237e6a7b6ed04</span><br><span class="line"></span><br><span class="line"># 填写您的 Umami Analytics 跟踪 ID 以启用 Umami Analytics。</span><br><span class="line">鲜味分析：</span><br><span class="line">  启用：假</span><br><span class="line">  编号: e77e68be-f6e4-4br3-9365-2b76b57cd571</span><br><span class="line">  主机：https://analytics.domain.com</span><br><span class="line">  脚本名称：umami.js</span><br><span class="line"></span><br><span class="line"># 如果您想使用您的头像作为头像，请填写您的头像电子邮件或哈希值</span><br><span class="line"># 您网站的徽标和/或图标。</span><br><span class="line"># 生成哈希值： `$ echo -n &quot;name@email.com&quot; | md5`。</span><br><span class="line">头像:</span><br><span class="line">  电子邮件：name@email.com</span><br><span class="line">  哈希值：d41d8cd98f00b204e9800998ecf8427e</span><br><span class="line"></span><br><span class="line"># 从 CDN 加载库和样式，或者依赖本地文件</span><br><span class="line">cdn:</span><br><span class="line">  启用：真</span><br><span class="line">  jquery：https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js</span><br><span class="line">  剪贴板：https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js</span><br><span class="line">  font_awesome：https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css</span><br><span class="line">  justified_gallery_css：https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/css/justifiedGallery.min.css</span><br><span class="line">  justified_gallery_js：https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js</span><br></pre></td></tr></table></figure>
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+              <a href="/2023/09/04/Vip-time/" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>PREV</span>
+              </a>
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime" title="更新时间"></i>
+              2023-09-06
+            </span>
+            
+                  <span class="post-tags">
+                    <i class="iconfont icon-tags" title="标签"></i>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/Hexo/" title="Hexo">
+                        <b>#</b> Hexo
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+          </div>
+          <div class="post-foot-prev">
+            
+              <a href="/2023/09/06/life-lists/" target="_self">
+                <span>NEXT</span>
+                <i class="iconfont icon-chevronright"></i>
+              </a>
+            
+          </div>
+        </div>
+      
     </div>
-  
-
-
-    </div>
-
     
 
-  </div>
-  <footer class="footer text-center">
-    <div id="bottom-inner">
-        <a class="bottom-item" href="">首页</a> |
-        <a class="bottom-item" href="" target="_blank">主站</a> 
+    
+      <div class="comments-container">
         
-    </div>
-</footer>
-  
 
-<script>
-  (function(window, document, undefined) {
 
-    var timer = null;
 
-    function returnTop() {
-      cancelAnimationFrame(timer);
-      timer = requestAnimationFrame(function fn() {
-        var oTop = document.body.scrollTop || document.documentElement.scrollTop;
-        if (oTop > 0) {
-          document.body.scrollTop = document.documentElement.scrollTop = oTop - 50;
-          timer = requestAnimationFrame(fn);
-        } else {
-          cancelAnimationFrame(timer);
-        }
-      });
-    }
 
-    var hearts = [];
-    window.requestAnimationFrame = (function() {
-      return window.requestAnimationFrame ||
-        window.webkitRequestAnimationFrame ||
-        window.mozRequestAnimationFrame ||
-        window.oRequestAnimationFrame ||
-        window.msRequestAnimationFrame ||
-        function(callback) {
-          setTimeout(callback, 1000 / 60);
-        }
-    })();
-    init();
 
-    function init() {
-      css(".heart{z-index:9999;width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: absolute;}.heart:after{top: -5px;}.heart:before{left: -5px;}");
-      attachEvent();
-      gameloop();
-      addMenuEvent();
-    }
+      </div>
+    
+  </div>
 
-    function gameloop() {
-      for (var i = 0; i < hearts.length; i++) {
-        if (hearts[i].alpha <= 0) {
-          document.body.removeChild(hearts[i].el);
-          hearts.splice(i, 1);
-          continue;
-        }
-        hearts[i].y--;
-        hearts[i].scale += 0.004;
-        hearts[i].alpha -= 0.013;
-        hearts[i].el.style.cssText = "left:" + hearts[i].x + "px;top:" + hearts[i].y + "px;opacity:" + hearts[i].alpha + ";transform:scale(" + hearts[i].scale + "," + hearts[i].scale + ") rotate(45deg);background:" + hearts[i].color;
-      }
-      requestAnimationFrame(gameloop);
-    }
 
-    /**
-     * 给logo设置点击事件
-     * 
-     * - 回到顶部
-     * - 出现爱心
-     */
-    function attachEvent() {
-      var old = typeof window.onclick === "function" && window.onclick;
-      var logo = document.getElementById("logo");
-      if (logo) {
-        logo.onclick = function(event) {
-          returnTop();
-          old && old();
-          createHeart(event);
-        }
-      }
+        <div class="footer">
+  <div class="social">
+    <ul>
       
-    }
-
-    function createHeart(event) {
-      var d = document.createElement("div");
-      d.className = "heart";
-      hearts.push({
-        el: d,
-        x: event.clientX - 5,
-        y: event.clientY - 5,
-        scale: 1,
-        alpha: 1,
-        color: randomColor()
-      });
-      document.body.appendChild(d);
-    }
-
-    function css(css) {
-      var style = document.createElement("style");
-      style.type = "text/css";
-      try {
-        style.appendChild(document.createTextNode(css));
-      } catch (ex) {
-        style.styleSheet.cssText = css;
-      }
-      document.getElementsByTagName('head')[0].appendChild(style);
-    }
-
-    function randomColor() {
-      // return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + ")";
-      return "#F44336";
-    }
-
-    function addMenuEvent() {
-      var menu = document.getElementById('menu-main-post');
-      if (menu) {
-        var toc = document.getElementById('toc');
-        if (toc) {
-          menu.onclick = function() {
-            if (toc) {
-              if (toc.style.display == 'block') {
-                toc.style.display = 'none';
-              } else {
-                toc.style.display = 'block';
-              }
-            }
-          };
-        } else {
-          menu.style.display = 'none';
-        }
-      }
-    }
-
-  })(window, document);
-</script>
-
+        <li>
+          <a title="github" target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">
+            <i class="iconfont icon-github"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="email" href="">
+            <i class="iconfont icon-envelope"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="facebook" href="">
+            <i class="iconfont icon-facebooksquare"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="twitter" href="">
+            <i class="iconfont icon-twitter"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="wechat" href="">
+            <i class="iconfont icon-wechat"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="weibo" href="">
+            <i class="iconfont icon-weibo"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="rss" href="/atom.xml">
+            <i class="iconfont icon-rss"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div>
   
+    <div class="footer-more">
+      <a target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">Copyright © Oranges 2020</a>
+    </div>
+  
+    <div class="footer-more">
+      <a target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">Theme by Oranges | Powered by Hexo</a>
+    </div>
+  
+</div>
+
+      </div>
+
+      <div class="back-to-top hidden">
+  <a href="javascript: void(0)">
+    <i class="iconfont icon-chevronup"></i>
+  </a>
+</div>
+
+
+<script src="/js/backtotop.js"></script>
 
 
 
-</body>
+      
+  <div class="search-icon" id="search-icon">
+    <a href="javascript: void(0)">
+      <i class="iconfont icon-search"></i>
+    </a>
+  </div>
+
+  <div class="search-overlay hidden">
+    <div class="search-content" tabindex="0">
+      <div class="search-title">
+        <span class="search-icon-input">
+          <a href="javascript: void(0)">
+            <i class="iconfont icon-search"></i>
+          </a>
+        </span>
+        
+          <input type="text" class="search-input" id="search-input" placeholder="搜索...">
+        
+        <span class="search-close-icon" id="search-close-icon">
+          <a href="javascript: void(0)">
+            <i class="iconfont icon-close"></i>
+          </a>
+        </span>
+      </div>
+      <div class="search-result" id="search-result"></div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var inputArea = document.querySelector("#search-input")
+    var searchOverlayArea = document.querySelector(".search-overlay")
+
+    inputArea.onclick = function() {
+      getSearchFile()
+      this.onclick = null
+    }
+
+    inputArea.onkeydown = function() {
+      if(event.keyCode == 13)
+        return false
+    }
+
+    function openOrHideSearchContent() {
+      let isHidden = searchOverlayArea.classList.contains('hidden')
+      if (isHidden) {
+        searchOverlayArea.classList.remove('hidden')
+        document.body.classList.add('hidden')
+        // inputArea.focus()
+      } else {
+        searchOverlayArea.classList.add('hidden')
+        document.body.classList.remove('hidden')
+      }
+    }
+
+    function blurSearchContent(e) {
+      if (e.target === searchOverlayArea) {
+        openOrHideSearchContent()
+      }
+    }
+
+    document.querySelector("#search-icon").addEventListener("click", openOrHideSearchContent, false)
+    document.querySelector("#search-close-icon").addEventListener("click", openOrHideSearchContent, false)
+    searchOverlayArea.addEventListener("click", blurSearchContent, false)
+
+    var searchFunc = function (path, search_id, content_id) {
+      'use strict';
+      var $input = document.getElementById(search_id);
+      var $resultContent = document.getElementById(content_id);
+      $resultContent.innerHTML = "<ul><span class='local-search-empty'>首次搜索，正在载入索引文件，请稍后……<span></ul>";
+      $.ajax({
+        // 0x01. load xml file
+        url: path,
+        dataType: "xml",
+        success: function (xmlResponse) {
+          // 0x02. parse xml file
+          var datas = $("entry", xmlResponse).map(function () {
+            return {
+              title: $("title", this).text(),
+              content: $("content", this).text(),
+              url: $("url", this).text()
+            };
+          }).get();
+          $resultContent.innerHTML = "";
+
+          $input.addEventListener('input', function () {
+            // 0x03. parse query to keywords list
+            var str = '<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length <= 0) {
+              return;
+            }
+            // 0x04. perform local searching
+            datas.forEach(function (data) {
+              var isMatch = true;
+              var content_index = [];
+              if (!data.title || data.title.trim() === '') {
+                data.title = "Untitled";
+              }
+              var orig_data_title = data.title.trim();
+              var data_title = orig_data_title.toLowerCase();
+              var orig_data_content = data.content.trim().replace(/<[^>]+>/g, "");
+              var data_content = orig_data_content.toLowerCase();
+              var data_url = data.url;
+              var index_title = -1;
+              var index_content = -1;
+              var first_occur = -1;
+              // only match artiles with not empty contents
+              if (data_content !== '') {
+                keywords.forEach(function (keyword, i) {
+                  index_title = data_title.indexOf(keyword);
+                  index_content = data_content.indexOf(keyword);
+
+                  if (index_title < 0 && index_content < 0) {
+                    isMatch = false;
+                  } else {
+                    if (index_content < 0) {
+                      index_content = 0;
+                    }
+                    if (i == 0) {
+                      first_occur = index_content;
+                    }
+                    // content_index.push({index_content:index_content, keyword_len:keyword_len});
+                  }
+                });
+              } else {
+                isMatch = false;
+              }
+              // 0x05. show search results
+              if (isMatch) {
+                str += "<li><a href='" + data_url + "' class='search-result-title'>" + orig_data_title + "</a>";
+                var content = orig_data_content;
+                if (first_occur >= 0) {
+                  // cut out 100 characters
+                  var start = first_occur - 20;
+                  var end = first_occur + 80;
+
+                  if (start < 0) {
+                    start = 0;
+                  }
+
+                  if (start == 0) {
+                    end = 100;
+                  }
+
+                  if (end > content.length) {
+                    end = content.length;
+                  }
+
+                  var match_content = content.substr(start, end);
+
+                  // highlight all keywords
+                  keywords.forEach(function (keyword) {
+                    var regS = new RegExp(keyword, "gi");
+                    match_content = match_content.replace(regS, "<span class=\"search-keyword\">" + keyword + "</span>");
+                  });
+
+                  str += "<p class=\"search-result-abstract\">" + match_content + "...</p>"
+                }
+                str += "</li>";
+              }
+            });
+            str += "</ul>";
+            if (str.indexOf('<li>') === -1) {
+              return $resultContent.innerHTML = "<ul><span class='local-search-empty'>没有找到内容，请尝试更换检索词。<span></ul>";
+            }
+            $resultContent.innerHTML = str;
+          });
+        }
+      });
+      $(document).on('click', '#search-close-icon', function() {
+        $('#search-input').val('');
+        $('#search-result').html('');
+      });
+    }
+
+    var getSearchFile = function() {
+        var path = "/search.xml";
+        searchFunc(path, 'search-input', 'search-result');
+    }
+  </script>
+
+
+
+
+    </div>
+  </body>
 </html>
