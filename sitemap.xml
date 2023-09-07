@@ -273,14 +273,14 @@
   </url>
   
   <url>
-    <loc>https://noe.zone/tags/A4/</loc>
+    <loc>https://noe.zone/tags/emoji/</loc>
     <lastmod>2023-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://noe.zone/tags/emoji/</loc>
+    <loc>https://noe.zone/tags/A4/</loc>
     <lastmod>2023-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -308,14 +308,14 @@
   </url>
   
   <url>
-    <loc>https://noe.zone/tags/%E4%BC%9A%E5%91%98/</loc>
+    <loc>https://noe.zone/tags/vscode/</loc>
     <lastmod>2023-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://noe.zone/tags/vscode/</loc>
+    <loc>https://noe.zone/tags/%E4%BC%9A%E5%91%98/</loc>
     <lastmod>2023-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -336,13 +336,6 @@
   </url>
   
   <url>
-    <loc>https://noe.zone/tags/%E9%87%87%E8%B4%AD/</loc>
-    <lastmod>2023-09-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://noe.zone/tags/ios/</loc>
     <lastmod>2023-09-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -351,6 +344,13 @@
   
   <url>
     <loc>https://noe.zone/tags/app/</loc>
+    <lastmod>2023-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://noe.zone/tags/%E9%87%87%E8%B4%AD/</loc>
     <lastmod>2023-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -394,14 +394,14 @@
   </url>
   
   <url>
-    <loc>https://noe.zone/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <loc>https://noe.zone/categories/APP/</loc>
     <lastmod>2023-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://noe.zone/categories/APP/</loc>
+    <loc>https://noe.zone/categories/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2023-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
