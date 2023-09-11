@@ -5,11 +5,30 @@
 
 html,
 body {
-  font-size: 10px;
-  letter-spacing: 0.01rem;
+  font-size: 9.5px;
+  letter-spacing: 0.7px;
+  font-weight: 400;
+  line-height: 18px;
+  /* 默认0.01 */
   background-color: var(--bg-body);
   transition: color 400ms ease-in-out 0s, background-color 400ms ease-in-out 0s;
-  font-family: Consolas, "Liberation Mono", Menlo, Monaco, "Source Han Sans CN", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif
+  /* 14行-17代码全站样式设置为默认正常*/
+  font-style: normal;
+  /* font-style: italic;
+  font-style: oblique;
+  font-style: oblique 10deg; */
+
+  /* 19行原始family样式 */
+  /*font-family: Consolas, "Liberation Mono", Menlo, Monaco, "Source Han Sans CN", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif*/
+  /* font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif; */
+  font-family: consolas, "Console", Menlo, Monaco, "Source Han Sans CN", "PingFang SC", "Hiragino Sans GB", "Console", sans-serif
+    /* font-family: Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; */
+    /* windows系统电脑屏幕分辨率普遍不高，Tahoma字体在小字号下结构清晰端整、阅读辨识容易，在不同操作系统支持性好，所以作为首选字体，
+   如果系统没有预装Tahoma，则使用Arial作为替代。但两者差别不大，Arial优先级提前也行。 */
+
+    /* font-family: 'Consolas';
+  src: url('../fonts/consola-1.ttf'); */
+
 }
 
 body.hidden {
@@ -176,9 +195,11 @@ a:hover {
   padding-top: 10px;
 }
 
+/* 文章内容样式 */
 .content {
   clear: both;
   padding: 0 20px;
+
 }
 
 .content-title {

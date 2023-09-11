@@ -104,12 +104,12 @@
       <div class="post-title">「🎨会员到期时间」</div>
       <div class="post-attach">
         <span class="post-pubtime">
-          <i class="iconfont icon-updatetime" title="更新时间"></i>
+          <i class="iconfont icon-updatetime" title="Update time"></i>
           2023-09-04
         </span>
         
               <span class="post-categories">
-                <i class="iconfont icon-bookmark" title="分类"></i>
+                <i class="iconfont icon-bookmark" title="Categories"></i>
                 
                 <span class="span--category">
                   <a href="/categories/%E6%95%B0%E7%A0%81/" title="数码">
@@ -120,7 +120,7 @@
               </span>
           
               <span class="post-tags">
-                <i class="iconfont icon-tags" title="标签"></i>
+                <i class="iconfont icon-tags" title="Tags"></i>
                 
                 <span class="span--tag">
                   <a href="/tags/%E4%BC%9A%E5%91%98/" title="会员">
@@ -200,12 +200,12 @@
           </div>
           <div class="post-attach">
             <span class="post-pubtime">
-              <i class="iconfont icon-updatetime" title="更新时间"></i>
+              <i class="iconfont icon-updatetime" title="Update time"></i>
               2023-09-04
             </span>
             
                   <span class="post-categories">
-                    <i class="iconfont icon-bookmark" title="分类"></i>
+                    <i class="iconfont icon-bookmark" title="Categories"></i>
                     
                     <span class="span--category">
                       <a href="/categories/%E6%95%B0%E7%A0%81/" title="数码">
@@ -216,7 +216,7 @@
                   </span>
               
                   <span class="post-tags">
-                    <i class="iconfont icon-tags" title="标签"></i>
+                    <i class="iconfont icon-tags" title="Tags"></i>
                     
                     <span class="span--tag">
                       <a href="/tags/%E4%BC%9A%E5%91%98/" title="会员">
@@ -341,7 +341,7 @@
           </a>
         </span>
         
-          <input type="text" class="search-input" id="search-input" placeholder="请键入检索词进行搜索...">
+          <input type="text" class="search-input" id="search-input" placeholder="Search...">
         
         <span class="search-close-icon" id="search-close-icon">
           <a href="javascript: void(0)">
@@ -393,7 +393,7 @@
       'use strict';
       var $input = document.getElementById(search_id);
       var $resultContent = document.getElementById(content_id);
-      $resultContent.innerHTML = "<ul><span class='local-search-empty'>首次搜索，正在载入索引文件，请稍后……<span></ul>";
+      $resultContent.innerHTML = "<ul><span class='local-search-empty'>First search, index file loading, please wait...<span></ul>";
       $.ajax({
         // 0x01. load xml file
         url: path,
@@ -489,7 +489,7 @@
             });
             str += "</ul>";
             if (str.indexOf('<li>') === -1) {
-              return $resultContent.innerHTML = "<ul><span class='local-search-empty'>没有找到内容，请尝试更换检索词。<span></ul>";
+              return $resultContent.innerHTML = "<ul><span class='local-search-empty'>No result<span></ul>";
             }
             $resultContent.innerHTML = str;
           });
