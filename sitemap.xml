@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://shing.cc/2023/08/25/Hexo-Remote-Update-Content/</loc>
+    
+    <lastmod>2023-09-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://shing.cc/2023/09/11/yml-chinese/</loc>
+    
+    <lastmod>2023-09-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://shing.cc/2023/09/06/life-lists/</loc>
+    
+    <lastmod>2023-09-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://shing.cc/friends/index.html</loc>
     
     <lastmod>2023-09-11</lastmod>
@@ -30,15 +57,6 @@
   
   <url>
     <loc>https://shing.cc/about/index.html</loc>
-    
-    <lastmod>2023-09-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://shing.cc/2023/09/06/life-lists/</loc>
     
     <lastmod>2023-09-07</lastmod>
     
@@ -84,15 +102,6 @@
   
   <url>
     <loc>https://shing.cc/tags/index.html</loc>
-    
-    <lastmod>2023-09-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://shing.cc/2023/09/06/yml-chinese/</loc>
     
     <lastmod>2023-09-06</lastmod>
     
@@ -191,15 +200,6 @@
   </url>
   
   <url>
-    <loc>https://shing.cc/2023/08/25/Hexo-Remote-Update-Content/</loc>
-    
-    <lastmod>2023-08-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://shing.cc/2023/08/28/Changing-A4-titlesize/</loc>
     
     <lastmod>2023-08-29</lastmod>
@@ -268,7 +268,28 @@
   </url>
   
   <url>
+    <loc>https://shing.cc/tags/AirPods2/</loc>
+    <lastmod>2023-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shing.cc/tags/Apple/</loc>
+    <lastmod>2023-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://shing.cc/tags/A4/</loc>
+    <lastmod>2023-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shing.cc/tags/emoji/</loc>
     <lastmod>2023-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -296,21 +317,7 @@
   </url>
   
   <url>
-    <loc>https://shing.cc/tags/emoji/</loc>
-    <lastmod>2023-09-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shing.cc/tags/AirPods2/</loc>
-    <lastmod>2023-09-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shing.cc/tags/Apple/</loc>
+    <loc>https://shing.cc/tags/vscode/</loc>
     <lastmod>2023-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -318,13 +325,6 @@
   
   <url>
     <loc>https://shing.cc/tags/%E4%BC%9A%E5%91%98/</loc>
-    <lastmod>2023-09-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shing.cc/tags/vscode/</loc>
     <lastmod>2023-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -386,6 +386,13 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://shing.cc/tags/code/</loc>
+    <lastmod>2023-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -396,14 +403,14 @@
   </url>
   
   <url>
-    <loc>https://shing.cc/categories/%E5%AD%A6%E4%B9%A0/</loc>
+    <loc>https://shing.cc/categories/%E6%95%B0%E7%A0%81/</loc>
     <lastmod>2023-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://shing.cc/categories/%E6%95%B0%E7%A0%81/</loc>
+    <loc>https://shing.cc/categories/%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2023-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -418,13 +425,6 @@
   
   <url>
     <loc>https://shing.cc/categories/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2023-09-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shing.cc/categories/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/</loc>
     <lastmod>2023-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

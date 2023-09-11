@@ -1,42 +1,67 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en" color-mode="light">
 
   <head>
   <meta charset="utf-8">
-  <meta name="author" content="zchengsite, 1451426471@qq.com" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
+  <meta name="author" content="SHing" />
+  <meta name="description" content="乘一叶扁舟 入景随风 望江畔渔火" />
   
-  <title>Vscode国内下载以及中文、字体设置 | Shing</title>
+  
+  <title>
+    
+      Vscode国内下载以及中文、字体设置 
+      
+      
+      |
+    
+     Shing
+  </title>
 
   
-    <link rel="apple-touch-icon" href="/images/favicon.png">
-    <link rel="icon" href="/images/favicon.png">
+    <link rel="apple-touch-icon" href="/images/avatar.jpg">
+    <link rel="icon" href="/images/logo.jpeg">
   
 
   <!-- Raleway-Font -->
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
   <!-- hexo site css -->
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1886449_67xjft27j1l.css" />
+  <!-- 代码块风格 -->
   
-<link rel="stylesheet" href="/css/base.css">
-<link rel="stylesheet" href="/iconfont/iconfont.css">
-<link rel="stylesheet" href="/css/github-markdown.css">
-<link rel="stylesheet" href="/css/highlight.css">
+    
+<link rel="stylesheet" href="/css/figcaption/mac-block.css">
 
+  
 
   <!-- jquery3.3.1 -->
-  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  
+    <script defer type="text/javascript" src="/plugins/jquery.min.js"></script>
+  
 
   <!-- fancybox -->
-  <link href="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.css" rel="stylesheet">
-  <script async src="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.js"></script>
+  
+    <link href="/plugins/jquery.fancybox.min.css" rel="stylesheet">
+    <script defer type="text/javascript" src="/plugins/jquery.fancybox.min.js"></script>
+  
   
 <script src="/js/fancybox.js"></script>
 
 
   
 
+  
+
+  <script>
+    var html = document.documentElement
+    const colorMode = localStorage.getItem('color-mode')
+    if (colorMode) {
+      document.documentElement.setAttribute('color-mode', colorMode)
+    }
+  </script>
 <meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Shing" type="application/atom+xml">
 </head>
 
@@ -48,10 +73,10 @@
     <a href="/">
       <!-- 头像取消懒加载，添加no-lazy -->
       
-        <img src="/images/avatar.png" alt="">
+        <img src="/images/logo.jpeg" alt="">
       
     </a>
-    <div class="nickname"><a href="/">Oranges</a></div>
+    <div class="nickname"><a href="/">Shing</a></div>
   </div>
   <div class="navbar">
     <ul>
@@ -90,6 +115,36 @@
 <!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
 
 
+  <!-- LaTex Display -->
+
+  
+    <script async type="text/javascript" src="/plugins/mathjax/tex-chtml.js"></script>
+  
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    }
+  </script>
+
+
+
+
+
+  <!-- clipboard -->
+
+  
+    <script async type="text/javascript" src="/plugins/clipboard.min.js"></script>
+  
+  
+<script src="/js/codeCopy.js"></script>
+
+
+
+
+
+
 
   
 
@@ -104,16 +159,16 @@
       <div class="post-title">Vscode国内下载以及中文、字体设置</div>
       <div class="post-attach">
         <span class="post-pubtime">
-          <i class="iconfont icon-updatetime" title="Update time"></i>
-          2023-09-04
+          <i class="iconfont icon-updatetime mr-10" title="Update time"></i>
+          2023-09-04 14:52:25
         </span>
         
               <span class="post-tags">
-                <i class="iconfont icon-tags" title="Tags"></i>
+                <i class="iconfont icon-tags mr-10" title="Tags"></i>
                 
-                <span class="span--tag">
+                <span class="span--tag mr-8">
                   <a href="/tags/vscode/" title="vscode">
-                    <b>#</b> vscode
+                    #vscode
                   </a>
                 </span>
                 
@@ -121,7 +176,7 @@
           
       </div>
       <div class="markdown-body">
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1979219515&auto=1&height=66"></iframe>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1979219515&auto=1&height=66"></iframe>
 <h4 id="Vscode是什么">Vscode是什么</h4>
 <p>Visual Studio Code（简称“VS Code” ）是Microsoft在2015年4月30日Build开发者大会上正式宣布一个运行于 Mac OS X、Windows和 Linux 之上的，针对于编写现代Web和云应用的跨平台源代码编辑器，可在桌面上运行，并且可用于Windows，macOS和Linux。它具有对JavaScript，TypeScript和Node.js的内置支持，并具有丰富的其他语言（例如C++，C＃，Java,Python，PHP，Go）和运行时（例如.NET和Unity）扩展的生态系统。</p>
 <h4 id="国内下载">国内下载</h4>
@@ -142,22 +197,22 @@
             
               <a href="/2023/08/30/ios-app-recommend/" target="_self">
                 <i class="iconfont icon-chevronleft"></i>
-                <span>PREV</span>
+                <span>Prev</span>
               </a>
             
           </div>
           <div class="post-attach">
             <span class="post-pubtime">
-              <i class="iconfont icon-updatetime" title="Update time"></i>
-              2023-09-04
+              <i class="iconfont icon-updatetime mr-10" title="Update time"></i>
+              2023-09-04 14:52:25
             </span>
             
                   <span class="post-tags">
-                    <i class="iconfont icon-tags" title="Tags"></i>
+                    <i class="iconfont icon-tags mr-10" title="Tags"></i>
                     
-                    <span class="span--tag">
+                    <span class="span--tag mr-8">
                       <a href="/tags/vscode/" title="vscode">
-                        <b>#</b> vscode
+                        #vscode
                       </a>
                     </span>
                     
@@ -167,7 +222,7 @@
           <div class="post-foot-prev">
             
               <a href="/2023/09/04/Vip-time/" target="_self">
-                <span>NEXT</span>
+                <span>Next</span>
                 <i class="iconfont icon-chevronright"></i>
               </a>
             
@@ -176,10 +231,15 @@
       
     </div>
     
-  <div class="post-catalog" id="catalog">
-    <div class="title">Content</div>
+  <div id="btn-catalog" class="btn-catalog">
+    <i class="iconfont icon-catalog"></i>
+  </div>
+  <div class="post-catalog hidden" id="catalog">
+    <div class="title">Contents</div>
     <div class="catalog-content">
-      <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#Vscode%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text">Vscode是什么</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%BD%E5%86%85%E4%B8%8B%E8%BD%BD"><span class="toc-text">国内下载</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Vscode%E8%AE%BE%E7%BD%AE%E4%B8%AD%E6%96%87"><span class="toc-text">Vscode设置中文</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Vscode%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE"><span class="toc-text">Vscode字体设置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9B%B4%E5%A4%9A%E8%AE%BE%E7%BD%AE"><span class="toc-text">更多设置</span></a></li></ol>
+      
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#Vscode%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text">Vscode是什么</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%BD%E5%86%85%E4%B8%8B%E8%BD%BD"><span class="toc-text">国内下载</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Vscode%E8%AE%BE%E7%BD%AE%E4%B8%AD%E6%96%87"><span class="toc-text">Vscode设置中文</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Vscode%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE"><span class="toc-text">Vscode字体设置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9B%B4%E5%A4%9A%E8%AE%BE%E7%BD%AE"><span class="toc-text">更多设置</span></a></li></ol>
+      
     </div>
   </div>
 
@@ -197,12 +257,15 @@
 
 
 
+
+
       </div>
     
   </div>
 
 
-        <div class="footer">
+        
+<div class="footer">
   <div class="social">
     <ul>
       
@@ -212,58 +275,30 @@
           </a>
         </li>
       
-        <li>
-          <a title="email" href="">
-            <i class="iconfont icon-envelope"></i>
-          </a>
-        </li>
-      
-        <li>
-          <a title="facebook" href="">
-            <i class="iconfont icon-facebooksquare"></i>
-          </a>
-        </li>
-      
-        <li>
-          <a title="twitter" href="">
-            <i class="iconfont icon-twitter"></i>
-          </a>
-        </li>
-      
-        <li>
-          <a title="wechat" href="">
-            <i class="iconfont icon-wechat"></i>
-          </a>
-        </li>
-      
-        <li>
-          <a title="weibo" href="">
-            <i class="iconfont icon-weibo"></i>
-          </a>
-        </li>
-      
-        <li>
-          <a title="rss" href="/atom.xml">
-            <i class="iconfont icon-rss"></i>
-          </a>
-        </li>
-      
     </ul>
   </div>
   
+    
     <div class="footer-more">
-      <a target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">Copyright © {thisYear} Oranges</a>
+      
+        <a target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">Copyright © 2023 Oranges</a>
+        
     </div>
   
+    
     <div class="footer-more">
-      <a target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">Theme by Oranges | Powered by Hexo</a>
+      
+        <a target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">Theme by Oranges | Powered by Hexo</a>
+        
     </div>
+  
   
 </div>
 
       </div>
 
-      <div class="back-to-top hidden">
+      <div class="tools-bar">
+        <div class="back-to-top tools-bar-item hidden">
   <a href="javascript: void(0)">
     <i class="iconfont icon-chevronup"></i>
   </a>
@@ -274,8 +309,8 @@
 
 
 
-      
-  <div class="search-icon" id="search-icon">
+        
+  <div class="search-icon tools-bar-item" id="search-icon">
     <a href="javascript: void(0)">
       <i class="iconfont icon-search"></i>
     </a>
@@ -442,6 +477,14 @@
             }
             $resultContent.innerHTML = str;
           });
+        },
+        error: function(xhr, status, error) {
+          $resultContent.innerHTML = ""
+          if (xhr.status === 404) {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>The search.xml file was not found, please refer to：<a href='https://github.com/zchengsite/hexo-theme-oranges#configuration' target='_black'>configuration</a><span></ul>";
+          } else {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>The request failed, Try to refresh the page or try again later.<span></ul>";
+          }
         }
       });
       $(document).on('click', '#search-close-icon', function() {
@@ -459,6 +502,46 @@
 
 
 
+        
+  <div class="tools-bar-item theme-icon" id="switch-color-scheme">
+    <a href="javascript: void(0)">
+      <i id="theme-icon" class="iconfont icon-moon"></i>
+    </a>
+  </div>
+
+  
+<script src="/js/colorscheme.js"></script>
+
+
+
+
+
+        
+  
+    <div class="share-icon tools-bar-item">
+      <a href="javascript: void(0)" id="share-icon">
+        <i class="iconfont iconshare"></i>
+      </a>
+      <div class="share-content hidden">
+        
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + Vscode%E5%9B%BD%E5%86%85%E4%B8%8B%E8%BD%BD%E4%BB%A5%E5%8F%8A%E4%B8%AD%E6%96%87%E3%80%81%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE + '&url=' + https%3A%2F%2Fshing.cc%2F2023%2F09%2F04%2FVscode-download%2F + '" target="_blank" title="Twitter">
+            <i class="iconfont icon-twitter"></i>
+          </a>
+        
+        
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=https://shing.cc/2023/09/04/Vscode-download/" target="_blank" title="Facebook">
+            <i class="iconfont icon-facebooksquare"></i>
+          </a>
+        
+      </div>
+    </div>
+  
+  
+<script src="/js/shares.js"></script>
+
+
+
+      </div>
     </div>
   </body>
 </html>
