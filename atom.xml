@@ -6,7 +6,7 @@
   <link href="https://shing.cc/atom.xml" rel="self"/>
   
   <link href="https://shing.cc/"/>
-  <updated>2023-09-21T03:21:30.247Z</updated>
+  <updated>2023-09-22T06:57:14.372Z</updated>
   <id>https://shing.cc/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Windows时间服务器出错导致不同步的问题</title>
+    <link href="https://shing.cc/2023/09/22/windows-time-synchronous.html"/>
+    <id>https://shing.cc/2023/09/22/windows-time-synchronous.html</id>
+    <published>2023-09-22T06:37:48.051Z</published>
+    <updated>2023-09-22T06:57:14.372Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><p><img src="https://z1.ax1x.com/2023/09/22/pPo1ho4.png" alt=""></p><h4 id="1-问题描述">1.问题描述</h4><p>最近发现公司这个破电脑老是时间不同步，即便是设置了自动同步也没有用。</p><h4 id="2-解决方法">2.解决方法</h4><ul class="lvl-0"><li class="lvl-2"><p>右下角打开点击时间-—打开日期与时间设置。</p></li><li class="lvl-2"><p>右上角—添加不同时区的时钟。<br><img src="https://z1.ax1x.com/2023/09/22/pPo1Jzt.png" alt=""></p></li><li class="lvl-2"><p>选择Internet时间，更改设置，更改服务器为<kbd><a href="http://time.nist.gov">time.nist.gov</a></kbd>,勾选“与Internet时间服务器同步”，立即更新，确定，然后应用，问题解决。<br><img src="https://z1.ax1x.com/2023/09/22/pPo1tQP.png" alt=""></p></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css&quot;&gt;&lt;p&gt;&lt;img src=&quot;https://z1.ax1</summary>
+      
+    
+    
+    
+    <category term="生活" scheme="https://shing.cc/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="windows" scheme="https://shing.cc/tags/windows/"/>
+    
+    <category term="时间" scheme="https://shing.cc/tags/%E6%97%B6%E9%97%B4/"/>
+    
+  </entry>
   
   <entry>
     <title>国人开发神器-公式OCR识别软件SimpleTex</title>
@@ -482,30 +508,6 @@
     <category term="categories" scheme="https://shing.cc/tags/categories/"/>
     
     <category term="tag" scheme="https://shing.cc/tags/tag/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo d部署报错解决办法</title>
-    <link href="https://shing.cc/2023/08/25/Solution-to-Hexo-deployment-error.html"/>
-    <id>https://shing.cc/2023/08/25/Solution-to-Hexo-deployment-error.html</id>
-    <published>2023-08-24T16:00:00.000Z</published>
-    <updated>2023-09-11T09:16:08.598Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><h5 id="方法一：在博客文件夹中删除-deploy-git文件">方法一：<em><strong>在博客文件夹中删除.deploy_git文件</strong></em></h5><p>在博客文件夹中删除.deploy_git 文件命令行(terminal)[不推荐使用cmd, 使用 git bash 等] 中输入 git config --global core.autocrlf false把git加入系统环境变量重新执行hexo c hexo g hexo d<br>部署成功。</p><h5 id="方法二：修改Repo-找到-config-yml文件">方法二：<em><strong>修改Repo 找到_config.yml文件</strong></em></h5><p><strong>格式如下:</strong><br>找到_config.yml文件，翻到最后面根据格式修改如下内容<br>Repo:<a href="https://github.com/YourName/YourName.github.io.git(%E4%B8%8D%E8%A6%81%E4%BD%BF%E7%94%A8%E8%BF%99%E4%B8%AA)">https://github.com/YourName/YourName.github.io.git(不要使用这个)</a><br><a href="mailto:git@github.com">git@github.com</a>:YourName/YourName.github.io.git(用这个)<br>部署成功。【注】YourName是你的GitHub用户名</p><p><a href="https://hexo-delta-khaki.vercel.app/posts/3.html">Hexo Github Action 自动部署 在线编辑文章 新建文章</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css&quot;&gt;&lt;h5 id=&quot;方法一：在博客文件夹中删除-deplo</summary>
-      
-    
-    
-    
-    <category term="博客记录" scheme="https://shing.cc/categories/%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%95/"/>
-    
-    
-    <category term="Hexo" scheme="https://shing.cc/tags/Hexo/"/>
     
   </entry>
   
