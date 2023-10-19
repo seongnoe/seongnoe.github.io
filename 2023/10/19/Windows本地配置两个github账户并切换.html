@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="zh-CN" color-mode="light">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <meta name="keywords" content="shing.cc">
+  
+  <meta name="author" content="Shing" />
+  <meta name="description" content="「卑以自牧 含章可贞」 " />
+  
+  
+  <title>
+    
+      windows本地配置两个github账户并切换 
+      
+      
+      |
+    
+     Shing&#39;s blog
+  </title>
+
+  
+    <link rel="apple-touch-icon" href="/images/avatar.jpg">
+    <link rel="icon" href="/images/logo.jpg">
+  
+
+  <!-- Raleway-Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+  <!-- hexo site css -->
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1886449_67xjft27j1l.css" />
+  <!-- 代码块风格 -->
+  
+    
+<link rel="stylesheet" href="/css/figcaption/mac-block.css">
+
+  
+
+  <!-- jquery3.3.1 -->
+  
+    <script defer type="text/javascript" src="/plugins/jquery.min.js"></script>
+  
+
+  <!-- fancybox -->
+  
+    <link href="/plugins/jquery.fancybox.min.css" rel="stylesheet">
+    <script defer type="text/javascript" src="/plugins/jquery.fancybox.min.js"></script>
+  
+  
+<script src="/js/fancybox.js"></script>
+
+
+  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3N6802FHNJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3N6802FHNJ');
+    </script>
+  
+
+  
+
+  <script>
+    var html = document.documentElement
+    const colorMode = localStorage.getItem('color-mode')
+    if (colorMode) {
+      document.documentElement.setAttribute('color-mode', colorMode)
+    }
+  </script>
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Shing's blog" type="application/atom+xml">
+</head>
+
+
+  <body>
+    <div id="app">
+      <div class="header">
+  <div class="avatar">
+    <a href="/">
+      <!-- 头像取消懒加载，添加no-lazy -->
+      
+        <img src="/images/logo.jpg" alt="">
+      
+    </a>
+    <div class="nickname"><a href="/">Shing</a></div>
+  </div>
+  <div class="navbar">
+    <ul>
+      
+        <li class="nav-item" data-path="/">
+          <a href="/">Home</a>
+        </li>
+      
+        <li class="nav-item" data-path="/categories/">
+          <a href="/categories/">Categories</a>
+        </li>
+      
+        <li class="nav-item" data-path="/tags/">
+          <a href="/tags/">Tags</a>
+        </li>
+      
+        <li class="nav-item" data-path="/friends/">
+          <a href="/friends/">Link</a>
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+<script src="/js/activeNav.js"></script>
+
+
+
+      <div class="flex-container">
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
+
+
+  <!-- LaTex Display -->
+
+  
+    <script async type="text/javascript" src="/plugins/mathjax/tex-chtml.js"></script>
+  
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    }
+  </script>
+
+
+
+
+
+  <!-- clipboard -->
+
+  
+    <script async type="text/javascript" src="/plugins/clipboard.min.js"></script>
+  
+  
+<script src="/js/codeCopy.js"></script>
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">windows本地配置两个github账户并切换</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
+          2023-10-19 10:29:07
+        </span>
+        
+              <span class="post-categories">
+                <i class="iconfont icon-bookmark" title="分类"></i>
+                
+                <span class="span--category">
+                  <a href="/categories/%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%95/" title="博客记录">
+                    <b>#</b> 博客记录
+                  </a>
+                </span>
+                
+              </span>
+          
+              <span class="post-tags">
+                <i class="iconfont icon-tags mr-10" title="标签"></i>
+                
+                <span class="span--tag mr-8">
+                  <a href="/tags/Git/" title="Git">
+                    #Git
+                  </a>
+                </span>
+                
+              </span>
+          
+      </div>
+      <div class="markdown-body">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><p><img src="https://thedigitalhacker.com/wp-content/uploads/2019/07/github-logo.jpeg" alt="github"></p>
+<p>[TOC]</p>
+<h5 id="本文用到的工具：">本文用到的工具：</h5>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><a target="_blank" rel="noopener" href="https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe">GIT</a></p>
+</li>
+<li class="lvl-2">
+<p><a target="_blank" rel="noopener" href="https://code.visualstudio.com/Download">VScode</a></p>
+</li>
+<li class="lvl-2">
+<p><a target="_blank" rel="noopener" href="https://typoraio.cn/">Typora</a></p>
+</li>
+<li class="lvl-2">
+<p><a target="_blank" rel="noopener" href="https://www.xlinkworld.me/aff.php?aff=3914">老爹的稳定魔法</a></p>
+</li>
+</ul>
+<h5 id="推荐Github可视化工具：">推荐Github可视化工具：</h5>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><a target="_blank" rel="noopener" href="https://desktop.github.com/">Github Desktop</a></p>
+</li>
+<li class="lvl-2">
+<p><a target="_blank" rel="noopener" href="https://www.sourcetreeapp.com/download-archives">Sourcetree</a></p>
+</li>
+</ul>
+<h2 id="1-生成密钥">1. 生成密钥</h2>
+<p>请先进入到你的<code>C:\Users\Administrator\.ssh</code> 文件夹下用git bash进行操作。</p>
+<p>首先是先生成两个SSH密钥，对应你的两个身份(假设为 A 和 B)。</p>
+<p>假设你当初已经用<code>ssh-keygen -t rsa -C “youremail@qq.com”</code>生成了一对秘钥<code>id_rsa</code>和<code>id_rsa.pub</code> ， 保存在了<code>~/.ssh</code>文件夹内。</p>
+<p>然后，你需要再用另一个邮箱生成一对 private 的秘钥<code>ssh-keygen -t rsa -C “B_eamil@qq.com”</code>。<strong>这时候要注意重命名，否则会覆盖上面的密钥文件。</strong></p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>应该怎么重命名？</p>
+</li>
+</ul>
+<p><img src="https://z1.ax1x.com/2023/10/19/piiERrF.png" alt=""></p>
+<p>假设我们生成了一对新的秘钥<code>private</code> 和<code>private.pub</code>。然后分别将这两对密钥加入到对应的 GitHub 账户中，这个步骤就略过了。</p>
+<p>参考链接：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/leonliuo/p/16295806.html#label6">https://www.cnblogs.com/leonliuo/p/16295806.html#label6</a></p>
+<p><strong>注：怎么你的密钥存放路径在哪？</strong></p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>Windows： <code>C:\Users\Administrator\.ssh</code></p>
+</li>
+<li class="lvl-2">
+<p>Linux：<code>/root/.ssh</code></p>
+</li>
+</ul>
+<h2 id="2-编辑配置文件">2. 编辑配置文件</h2>
+<p>编辑<code>~/.ssh/config</code>文件。如果该文件不存在的话，直接创建一个就好。**右键新建一个文件，把后缀去掉，只需要命名为config，然后选择用记事本或者其他编辑软件打开，我用的是Vscode。**里面的内容如下（直接复制粘贴进去，但是要合理更改）：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># A用户</span><br><span class="line">Host a.github.com   # Host : 每个Host要取一个别名，用来区分你的账户，任意取名但不能重复。</span><br><span class="line">Hostname github.com  # HostName : 要登录主机的主机名</span><br><span class="line">IdentityFile ~/.ssh/id_rsa  # IdentityFile : 指明上面User对应的identityFile路径</span><br><span class="line"></span><br><span class="line">#B用户</span><br><span class="line">Host b.github.com</span><br><span class="line">Hostname github.com</span><br><span class="line">IdentityFile ~/.ssh/private</span><br></pre></td></tr></table></figure>
+<p>修改完之后，在<code>git bash</code>运行以下命令（<code>@</code>后面的主机名为上面配置文件中填写的<code>Host</code>选项），检查是否正常。</p>
+<p><strong>（先注意一下</strong>：<strong>这里一定是先把两个公钥添加到对应的 GitHub 账户，再进行下面的 ssh 连接测试，否则肯定是连接不上，会显示 permission denied。</strong>）</p>
+<p>参考链接：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/leonliuo/p/16295806.html#label6">https://www.cnblogs.com/leonliuo/p/16295806.html#label6</a></p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@a.github.com  #A是config文件中的Host公共别名 好像T必须大写 否则会报错哈~~~</span><br><span class="line">ssh -T git@b.github.com  #B是config文件中的Host个人别名</span><br></pre></td></tr></table></figure>
+<p>如果都能正常返回如下信息，就说明配置正常，恭喜你！</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hi xxx! You&#x27;ve successfully authenticated, but GitHub does not provide shell access.</span><br></pre></td></tr></table></figure>
+<p>同样的方式你就可以配置更多的以SSH登录的不同git用户。</p>
+<h2 id="3-如何克隆">3. 如何克隆</h2>
+<p>单个账号 , 使用https和SSH都可以</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">https</span><br><span class="line">git gitssh链接</span><br><span class="line">SSH </span><br><span class="line">git clone git@a.github.com: gitssh链接</span><br></pre></td></tr></table></figure>
+<p>配置了多账户的git , 不能用https的方式clone , 需要使用SSH方式区分不同的账号</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">例如,config文件中Host 配置的是 B</span></span><br><span class="line">git clone git@B: gitssh链接</span><br></pre></td></tr></table></figure>
+<h2 id="4-配置仓库设置">4. 配置仓库设置</h2>
+<p>首先要<strong>删除GIT配置的全局用户名和邮件地址</strong>，接着在每个项目仓库中按照需求设置不同的<code>user.name</code>和 <code>user.email</code>：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"># 删除全局设置</span><br><span class="line">git config --global --unset user.name</span><br><span class="line">git config --global --unset user.email</span><br><span class="line"></span><br><span class="line"># 添加本地设置</span><br><span class="line"># 进入到你的git仓库，设置私有仓库的GitHub账号邮箱和公有账号的GitHub邮箱。</span><br><span class="line">git config --local user.name xxxx</span><br><span class="line">git config --local user.email xxx</span><br></pre></td></tr></table></figure>
+<p>之后在添加远程仓库的时候，把<code>github.com</code> 修改成<code>github_public</code> 或者<code>github_private</code>就好了（即上述文件中的HOST选项），用上面两个 Host 名称来代替原来的<code>github.com</code> ，（<strong>这一步很重要</strong>）如：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin git@github_public:xxx/example.git # public user</span><br><span class="line">git remote add origin git@github_private:xxx/example.git # priavate user</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>其实，上面的配置文件的意思就是，按照你设置远程仓库时使用不同的 Host 名称，查找<code>~/.ssh/config</code>文件，使用不同的 SSH 文件连接到 GitHub。这样你就将是以不同的身份访问 GitHub 仓库。</p>
+</blockquote>
+
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+              <a href="/2023/09/22/windows-time-synchronous.html" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>上一页</span>
+              </a>
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
+              2023-10-19 10:29:07
+            </span>
+            
+                  <span class="post-categories">
+                    <i class="iconfont icon-bookmark" title="分类"></i>
+                    
+                    <span class="span--category">
+                      <a href="/categories/%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%95/" title="博客记录">
+                        <b>#</b> 博客记录
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+                  <span class="post-tags">
+                    <i class="iconfont icon-tags mr-10" title="标签"></i>
+                    
+                    <span class="span--tag mr-8">
+                      <a href="/tags/Git/" title="Git">
+                        #Git
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+          </div>
+          <div class="post-foot-prev">
+            
+          </div>
+        </div>
+      
+    </div>
+    
+  <div id="btn-catalog" class="btn-catalog">
+    <i class="iconfont icon-catalog"></i>
+  </div>
+  <div class="post-catalog hidden" id="catalog">
+    <div class="title">目录</div>
+    <div class="catalog-content">
+      
+        <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9C%AC%E6%96%87%E7%94%A8%E5%88%B0%E7%9A%84%E5%B7%A5%E5%85%B7%EF%BC%9A"><span class="toc-text">本文用到的工具：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%8E%A8%E8%8D%90Github%E5%8F%AF%E8%A7%86%E5%8C%96%E5%B7%A5%E5%85%B7%EF%BC%9A"><span class="toc-text">推荐Github可视化工具：</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E7%94%9F%E6%88%90%E5%AF%86%E9%92%A5"><span class="toc-text">1. 生成密钥</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E7%BC%96%E8%BE%91%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-text">2. 编辑配置文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%A6%82%E4%BD%95%E5%85%8B%E9%9A%86"><span class="toc-text">3. 如何克隆</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%85%8D%E7%BD%AE%E4%BB%93%E5%BA%93%E8%AE%BE%E7%BD%AE"><span class="toc-text">4. 配置仓库设置</span></a>
+      
+    </div>
+  </div>
+
+  
+<script src="/js/catalog.js"></script>
+
+
+
+
+    
+      <div class="comments-container">
+        
+
+
+
+
+  
+    <script async type="text/javascript" src="/plugins/valine.min.js" onload="loadValineSuc(this)"></script>
+  
+
+  <div id="vcomments"></div>
+
+  <script>
+    function loadValineSuc() {
+      new Valine({
+        el: '#vcomments',
+        appId: 'VVHHQcIjZzps45evjrp4LqJC-gzGzoHsz',
+        appKey: '2nmQZfPjSdxEtUXcZkduSM1x',
+        placeholder: 'Welcome to shing.cc!',
+        avatar: 'wavatar',
+        lang: 'zh-CN'
+      })
+    }
+  </script>
+
+    <style>
+      .comments-container .v .vempty {
+        display: none!important;
+      }
+    </style>
+
+
+
+
+      </div>
+    
+  </div>
+
+
+        
+<div class="footer">
+  <div class="social">
+    <ul>
+      
+        <li>
+          <a title="github" target="_blank" rel="noopener" href="https://github.com">
+            <i class="iconfont icon-github"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="email" href="mailto:seongnoe@gmail.com">
+            <i class="iconfont icon-envelope"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="CMT" target="_blank" rel="noopener" href="https://cmt.rea1.cc">
+            <i class="iconfont icon-wechat"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+  
+    
+    <div class="footer-more">
+      
+        <a href="https://shing.cc">Copyright © 1998-2023</a>
+        
+    </div>
+  
+    
+    <div class="footer-more">
+      
+        <a target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">Theme by Oranges | Powered by Hexo</a>
+        
+    </div>
+  
+  
+</div>
+
+      </div>
+
+      <div class="tools-bar">
+        <div class="back-to-top tools-bar-item hidden">
+  <a href="javascript: void(0)">
+    <i class="iconfont icon-chevronup"></i>
+  </a>
+</div>
+
+
+<script src="/js/backtotop.js"></script>
+
+
+
+        
+  <div class="search-icon tools-bar-item" id="search-icon">
+    <a href="javascript: void(0)">
+      <i class="iconfont icon-search"></i>
+    </a>
+  </div>
+
+  <div class="search-overlay hidden">
+    <div class="search-content" tabindex="0">
+      <div class="search-title">
+        <span class="search-icon-input">
+          <a href="javascript: void(0)">
+            <i class="iconfont icon-search"></i>
+          </a>
+        </span>
+        
+          <input type="text" class="search-input" id="search-input" placeholder="搜索...">
+        
+        <span class="search-close-icon" id="search-close-icon">
+          <a href="javascript: void(0)">
+            <i class="iconfont icon-close"></i>
+          </a>
+        </span>
+      </div>
+      <div class="search-result" id="search-result"></div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var inputArea = document.querySelector("#search-input")
+    var searchOverlayArea = document.querySelector(".search-overlay")
+
+    inputArea.onclick = function() {
+      getSearchFile()
+      this.onclick = null
+    }
+
+    inputArea.onkeydown = function() {
+      if(event.keyCode == 13)
+        return false
+    }
+
+    function openOrHideSearchContent() {
+      let isHidden = searchOverlayArea.classList.contains('hidden')
+      if (isHidden) {
+        searchOverlayArea.classList.remove('hidden')
+        document.body.classList.add('hidden')
+        // inputArea.focus()
+      } else {
+        searchOverlayArea.classList.add('hidden')
+        document.body.classList.remove('hidden')
+      }
+    }
+
+    function blurSearchContent(e) {
+      if (e.target === searchOverlayArea) {
+        openOrHideSearchContent()
+      }
+    }
+
+    document.querySelector("#search-icon").addEventListener("click", openOrHideSearchContent, false)
+    document.querySelector("#search-close-icon").addEventListener("click", openOrHideSearchContent, false)
+    searchOverlayArea.addEventListener("click", blurSearchContent, false)
+
+    var searchFunc = function (path, search_id, content_id) {
+      'use strict';
+      var $input = document.getElementById(search_id);
+      var $resultContent = document.getElementById(content_id);
+      $resultContent.innerHTML = "<ul><span class='local-search-empty'>首次搜索，正在载入索引文件，请稍后……<span></ul>";
+      $.ajax({
+        // 0x01. load xml file
+        url: path,
+        dataType: "xml",
+        success: function (xmlResponse) {
+          // 0x02. parse xml file
+          var datas = $("entry", xmlResponse).map(function () {
+            return {
+              title: $("title", this).text(),
+              content: $("content", this).text(),
+              url: $("url", this).text()
+            };
+          }).get();
+          $resultContent.innerHTML = "";
+
+          $input.addEventListener('input', function () {
+            // 0x03. parse query to keywords list
+            var str = '<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length <= 0) {
+              return;
+            }
+            // 0x04. perform local searching
+            datas.forEach(function (data) {
+              var isMatch = true;
+              var content_index = [];
+              if (!data.title || data.title.trim() === '') {
+                data.title = "Untitled";
+              }
+              var orig_data_title = data.title.trim();
+              var data_title = orig_data_title.toLowerCase();
+              var orig_data_content = data.content.trim().replace(/<[^>]+>/g, "");
+              var data_content = orig_data_content.toLowerCase();
+              var data_url = data.url;
+              var index_title = -1;
+              var index_content = -1;
+              var first_occur = -1;
+              // only match artiles with not empty contents
+              if (data_content !== '') {
+                keywords.forEach(function (keyword, i) {
+                  index_title = data_title.indexOf(keyword);
+                  index_content = data_content.indexOf(keyword);
+
+                  if (index_title < 0 && index_content < 0) {
+                    isMatch = false;
+                  } else {
+                    if (index_content < 0) {
+                      index_content = 0;
+                    }
+                    if (i == 0) {
+                      first_occur = index_content;
+                    }
+                    // content_index.push({index_content:index_content, keyword_len:keyword_len});
+                  }
+                });
+              } else {
+                isMatch = false;
+              }
+              // 0x05. show search results
+              if (isMatch) {
+                str += "<li><a href='" + data_url + "' class='search-result-title'>" + orig_data_title + "</a>";
+                var content = orig_data_content;
+                if (first_occur >= 0) {
+                  // cut out 100 characters
+                  var start = first_occur - 20;
+                  var end = first_occur + 80;
+
+                  if (start < 0) {
+                    start = 0;
+                  }
+
+                  if (start == 0) {
+                    end = 100;
+                  }
+
+                  if (end > content.length) {
+                    end = content.length;
+                  }
+
+                  var match_content = content.substr(start, end);
+
+                  // highlight all keywords
+                  keywords.forEach(function (keyword) {
+                    var regS = new RegExp(keyword, "gi");
+                    match_content = match_content.replace(regS, "<span class=\"search-keyword\">" + keyword + "</span>");
+                  });
+
+                  str += "<p class=\"search-result-abstract\">" + match_content + "...</p>"
+                }
+                str += "</li>";
+              }
+            });
+            str += "</ul>";
+            if (str.indexOf('<li>') === -1) {
+              return $resultContent.innerHTML = "<ul><span class='local-search-empty'>没有找到内容，请尝试更换检索词。<span></ul>";
+            }
+            $resultContent.innerHTML = str;
+          });
+        },
+        error: function(xhr, status, error) {
+          $resultContent.innerHTML = ""
+          if (xhr.status === 404) {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>未找到search.xml文件，具体请参考：<a href='https://github.com/zchengsite/hexo-theme-oranges#configuration' target='_black'>configuration</a><span></ul>";
+          } else {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>请求失败，尝试重新刷新页面或稍后重试。<span></ul>";
+          }
+        }
+      });
+      $(document).on('click', '#search-close-icon', function() {
+        $('#search-input').val('');
+        $('#search-result').html('');
+      });
+    }
+
+    var getSearchFile = function() {
+        var path = "/search.xml";
+        searchFunc(path, 'search-input', 'search-result');
+    }
+  </script>
+
+
+
+
+        
+  <div class="tools-bar-item theme-icon" id="switch-color-scheme">
+    <a href="javascript: void(0)">
+      <i id="theme-icon" class="iconfont icon-moon"></i>
+    </a>
+  </div>
+
+  
+<script src="/js/colorscheme.js"></script>
+
+
+
+
+
+        
+  
+    <div class="share-icon tools-bar-item">
+      <a href="javascript: void(0)" id="share-icon">
+        <i class="iconfont iconshare"></i>
+      </a>
+      <div class="share-content hidden">
+        
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + windows%E6%9C%AC%E5%9C%B0%E9%85%8D%E7%BD%AE%E4%B8%A4%E4%B8%AAgithub%E8%B4%A6%E6%88%B7%E5%B9%B6%E5%88%87%E6%8D%A2 + '&url=' + https%3A%2F%2Fshing.cc%2F2023%2F10%2F19%2FWindows%25E6%259C%25AC%25E5%259C%25B0%25E9%2585%258D%25E7%25BD%25AE%25E4%25B8%25A4%25E4%25B8%25AAgithub%25E8%25B4%25A6%25E6%2588%25B7%25E5%25B9%25B6%25E5%2588%2587%25E6%258D%25A2.html + '" target="_blank" title="Twitter">
+            <i class="iconfont icon-twitter"></i>
+          </a>
+        
+        
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=https://shing.cc/2023/10/19/Windows%E6%9C%AC%E5%9C%B0%E9%85%8D%E7%BD%AE%E4%B8%A4%E4%B8%AAgithub%E8%B4%A6%E6%88%B7%E5%B9%B6%E5%88%87%E6%8D%A2.html" target="_blank" title="Facebook">
+            <i class="iconfont icon-facebooksquare"></i>
+          </a>
+        
+      </div>
+    </div>
+  
+  
+<script src="/js/shares.js"></script>
+
+
+
+      </div>
+    </div>
+  </body>
+</html>
