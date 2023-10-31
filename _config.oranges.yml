@@ -21,11 +21,11 @@
 # 网站图标
 favicon:
   enable: true
-  icon: /images/logo.jpeg
+  icon: /images/logo.jpg
   touch_icon: /images/avatar.jpg
 # 用户头像与昵称
 avatar:
-  author_photo: /images/logo.jpeg
+  author_photo: /images/logo.jpg
   author_nickname: Shing
   path: /
 
@@ -34,8 +34,8 @@ avatar:
 # 注册Google分析账号，在管理/创建媒体资源/选择网站/填写相关信息后得到跟踪Id，一般格式为UA-xxxxxxx-x
 # 如之前已有注册账号，在管理/跟踪信息/跟踪代码/找到跟踪ID，一般格式为UA-xxxxxxx-x
 gtag:
-  enable: false
-  gtagkey: UA-xxxxxxx-x
+  enable: true
+  gtagkey: G-3N6802FHNJ
 
 # 文章评论系统
 comments:
@@ -76,6 +76,9 @@ comments:
     enable: false
     serverURL:
 
+      # shing1ai@qq.com
+      # sh1nglai@qq.com
+
 # 主题页面导航栏
 navbar:
   - name: Home
@@ -113,7 +116,7 @@ prevnext:
 
 # 友链详细信息：支持多个友链
 # * [ChatGPT](https://chat.noe.zone)
-# * [ipad电子书资源](https://zbook.eu.org)
+# * [ipad电子书资源](https://book-searcher.eu.org)
 # * [本站临时图床](https://imgse.com)
 # * [孔夫子旧书网](https://www.kongfz.com/)
 # * [notion笔记](https://www.notion.so/)
@@ -126,6 +129,10 @@ friends:
   # nickname: 昵称
   # site: 地址
   # meta: 描述
+
+  - nickname: 宝贝回家
+    site: https://www.baobeihuijia.com/bbhj/
+    meta:
   - nickname: 本站临时图床
     site: https://imgse.com
     meta:
@@ -144,6 +151,10 @@ friends:
   - nickname: 微信公众平台
     site: https://mp.weixin.qq.com
     meta:
+  - nickname: Google分析
+    site: https://analytics.google.com
+    meta:
+
 # 页脚信息
 footer:
   # social: 社交方式
@@ -161,6 +172,7 @@ footer:
     - name: email
       icon: envelope
       path: mailto:seongnoe@gmail.com
+
     # -
     #   name: facebook
     #   icon: facebooksquare
@@ -169,10 +181,9 @@ footer:
     #   name: twitter
     #   icon: twitter
     #   path:
-    # -
-    #   name: wechat
-    #   icon: wechat
-    #   path:
+    - name: CMT
+      icon: wechat
+      path: https://cmt.rea1.cc
     # -
     #   name: weibo
     #   icon: weibo
@@ -188,8 +199,8 @@ footer:
     # 支持变量显示，可自定义扩展，具体见主题/layout/_partial/footer.ejs
     # 一般用来显示根据各种场景需要切换的文本，如时间年份
     # 如：{thisYear} 会被替换为今年年份
-    - name: cmt
-      path: https://cmt.rea1.cc
+    # - name: cmt
+    #   path: https://cmt.rea1.cc
     - name: Copyright © 1998-2023
       path: https://shing.cc
     - name: Theme by Oranges | Powered by Hexo

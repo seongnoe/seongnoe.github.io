@@ -4,18 +4,18 @@
 
 # Site
 #zh-cn
-title: Shing
+title: Shing's blog
 subtitle: "Shing.cc"
-description: "乘一叶扁舟 入景随风 望江畔渔火"
-keywords:
+description: "「卑以自牧 含章可贞」 "
+keywords: shing.cc
 author: Shing
-language: zh-cn
+language: zh-CN
 timezone: "Asia/Shanghai"
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://shing.cc
-permalink: :year/:month/:day/:title/
+permalink: :year/:month/:day/:title.html
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -96,12 +96,12 @@ include:
 exclude:
 ignore:
 
-# Extensions
-#主题
+# Extensions扩展
+#主题更换
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
+# theme: oranges
 theme: oranges
-
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
@@ -159,3 +159,48 @@ markdown:
 # toc:
 #   maxdepth: 3
 
+#hexo-douban(豆瓣)
+
+# douban:
+#   id: 150321760
+#   builtin: false
+#   item_per_page: 10
+#   meta_max_line: 4
+#   customize_layout: page
+#   book:
+#     path: books/index.html
+#     title: "This is my book title"
+#     quote: "This is my book quote"
+#     option:
+#   # movie:
+#   #   path: movies/index.html
+#   #   title: "This is my movie title"
+#   #   quote: "This is my movie quote"
+#   #   option:
+#   # game:
+#   #   path: games/index.html
+#   #   title: "This is my game title"
+#   #   quote: "This is my game quote"
+#   #   option:
+#   # song:
+#   #   path: songs/index.html
+#   #   title: "This is my song title"
+#   #   quote: "This is my song quote"
+#   #   option:
+#   timeout: 10000
+
+post_wordcount:
+  date: true # 发布日期
+  update: true # 更新日期
+  wordCount: true # 文章字数统计
+  totalCount: true # 站点总文章字数
+  min2read: true # 文章阅读时长
+  readCount: true # 文章阅读次数
+
+# index anything
+indexAnything:
+  author: Shing
+# hexo-addlink
+# addlink:
+#   before_text: 源网页： # text before the post link
+#   after_text:

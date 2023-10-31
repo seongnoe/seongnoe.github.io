@@ -1,51 +1,69 @@
 ##############################################################################
 # Content
 ##############################################################################
+#自定义字体/颜色和网站logo/icon
+# 自定义颜色
+# 进入./themes/cactus/source/css/colors中有四个文件，对应不同风格的样式
+# https://img-blog.csdnimg.cn/img_convert/b88e69cc315ecc1ac89a4a43ed521e5b.png
+# $color-background = #1d1f21
+# $color-footer-mobile-1 = lighten($color-background, 2%)
+# $color-footer-mobile-2 = lighten($color-background, 10%)
+# $color-background-code = lighten($color-background, 2%)
+# $color-border = #908d8d
+# $color-meta = #908d8d
+# $color-meta-code = #908d8d
+# $color-link = rgba(212, 128, 170, 1)
+# $color-text = #c9cacc      //正文
+# $color-accent-3 = #cccccc  //副副标题
+# $color-accent-2 = #eeeeee  //副标题
+# $color-accent-1 = #ff6a00  //主标题
+# $color-quote = #ccffb6
+# $highlight = hexo-config("highlight") || "rainbow"
 
 # Link to a page that gives an overview of all your projects.
 # This can be an external link (e.g., to you GitHub profile) or to another
 # page within your website.
-projects_url: https://noe.zone
+projects_url: http://github.com/probberechts
 
 # Set the page direction to RTL or LTR. default is LTR. (if you set it 'rtl', the 'vazir' font will be loaded.)
-direction: ltr
+direction: LTR
 # Configure the navigation menu.
 # A pair 'Key: url' will result in a link to 'url' with the name 'Key' in the
 # navigation menu. Optionally, you can add translations for the 'Key' in
 # languages/*.yml
-# 将页面方向设置为 RTL 或 LTR。默认值为 LTR。（如果您将其设置为“RTL”，则将加载“Vazir”字体。
-#方向： 升
-# 配置导航菜单。
-# 一对 'Key： url' 将产生一个指向 'url' 的链接，其中的名称为 'Key'
-# 导航菜单。或者，您可以为“密钥”添加翻译
-# 语言/*.yml
 nav:
   home: /
   about: /about/
   articles: /archives/
-  标签: /tags
-  category: /categories/
-  search: /search/
-  朋友: /friends/
+  # projects: http://github.com/probberechts
+  category: /categories
+  tag: /tags
+  search: /search
 
-
-# Links to your social media accounts.社交分享设置
+# Links to your social media accounts.
 # The 'icon' keys should correspond to Fontawesome icon names
 # (see https://fontawesome.com/icons?d=gallery&s=brands);
 # only 'mail' is an exception.
-# You can optionally add a 'label' key to set the title attribute on the link. 
+# You can optionally add a 'label' key to set the title attribute on the link.
 # 'icon' value will be used as title when 'label' is missing.
+# https://fontawesome.com/v5/search
 
 social_links:
-
-  -
-    icon: mail
-    link: mailto:seongnoe@gmail.com
-  
+  # - icon: weibo
+  #   link: /
+  # - icon: weixin
+  #   link: /about
+  # - icon: zhihu
+  #   link: /
+  - icon: mail
+    link: mailto:shingcc@163.com
+  - icon: weixin
+    label: mastodon.social
+    link: /about
 
 # Customize the overview with displaying a tagcloud on the index page.
 # Options: https://hexo.io/docs/helpers.html#tagcloud
-tags_overview: false
+tags_overview: true
 
 # Customize the overview with the most recent blog posts on the index page.
 # Options:
@@ -63,7 +81,7 @@ posts_overview:
 # Note: this does not work together with pagination, since the pagination
 # plugin will sort pages by date of creation.
 archive:
-  sort_updated: true
+  sort_updated: false
 
 # Customize the article view.
 # Options:
@@ -75,16 +93,15 @@ post:
 # Note: if start_year/end_year not provided, will use current year.
 copyright:
   start_year: 1998
-  end_year:
+  end_year: 2023
 
 # Customize the 404 page
 # Options:
 #   - enabled: whether to enable the 404 page (404.html).
 error_404:
   enabled: true
-  title: "404 Page Not Found"
-  description: "你要看到的东西这个网站上好像没有呢~~~"
-
+  title: "404 Page Not Found_页面未找到"
+  description: "#The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.您要查找的页面可能已被删除、名称已更改或暂时不可用。如果您是通过搜索引擎的结果跳转到了本页面，极有可能您要访问的页面已经通过插件添加了.html格式从而导致原网页无法访问，请通过本站的搜索功能进行查找。"
 
 ##############################################################################
 # Look and Feel
@@ -102,9 +119,9 @@ logo:
   enabled: true
   width: 50
   height: 50
-  url: /images/logo.png
+  url: /images/logo1.png
   gravatar: false
-  grayout: false
+  grayout: true
 
 # Customize the favicons.
 # Cactus supports a limited set of the three most important icons:
@@ -117,7 +134,7 @@ logo:
 #   - gravatar: whether to create a favicon from your Gravatar
 favicon:
   desktop:
-    url: /images/logo.png
+    url: /images/favicon.ico
     gravatar: false
   android:
     url: /images/favicon-192x192.png
@@ -133,18 +150,17 @@ favicon:
 # Set the color scheme.
 # Available color schemes are 'dark', 'light', 'classic' and 'white'.
 # Alternatively, add your own custom color scheme to source/css/_colors.
-colorscheme: white
+colorscheme: dark
 
 # Maximal width of the page in rem units.
-page_width: 55
-
+page_width: 48
 
 ##############################################################################
 # Miscellaneous
 ##############################################################################
 
 # Enable or disable the RSS feed.
-rss: false
+rss: true
 
 # Turn your web pages into graph objects (see http://ogp.me).
 open_graph:
@@ -153,14 +169,13 @@ open_graph:
   twitter_id:
   google_plus:
 
-
 ##############################################################################
 # Plugins
 ##############################################################################
 
 # Enable MathJax support for Latex
 mathjax:
-  enabled: false
+  enabled: true
 
 # Fill in your Disqus Comments Shortname to enable Disqus comments.
 disqus:
