@@ -4,7 +4,7 @@
 
 # Site
 #zh-cn
-title: Shing's blog
+title: 昨夜书
 subtitle: "Shing.cc"
 description: "「卑以自牧 含章可贞」 "
 keywords: shing.cc
@@ -100,8 +100,8 @@ ignore:
 #主题更换
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-# theme: oranges
-theme: oranges
+# theme: oranges last hollow
+theme: ringo
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:

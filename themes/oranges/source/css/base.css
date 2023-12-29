@@ -3,12 +3,15 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   font-size: 10px;
   letter-spacing: 0.01rem;
   background-color: var(--bg-body);
   transition: color 400ms ease-in-out 0s, background-color 400ms ease-in-out 0s;
-  font-family: Consolas, "Liberation Mono", Menlo, Monaco, "Source Han Sans CN", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif
+  /* font-family: Consolas, "Liberation Mono", Menlo, Monaco, "Source Han Sans CN", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif */
+  font-family: "ZhuqueFangsong-Regular";
+  src:url("../fonts/ZhuqueFangsong-Regular.ttf");
 }
 
 body.hidden {
@@ -40,15 +43,15 @@ body.hidden {
 
 /*控制整个滚动条*/
 ::-webkit-scrollbar {
-    background-color: transparent;
-    width: 6px;
-    height: 6px;
-    background-clip: padding-box;
+  background-color: transparent;
+  width: 6px;
+  height: 6px;
+  background-clip: padding-box;
 }
 
 /*滚动条中滑块部分*/
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(144,147,153,.5);
+  background-color: rgba(144, 147, 153, .5);
   /* border-radius: 5px; */
   transition: background-color 0.3s ease;
 }
@@ -106,6 +109,7 @@ a:hover {
   .container {
     width: 90%;
   }
+
   .index .post-list,
   .friend-index .friend-list,
   .archives .post-list,
@@ -113,9 +117,11 @@ a:hover {
   .about-index .markdown-body {
     padding: 0;
   }
+
   .category-index .category-list {
     padding: 0 40px;
   }
+
   .btn-catalog {
     display: block;
     position: fixed;
@@ -128,17 +134,19 @@ a:hover {
     color: var(--color-text-a);
     background-color: rgb(255 255 255 / 50%);
   }
+
   .btn-catalog i {
     font-size: 24px;
   }
+
   .post-catalog {
-    top: 44px!important;
-    bottom: unset!important;
-    right: 0!important;
-    width: unset!important;
+    top: 44px !important;
+    bottom: unset !important;
+    right: 0 !important;
+    width: unset !important;
     display: flex;
     justify-content: flex-end;
-    padding: 10px!important;
+    padding: 10px !important;
     background-color: #fff;
     box-shadow: -1px 2px 5px 0px #999;
     opacity: .9;
@@ -147,17 +155,21 @@ a:hover {
     border-bottom-left-radius: 4px;
     transition: all 0.2s ease;
   }
+
   .post-catalog.hidden {
-    opacity: 0!important;
-    top: 0!important;
-    z-index: -1!important;
+    opacity: 0 !important;
+    top: 0 !important;
+    z-index: -1 !important;
   }
+
   .post-catalog .title {
     display: none;
   }
+
   .post-catalog .catalog-content {
-    height: unset!important;
+    height: unset !important;
   }
+
   .back-to-top {
     opacity: 0;
     z-index: -1;
@@ -165,6 +177,7 @@ a:hover {
 }
 
 @media (max-width: 1200px) and (min-width: 887px) {
+
   .index .post-list,
   .friend-index .friend-list,
   .archives .post-list,
@@ -206,7 +219,9 @@ a:hover {
   padding-right: 8px;
 }
 
-.tag-details .time-m-d, .archives .time-m-d, .category-details .time-m-d {
+.tag-details .time-m-d,
+.archives .time-m-d,
+.category-details .time-m-d {
   margin: 0 30px;
 }
 
@@ -363,7 +378,8 @@ a:hover {
   transform-origin: left;
 }*/
 
-.tag-list-count, .category-list-count {
+.tag-list-count,
+.category-list-count {
   padding: 0 5px;
   color: #aaa;
   font-size: 1.2rem;
@@ -426,7 +442,8 @@ a:hover {
   border-top: 1px solid var(--color-divider-md-border);
 }
 
-.prev-or-next .post-foot-next, .prev-or-next .post-foot-prev {
+.prev-or-next .post-foot-next,
+.prev-or-next .post-foot-prev {
   white-space: nowrap;
 }
 
@@ -440,7 +457,9 @@ a:hover {
   flex-wrap: wrap;
 }
 
-.post-attach .post-pubtime, .post-attach .post-tags, .post-attach .post-categories {
+.post-attach .post-pubtime,
+.post-attach .post-tags,
+.post-attach .post-categories {
   padding: 0 10px;
   display: flex;
   align-items: center;
@@ -450,7 +469,9 @@ a:hover {
   .time-m-d {
     margin-right: 15px;
   }
-  .tag-details .time-m-d, .archives .time-m-d {
+
+  .tag-details .time-m-d,
+  .archives .time-m-d {
     margin: 0 15px;
   }
 }
@@ -527,7 +548,7 @@ a:hover {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   transition: background-color 0.2s ease;
   visibility: visible;
   padding-right: 6px;
