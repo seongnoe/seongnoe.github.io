@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Shing&#39;s blog</title>
+  <title>昨夜书</title>
   
   <subtitle>Shing.cc</subtitle>
   <link href="https://shing.cc/atom.xml" rel="self"/>
   
   <link href="https://shing.cc/"/>
-  <updated>2023-10-19T02:29:07.800Z</updated>
+  <updated>2023-12-12T05:55:15.370Z</updated>
   <id>https://shing.cc/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://shing.cc/2023/12/08/English-learningplan.html"/>
+    <id>https://shing.cc/2023/12/08/English-learningplan.html</id>
+    <published>2023-12-08T05:56:43.286Z</published>
+    <updated>2023-12-12T05:55:15.370Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><p>当然，我很乐意帮助你制定一个英语学习计划。以下是我为你提供的一个基本的计划：</p><ol><li class="lvl-3">每日阅读：每天阅读英文文章或新闻，以提高你的阅读理解能力，增加词汇量，并从中学习语法规则。你可以从简单的开始，比如《纽约时报》的每日新闻，或者一些适合你水平的英语读物。</li><li class="lvl-3">单词学习：每天选择一些单词进行学习，可以使用词汇卡片、手机应用程序或者在线资源。你可以选择在阅读中遇到的生词，或者从词汇书中挑选。每天学习10-20个新单词，并尝试在日常生活中使用它们。</li><li class="lvl-3">语法学习：对于语法学习，我推荐使用教科书或在线资源。你可以购买适合你水平的英语语法书籍，或者在网上查找免费的资源，如多邻国、哔哩哔哩上的英语学习频道等。每天花些时间学习新的语法规则，并尝试在写作和口语中应用它们。</li><li class="lvl-3">写作练习：每天至少写一篇小作文或者日记，这样可以帮助你练习使用新学的单词和语法规则。你可以选择一个主题，然后尽量用英语写下你的想法。</li><li class="lvl-3">听力训练：每天听英语广播、播客或者英语歌曲，以提高你的听力理解能力。在听的时候，试着理解每个词和短语的意思，这也会帮助你提高语法理解。</li><li class="lvl-3">口语练习：尽可能多地与人用英语交谈。可以找一个语言交换伙伴，或者加入在线英语口语俱乐部。尝试用英语讲述你的日常生活，或者讨论新闻事件。</li><li class="lvl-3">定期复习：每周回顾你学过的单词和语法规则，以确保你不会忘记它们。每个月进行一次全面的复习，以确保你的英语学习进度是连贯的。</li></ol><p>希望这个计划对你有所帮助！如果你有任何其他问题或者需要更具体的建议，欢迎随时向我提问。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css&quot;&gt;&lt;p&gt;当然，我很乐意帮助你制定一个英语学习计划。以下是</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>windows本地配置两个github账户并切换</title>
@@ -482,25 +502,6 @@
     <category term="github" scheme="https://shing.cc/tags/github/"/>
     
     <category term="emoji" scheme="https://shing.cc/tags/emoji/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo+Git远程更新内容</title>
-    <link href="https://shing.cc/2023/08/25/Hexo-Remote-Update-Content.html"/>
-    <id>https://shing.cc/2023/08/25/Hexo-Remote-Update-Content.html</id>
-    <published>2023-08-25T01:04:01.000Z</published>
-    <updated>2023-09-11T09:15:53.006Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><p>更新与发布博文 依然在 Git Shell 中进入 Hexo文件夹，执行下面几条命令，将博客部署到 GitHub 上：</p><span id="more"></span><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">hexo <span class="title">clean</span> (<span class="params">也可以hexo cl</span>)</span></span><br><span class="line"><span class="function">hexo <span class="title">generate</span> (<span class="params">若要本地预览就先执行 hexo server</span>) </span></span><br><span class="line"><span class="function">hexo deploy</span></span><br></pre></td></tr></table></figure><p>快捷命令：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">``</span><span class="string">`hexo c == hexo clean \# 清除缓存 </span></span><br><span class="line"><span class="string">hexo g == hexo generate \# 生成静态文件</span></span><br><span class="line"><span class="string">hexo d == hexo deploy \# 部署到github中，更新网页端的内容 </span></span><br><span class="line"><span class="string">hexo s == hexo server \# 通过启动本地服务器，预览文章效果 </span></span><br><span class="line"><span class="string">hexo n == hexo new `</span><span class="string">``</span></span><br></pre></td></tr></table></figure><p>还能组合使用，如：</p><p><code>hexo d -g </code>刷新个人博客，一般使用如下命令来刷新博客。</p><p><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;更新与发布博文 依然在 Git Shell 中进入 Hexo文件夹，执行下面几条命令，将博客部署到 GitHub 上：&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="博客记录" scheme="https://shing.cc/categories/%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%95/"/>
-    
     
   </entry>
   
