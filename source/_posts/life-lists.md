@@ -1,5 +1,5 @@
 ---
-title: 我的采购清单【更新中】
+title: 采购清单
 date: 2023-9-6 11:45:58
 tags: 采购
 categories: 生活
