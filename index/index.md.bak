@@ -1,0 +1,26 @@
+---
+title: index
+date: 2023-08-24 15:16:33
+---
+
+
+<div align="right">
+  <a title="zh-CN" href="/"><img src="https://img.shields.io/badge/-简体中文-24292f?style=for-the-badge" alt="简体中文" /></a>
+  <a title="EN" href="README-EN.md">  <img src="https://img.shields.io/badge/-English-ffffff?style=for-the-badge" alt="English"></a>
+  <a title="zh-TW" href="README_zh-TW.md"><img src="https://img.shields.io/badge/-繁体中文-ffffff?style=for-the-badge" alt="繁体中文"></a>
+</div>
+
+
+
+<div align="center" >
+<a href="https://ninojay.top">
+<img width=200px height=200px src="https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/img/A4-favicon.png" alt="A4" />
+</a>
+</div>
+
+<div align="center">
+
+模仿A4纸张的一个hexo极简主题。主打一个简洁，体积小，配置少。
+
+
+

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Charn</title>
+  
+  <subtitle>「卑以自牧 含章可贞」</subtitle>
+  <link href="https://charn.me/atom.xml" rel="self"/>
+  
+  <link href="https://charn.me/"/>
+  <updated>2024-03-20T01:09:36.801Z</updated>
+  <id>https://charn.me/</id>
+  
+  <author>
+    <name>Charn</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>产品设计中使用伪码来与流程图哪个好一些？</title>
+    <link href="https://charn.me/2024/02/17/Pseudocode.html"/>
+    <id>https://charn.me/2024/02/17/Pseudocode.html</id>
+    <published>2024-02-17T01:46:17.000Z</published>
+    <updated>2024-03-20T01:09:36.801Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><p>在产品设计中，使用伪码和流程图都是描述系统逻辑和流程的有效工具，它们各自具有一些优势和适用场景。</p><span id="more"></span><p>伪码的优势：</p><ol><li class="lvl-3"><p><strong>明确性</strong>：伪码可以较为精确地描述算法和逻辑，因为它使用了类似于编程语言的结构。这使得开发人员更容易理解并将其转化为实际的代码。</p></li><li class="lvl-3"><p><strong>灵活性</strong>：伪码不受特定软件或工具的限制，可以用任何文本编辑器编写。此外，它可以根据需要轻松地进行修改和调整。</p></li><li class="lvl-3"><p><strong>沟通</strong>：虽然伪码可能对非技术人员来说有些难以理解，但它为技术人员（如开发人员和测试人员）提供了一个共同的语言来讨论实现细节。</p></li></ol><p>伪码的劣势：</p><ol><li class="lvl-3"><p><strong>技术细节缺失</strong>：伪码通常不关注具体的实现细节，如数据结构、算法优化等。这可能导致在实际开发过程中出现一些意想不到的技术挑战。</p></li><li class="lvl-3"><p><strong>非专业性</strong>：对于非技术人员来说，伪码可能仍然具有一定的理解难度。因此，在使用伪码进行沟通时，需要确保所有参与者都具备一定的编程基础知识。</p></li></ol><p>流程图的优势：</p><ol><li class="lvl-3"><p><strong>可视化</strong>：流程图提供了一种图形化的方式来展示流程，这使得它们对非技术人员更加友好，更容易理解。</p></li><li class="lvl-3"><p><strong>快速概览</strong>：通过查看流程图，人们可以快速了解整个流程的概览，而不需要深入阅读文本或代码。</p></li><li class="lvl-3"><p><strong>跨职能沟通</strong>：流程图是跨职能团队沟通的有效工具，因为它以直观的方式展示了产品的流程，不同背景和技能的团队成员都能理解。</p></li></ol><p>流程图的劣势：</p><ol><li class="lvl-3"><p><strong>详细性不足</strong>：流程图通常用于展示一个过程的高层次视图，因此可能无法包含所有的细节。对于复杂的过程或需要详细说明的步骤，流程图可能无法提供足够的信息。</p></li><li class="lvl-3"><p><strong>复杂性限制</strong>：当流程变得非常复杂时，流程图可能会变得难以理解和解释。大量的箭头、节点和连接线可能使图表显得混乱，难以跟踪流程的路径。</p></li><li class="lvl-3"><p><strong>标准化问题</strong>：不同的组织和个人可能会使用不同的符号和约定来创建流程图，这可能导致理解上的困惑。缺乏标准化的符号和规则可能会降低流程图的可读性和通用性。</p></li><li class="lvl-3"><p><strong>更新和维护困难</strong>：当流程发生变化时，流程图需要相应地更新以保持其准确性。然而，手动更新流程图可能是一个耗时且容易出错的过程，特别是在大型或频繁变化的项目中。</p></li><li class="lvl-3"><p><strong>技术限制</strong>：虽然有一些专业的流程图工具可用，但它们可能受到特定软件或平台的限制。此外，一些工具可能缺乏与其他系统（如项目管理工具或代码库）的集成，从而限制了流程图在跨团队协作中的效用。</p></li><li class="lvl-3"><p><strong>表达能力有限</strong>：流程图主要用于表示线性和顺序的过程，但在表示并发、异步或并行处理等方面可能不够灵活。对于需要展示这些复杂交互的场景，其他类型的图表（如状态图、活动图或序列图）可能更合适。</p></li></ol><p>至于哪一个更好，这取决于具体的使用场景和受众：</p><ul class="lvl-0"><li class="lvl-2"><p>如果你的团队主要由技术人员组成，并且你需要详细描述算法和逻辑，那么伪码可能是一个更好的选择。</p></li><li class="lvl-2"><p>如果你的团队包括非技术人员，或者你希望提供一个流程的快速概览，那么流程图可能更合适。</p></li></ul><p>实际上，很多项目会同时使用伪码和流程图，因为两者可以互补。伪码提供了详细的逻辑描述，而流程图则提供了这些逻辑的可视化表示。结合使用它们可以帮助团队成员更好地理解和协作实现产品设计。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;在产品设计中，使用伪码和流程图都是描述系统逻辑和流程的有效工具，它们各自具有一些优势和适用场景。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="思考" scheme="https://charn.me/categories/%E6%80%9D%E8%80%83/"/>
+    
+    
+    <category term="思考" scheme="https://charn.me/tags/%E6%80%9D%E8%80%83/"/>
+    
+    <category term="产品" scheme="https://charn.me/tags/%E4%BA%A7%E5%93%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我所希望的</title>
+    <link href="https://charn.me/2024/01/03/2024.html"/>
+    <id>https://charn.me/2024/01/03/2024.html</id>
+    <published>2024-01-03T08:12:50.000Z</published>
+    <updated>2024-01-04T02:44:10.873Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><p>转眼间，2024了。</p><span id="more"></span><p>今年好像真的过得很快，不变的是我与2023好像没什么变化，减肥也没有成功。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;转眼间，2024了。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://charn.me/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="生活" scheme="https://charn.me/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>思悼-你的存在便是谋逆</title>
+    <link href="https://charn.me/2023/09/14/movie-sidao.html"/>
+    <id>https://charn.me/2023/09/14/movie-sidao.html</id>
+    <published>2023-09-14T00:50:48.000Z</published>
+    <updated>2024-01-04T02:44:32.340Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><p>知来者之可追 悟已往之不谏</p><span id="more"></span><p>再次看完《思悼》，心中有种被堵住的感觉，不知从何写起。</p><p>印象最深的两个场景是，世子在漫天大雪中长跪于殿门之外求父亲收回与太妃的退位承诺；世子在瓢泼大雨里跪在桥上接受父亲的惩罚。都是长跪不起，都因父亲而起，纵然我对朝鲜王室与历史没有了解，但生于帝王家从出生起就注定无奈和悲怆的世子，在此时赤裸裸地向我展现了他痛苦的灵魂的与撕裂的内心。</p><p>在封建王权的阴影下，父子相弑的惨剧并不罕见。传统伦理中的忠与孝，在欲望和猜忌中荡然无存。正如英祖对世子所说：“普通人家用慈爱来养育儿女，而在王家，则当儿女是仇人。”</p><p>君臣先于父子，纲常扼杀亲情。作为君王的英祖，深刻地体会到了至高王者的非人性：即为了清除异己，可以不惜一切代价。</p><p>然而，正是这样一个暴戾的君王，也曾流露出一个父亲的慈爱：熬夜为世子写书，在他学习的课堂上和群臣们哈哈大笑。但是，英祖强烈的控制欲和将儿子培养成治国机器的执念，最终让他在逼死世子的道路上越走越远，无法回头。如果说，看到世子因为小孩天性而贪玩不爱读书就勃然大怒属于恨铁不成钢的焦急，那么，在世子临朝处理政务时不耐烦的全盘否定就完全出于他本身的蛮横。一个问也不是，不问也不是的傀儡儿子，感受到的是父亲没有缘由的责骂和不由分说的厌恶，于是他在恨自己无法处理朝政的同时，更恨这种勾心斗角暗流汹涌的朝廷纷争，最后，恨这一切的起源——把他带到这个地狱一般家族的他本应爱戴和尊敬的君王父亲。　　<img src="https://pic3.zhimg.com/v2-0178abcd9383ffdb0dc8bcf90dd119ea_r.jpg" alt=""></p><p>随着剧情发展，可以看出世子如何从一个有抱负的英气少年，一步步变成一个疯癫顽劣的病人。从小他就被迫要求一个人睡，感受不到母亲的爱；而父亲，又是一个鲜有悦色，只会用社稷来压迫他读书的冷酷王者。他想要反抗，但却悲哀地发现自己的无力，进而自暴自弃地走向堕落，以此来报复造成这一切的他的出身和他的父亲。在太妃的灵堂上，英祖又一次以卑劣的品性来揣度他，于是他悲愤之中，只有激动地违心连声道：“对，我就是这样！”</p><p>这不禁让我想起那个令人心寒的标签理论：人一旦被有意义的他人——如教师，亲戚等贴上标签，描述为偏差行为或犯罪者，他就逐渐自我修正，而成为偏差行为者或犯罪者。世子最终狰狞的面目，何尝不是那个声称为了让他成为好君王的他的用心良苦的父亲所一手造就的呢？</p><p>于是，最后，世子被关进柜子，活活饿死。目睹并放任这一切发生的英祖，悲痛地接受了这个宣告他“教育”彻底失败的结局。从一开始，他就不愿意承认自己的错，而且把儿子的错，看做是他的错。他出于偏激而一厢情愿的爱，把世子看成他人生的附属品和跟从者。这样一个迷失于权力的君王，竟自欺欺人地去怪命运。“你的存在便是谋逆。”他说。联想到英祖在影片中多次坐在画有太阳和月亮的屏风前，日月均在而不明，他的眼前只有黑暗。</p><p>当然，历史上的这场悲剧，一定还有更多更为复杂的背景。单就影片本身而言，苍凉哀婉之情贯穿始终，浓郁刚烈，凄美悲情，表演精彩，感染力极强。客串演出的苏志燮最后的一场扇舞最是美到极致，掩面而终，看不清舞者的表情。就像所有的隐匿于历史长河中的帝王将相，无处可寻他们的真面目，最终，唯空余一声亡者含冤的长长叹息。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;知来者之可追 悟已往之不谏&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="电影" scheme="https://charn.me/categories/%E7%94%B5%E5%BD%B1/"/>
+    
+    
+    <category term="电影" scheme="https://charn.me/tags/%E7%94%B5%E5%BD%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《百年孤独》中的孤独到底是什么？</title>
+    <link href="https://charn.me/2023/09/12/One-Hundred-years-of-Solitude.html"/>
+    <id>https://charn.me/2023/09/12/One-Hundred-years-of-Solitude.html</id>
+    <published>2023-09-12T05:53:20.000Z</published>
+    <updated>2024-01-04T06:26:50.637Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css"><p>是人生本生啊。</p><span id="more"></span><p>“不论在什么地方都要记住，过去都是假的，回忆没有归路，春天总是一去不返，最疯狂执著的爱情也终究是过眼云烟。生命中曾经有过的所有灿烂，原来终究都需要用寂寞来偿还。”</p><p>读《百年孤独》，有一点读《红楼梦》的感觉，真真假假似梦似幻，写的都是一个大家族的起起落落，家族的核心都有一个意志坚定活力充沛的老祖母，两本书里还都有各种难以厘清的人名和人物关系。</p><p>魔幻现实主义的风格最迷人的地方在于，他赋予了作者“天马行空”的权利，不必拘谨于现实的逻辑，可以把自己的想法表达到极限。为了表现苍老，作者让梅尔吉亚德斯的皮肤上长满苔藓，为了表达孤独，他让何塞·阿卡迪奥·布恩迪亚被绑在树上几十年，一动不动直到死去。马尔克斯的文字很有力量，就像一个有着巨大引力的黑洞，吸引着我震颤着我。阅读他的文字，是一种享受，令人心情愉悦。　　<img src="https://img.zcool.cn/community/013e8757c6b1270000018c1bd0101b.jpg@1280w_1l_2o_100sh.jpg" alt=""></p><p>书里写了布恩迪亚家族七代人的历史，把他放大到历史的维度，他写的更是拉美人民的历史。马孔多从一个与世隔绝的世外桃源，到行政管理的介入，再到工业文明成果的到来，一百多年里，这个小镇不断遭遇外来文明的入侵和时代发展的生拉硬拽，火车和工业为小镇的人们带来了繁华与狂欢，但也使其饱受资本主义的摧残，3000多名反抗的工人被集体杀死却只一人知晓，在历史的滚滚车轮面前，人类所有试图阻止其发展的努力都成了螳臂当车的悲剧。即便像布恩迪亚上校一样南征北战、名震四海，百年后也依然被人遗忘，在历史的演进中化为灰烬。</p><p>书中最喜欢的人物是乌尔苏拉，她是整个家族的核心，她的一生都是孤独的，但她坚强地撑起了这个“净出疯子”的家族的荣辱兴衰。她也是整个家族寿命最长的人，她的一生都在为这个家族奉献，为这个家带来温情，并修复那些由男人们带来的破坏。喜欢她倔强又乐观的性格，她从不示弱，也不愿别人看出自己的孤独，哪怕她年迈之时双眼失明，她也依靠自己平日的细心和聪慧来与外界交流，以至于她临死之前也没有一个人发现，这位年过百岁的老太太已经失明了很久。</p><p>这个人物形象特别像我们的妈妈，她们看似柔弱但却拥有力量，这力量似涓涓细流，却坚不可摧，维持着家庭的正常运转。</p><p>另一个喜欢的人物是阿玛兰妲，自卑又骄傲地活着，对她是又爱又怜，因为感觉特别像自己。</p><p>书中的每个人都是孤独的。人生来孤独，平庸与荣光，最终都要归于平静。百年孤独告诉我们孤独是每个人身体的一部分，我们要做的不是摆脱它，而是和它和平相处。</p><p>摘录书中描述布恩迪亚上校晚年生活状态的段落：</p><p>沉默寡言的奥雷里亚诺·布恩迪亚上校对家中重新焕发的活力视若无睹，约略懂得幸福晚年的秘诀不过是与孤独签下不失尊严的协定罢了。每天浅睡一觉后五点起床，照例到厨房喝上一杯不加糖的咖啡，然后一整天关在作坊里，到下午四点才拖着一张矮凳走过长廊，如火如荼的玫瑰、明媚耀眼的暮色、阿玛兰妲的漠然——每到黄昏时分她的忧郁就发出开锅般清晰可闻的声响——都无法吸引他的注意。他在临街的门口坐下，直到蚊虫开始肆虐才回到家中。一次，有人鼓起勇气打扰了他的独处。</p><p>“您近来可好，上校？”那人走过时问道。</p><p>“就在这儿待着，”他回答，“等着给我下葬。”</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;是人生本生啊。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="阅读" scheme="https://charn.me/categories/%E9%98%85%E8%AF%BB/"/>
+    
+    
+    <category term="阅读" scheme="https://charn.me/tags/%E9%98%85%E8%AF%BB/"/>
+    
+    <category term="书籍" scheme="https://charn.me/tags/%E4%B9%A6%E7%B1%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>采购清单</title>
+    <link href="https://charn.me/2023/09/06/life-lists.html"/>
+    <id>https://charn.me/2023/09/06/life-lists.html</id>
+    <published>2023-09-06T03:45:58.000Z</published>
+    <updated>2024-03-20T01:02:07.858Z</updated>
+    
+    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <script id="hbeData" type="hbeData" data-hmacdigest="f78ff79959b574ea4e1d0f35cec080ea54288ab34fee56c12c03201092070386">1ee55e97e58a3e77f79b6706bf4842d7d3b86dd1e541298a70c6ca279e6664841b870dcbe628c6cef80740e2fc19bcb47654524a96aa6090f4aa864f44406905dd676030aab2f4015788b30221eaebf21231a19aa678df62dda5487de7d9d8674824cf3a7cd078577330b0c0fbe166026799e68fcbbe4cc7f32055119fff28bb56dbdc09d261b8faae44cdfd240fb4558fd4cae91b7fa472a4a4e1a05721e31fcf170fcb7ee7903d9b3e5cc41175181a41400833e994708a2c770037f92e5327b702f3229776d4614b067c65911a7040cd9d948e9393f80b36998775f2260d125afacb8aff3eef96b289cca9cd69f500995d588455e0ebf117cd7982d2f3ca2a589dc2ed0a05f0745a34118bc2bbd683f53da3ed5e9da92421a4019330b52d474354c0f2e7966ab3c15ef4a3c12ef9e9473f051b77de6bceae3cb3e2350c5dd8251ca64d80dceec6de9984cdefef81c8d4cc538ce1864d421d208a6272ffce6980b8ab40e54ff2f9efa6d2e179baf3cf6ebedaeeb667513c992acd554879ccdf44115e17ebba25d4afd4907b60c1b0845b342a2b86044a27ae1f38612dd4ee2cba62b230c65a2d1b908ccca7ffc162df45cb30ab0df166ce59c6950cf5b8fdda425433a2f3fb662bb0d9a3062b8a7cf5018920b022665dc46d4f449564118835f072ee882b61847955b6a550e84e7fe6c2b0d60df0c812ae4494ad1eaad5adf85bfb4bdabe8a86d7e23b88417c7abf22de214315d7e4ec4a3664c91baeeba5d8c6cabc189da4c1dd51591f9aee78d371626bedf16318ad7012aaa2aa7201251574dfe1ffc4e0f81945d2432ed0451a39bb1a5d597c77abeba69981a5579a7a9ec8f0811dab8ad6db877769954a8a73c82c07b5bbc0bf16dc011a69097697472256d6cd09d20c1b12d24ba7c51a95c01c523c8626ccd743925fb81d9177a81b9e5aff591e2c142394b83313639315428de72119bbdbb46ba83c795cd6b286a08792edffcd058a1a6f460f2b7bd2c4664b4a40ad1415d53d9a1d8bac6e422267489b1b399b153333d90c15069f2d4934394624e0a7f46e3b680cf3bb6277d2e2a6433438926ace5e50baa9f8908d0a574a8b1aa4f3993780ca47b090c93ddc16516f29af87f69ae5bde9576272e40183786e3e682fd9490e41d9bca6e4faf3ae6ee647d4b7155d691cd181c9f64daba74b9ce9c29913256dcb5b0714f839dda79ca3fc42704e5e20660c1f2e3ed89c2c63b851cd77c25e49458ce9d62c5fcd12a6f7b160acd42192ea649be77777b0980ee77d5419d98306c5a93f0ee71d6c9e9f9c720a3b0878660956d5b72ef31a1ee0ab79e6b0a4dd834641ff3dcda500f40bef4c6abed9218a10e903194babe6c3078e6d242eb21604fbfd0bf252e26581c61ac63a19fddc95c7f40381bad1809619d2fec7a9e7206b0a622ce6328c611e35a469b1feef7a79e618e028b7537d0ec904e2004a96eb63a73abfb5e321efc791ad0ab7e1134b212106c63bbf299cdf27db6bef40736e29b8477d7802b5a1b2d2600b0912d53845125f3e5fae41f7249f79d386458bd73972b2f22e6927c1e8f45db9ff3013e3a047c8361d2f7cb932de0dfb3b3e6d68efaa4b461f787952367e43ef29f4a2a65ae502a2a34890db19928ad97c3b9060204f9693a7cd1abc960feba9147feb1d3253483cd0349ee549689110c5f856b53bde09b92d8636e0bf0909b066f2730b7a692922360993de1246ad1f5a95d84363eb12c34f09c6fe8e6fc5864cfa7ea696eaa48714a1db085d3f7b6bc91b0d13f6cf47fe999f6b7553be56f5f956bd782ff0f5a7cd2a8c7fb7be6e58601be3d361ceca86ce536ffe6035eae0632914f9fc5b299a507a5f5b4f078718c29276ddd1152378b86429155d7c564dd9e324068694f651d78aa577f3f138f6e9bde2ce7e4b5e588ee3f6f3219ff8aa0fb41e4b6291a9be81d6cc8987778f37d4a5c424aae601f02070591d6e9b378e34f48e0a8a0db8af63bc0078dcafcc3ab29b6efe39218aca6650808901908f217f813961824451cff347c5fc40daf1878fef78abea345dc525cb6d49e51e584eae223ff75558895f5ce9ea25dc03a4e623a474e127b7a90dc48a91e67b144cf6f58839235350176af16e88101ab2a39b5d301742db6c9f9103ba0d0f0e68aa50c46e2679b57480ff5330831ab6006c1cbb245913219b6cbb6347d45f5efda683fb8c9cc3ae050d0159cb052eede22db5f2782c2b0762a9256662108cf06aebead57bacc6c87fa8f90cdb37051806d3132be1428b0c87b9308798a3c4b0eee8dc0bbabba7928f4bc5903cfabb752558b78bfba7c42d7531f64e2f3d0ce4b30997d97c81cef96cd66ec0b2e883f3162c5efb88125203bb4bbb39570940ecd0aae78a7bbd61be0b5089d3cd4f7f83d3e2c1e5b3ff079d9ac331c3415a1cffd8f4e8b4c847ab56d05d5c534e63f54ae6fe38f0a2e9590855f4a343c71a7610679020400dee17889419f2efbcd7e2878763db71e4e8b6b781a8a0da15c38ee91496bc6aa15e35aed1670ac1dfe631d2c83f326a182db34d68cd9d0aeb74bb0354a39e1ac7773dcfeeda4cbcb3ee044228ead74cca5043a1f72d0042d24fe16fba92bf3b4d4dc718a14a9548b0229ccab9ea6146cf1b0f2a783156c6f5a784e1bb17074e81f4a8e28addfe247815b54f130b9d333701281b809fb6f45af15748a308f495dd512eecf052e8e7511b1afe54c09f0b055fd49389e07d79d7f05fa509aae6c82c4e04d6c505147603b00949421e45be92fc08c2cb57f1fb03929bb8125b518449e7953e0a08564009f989a6a6304559628309688d2499629916b305e34a54e038ee2ee5202e0042b50ccbde0f02beadfdf9f95641ce377f8764c1775188e07bbd77cf110aa5b80334dfc658b0cef28a990c5a4d57d6498a0850e098ddf5706cfedc6287c3a26a0c43e8d617ae643b3d091e2c83684fa9b48e151ee67203e40df6592e382aeafdd56b3ecf2c5dcb362eed10b1316a097ffae8037ca47dad317aa2e6187dd1a6f70693762e9499dc845905a15c7d5647c1a829bfea9d8e214d941402c37deb1f90e32637ce0a5317b185bcf90ce43b888794a1bffa8b7eab51fa01c52894842e67601c533d466a01ac59cc3cb774b41b0b6abf5b2be5ce0faffe8866f1ea7e18254e89dbc3dd94d7717210d0f3b64cc43489145381d64c8503f5ee0b4e207c559da40c4be7a5e904cb4cbce846b6e1f87404f7d8994d6c86ed520f490125aef31bc3dd258ca65cd0462b290298c776b936d01e1f9aee161c3130157b676546ed12138b839743879b64db7d6d4b47900228657257d2b90d424cd3858764a081b1fa363aae1b5f8781b5e0507879e7f973675b44b8f3e46c20dc9836283c64102c320bfa4a0e0db7c157564f90fdf0278b1dedb3d42c4e02bc02efc87696d273eb299816f5eea5b26ab643b0705800c8954132be858ffc6878f09716517b77f39373c7a328ecaadcd7cd0bf919e2630ecede86d600f69af8d814581dfef41a749b0e597f9aa5415a34661b4853edd22284a563816cc49b83b1a9c572a4c8f14697d164d8e342bc31b58309770178e5af64704ff7a01a54b6b87b0a105e832249135b5c7fb8bcbbbd053a5c7f8ca12763bdc9fbae2acd5a62dcf2f74f786af461bb8c790b5a2a2065fb98c3537926bf947e438fe5ec78fc9243f4200f98d90655b916c005d5bd78aa843435fc3c4a69fd9facf50e3ce91fac02ff8e1a75161ec34314124ce3d60c7a6c224f177265119e13fce75dd7d23db02f66e293f02a7d3267fc30150a7305fb1a6593effde21826b67fad7726e8de25da4b750d60955bd6bd830d3bab374ab764f06ee87e9776950442fb324f43221ba4adf6a65605379ac25a569d872a43b4fc4b0a466eb6c4473f1d0c93d78fe6ccc0304bb5d6e53d9bbded0bd733a64248f6a6d5244bfff613c57476e0d55afbd17f7189bcf628dca79bb0cb494f927e3b6c5ef171178bcfe56fa05d07aaa3df3868c07eb44371a2d29f8dbed68131c43d366e32531a8db8c8940145f5aa946f9fe9003f629043b93644ae9a33be058f8ec8687cad11e816c206d487a81272ee6f0165c375447d93dab4ba58654baff6e6386ec79f151047197b1d66de32adf097e2fc002d810a753dd15d1667668cddea54e1038ecf38c3ac89d0cf0058bf825ef011adbfa348cd65185669edab11e3157464f40c6789c2719ceef5912b846d94e574dee97108a208e68327c3aa9084ea2d9872880047fc2a53a59c670d79c264ac17fa046b5f0a05754c4911110e48579e5dc16775adcc769c6f6c9ea5e049a6742ff3c22b26990b316307109a35ab5b</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+    
+    
+    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
+    
+    
+    
+    <category term="生活" scheme="https://charn.me/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="采购" scheme="https://charn.me/tags/%E9%87%87%E8%B4%AD/"/>
+    
+  </entry>
+  
+</feed>
