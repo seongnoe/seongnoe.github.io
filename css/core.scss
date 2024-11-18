@@ -1,0 +1,59 @@
+@charset 'utf-8';
+@import './colors';
+
+@import 'bulma/bulma';
+
+@import './colors_override';
+@import './bgText';
+@import './autoColorSchemeImpl';
+
+@import '_partial/header';
+
+.box:not(.no-box-animation) {
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.6s;
+}
+
+.box:hover:not(.no-box-animation) {
+  box-shadow: 0 1em 2em 0.25em rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+#tocList {
+  font-size: 0.9rem;
+  max-height: 1300px;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+
+  ol {
+    list-style-type: none;
+    margin-left: 0.5em;
+    margin-top: 0.1em;
+  }
+
+  li {
+    list-style-type: none;
+  }
+}
+
+.gone {
+  max-height: 0 !important;
+}
+
+.hljs {
+  background: none !important;
+}
+
+.notification {
+  @each $name, $pair in $colors {
+    &.is-#{$name}:not(.is-light) {
+      background-color: var(--widget-#{$name}-bgcolor);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .columns.is-centered {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+}
